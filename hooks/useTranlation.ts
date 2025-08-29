@@ -15,7 +15,10 @@ type Translations = {
     };
   };
   hero: {
-    title: string;
+hookPhrase: {
+      line1: string;
+      line2: string;
+    };
     description: string;
     buttons: {
       getStarted: string;
@@ -123,7 +126,10 @@ export const useTranslation = () => {
       buttons: { login: '', signup: '' },
     },
     hero: {
-      title: '',
+      hookPhrase: {
+        line1: '',
+        line2: '',
+      },
       description: '',
       buttons: { getStarted: '', demo: '' },
     },

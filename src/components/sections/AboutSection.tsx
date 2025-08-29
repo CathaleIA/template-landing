@@ -29,8 +29,8 @@ export default function AboutSection() {
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="/assets/chargecore-about.jpg"
-                alt="About Chargecore"
+                src="/assets/cathaleia-about.png"
+                alt="About cathaleia"
                 className="rounded-lg border shadow-sm max-w-full h-auto"
               />
             </div>

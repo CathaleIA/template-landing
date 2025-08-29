@@ -37,13 +37,17 @@
     }
   },
   "hero": {
-"title": "Donde los Datos Hacen Más",
-  "description": "Potencia tus procesos usando inteligentemente tus datos. Analíticas. IA. Ingeniería de datos. Aplicaciones y colaboración. Todo en nuestra plataforma.",
-  "buttons": {
-    "contact": "Contáctanos",
-    "learnMore": "Saber Más"
-    }
+  "hookPhrase": {
+    "line1": "DONDE TUS DATOS",
+    "line2": "CREAN VENTAJA"
   },
+  "description": "Convierte la complejidad de tus datos en decisiones inteligentes que impulsan eficiencia, innovación y crecimiento en toda tu empresa con IA avanzada.",
+  "buttons": {
+    "getStarted": "Contáctanos",
+    "demo": "Ver Demo"
+  }
+}
+,
   "features": {
     "head": "Características",
     "title": "Centraliza y Transforma tus Datos",
