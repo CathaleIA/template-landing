@@ -1,260 +1,283 @@
 {
-    "header": {
-      "title": "CathaleIA",
-        "nav": [
-        {
-            "id": "features",
-            "title": "Fonctionnalités"
-        },
-        {
-            "id": "dashboard",
-            "title": "Tableau de bord"
-        },
-        {
-            "id": "integrations",
-            "title": "Intégrations"
-        },
-        {
-            "id": "security",
-            "title": "Sécurité"
-        },
-        {
-            "id": "testimonials",
-            "title": "Témoignages"
-        },
-        {
-            "id": "pricing",
-            "title": "Tarifs"
-        }
-        ],
-      "buttons": {
-        "login": "Connexion",
-        "signup": "Inscription"
-      }
-    },
-    "hero": {
-      "title": "Transformez les Données en Décisions Puissantes",
-      "description": "Collectez, analysez et visualisez les informations de vos clients en temps réel. Prenez des décisions intelligentes, gérez des projets efficacement et amenez votre équipe au niveau supérieur.",
-      "buttons": {
-        "getStarted": "Commencer",
-        "demo": "Réserver une démo"
-      }
-    },
-    "features": {
-    "head": "Fonctionnalités",
-        "title": "Centralisez et Transformez Vos Données",
-        "description": "Notre plateforme collecte et organise les données opérationnelles et administratives de votre entreprise, vous offrant une vision claire et exploitable grâce à un tableau de bord intuitif.",
-        "items": [
-          {
-            "title": "Collecte de Données",
-            "description": "Capturez automatiquement les données opérationnelles et administratives de multiples sources, garantissant que toutes les informations pertinentes sont toujours à jour et accessibles."
-          },
-          {
-            "title": "Visualisation sur Tableau de Bord",
-            "description": "Accédez à un tableau de bord personnalisable qui affiche vos données clés en temps réel, facilitant la prise de décisions éclairées."
-          },
-          {
-            "title": "Gestion des Rapports",
-            "description": "Générez et gérez des rapports détaillés en quelques clics, vous permettant d'analyser les performances et de partager des insights avec votre équipe."
-          },
-          {
-            "title": "Analyse de Données (Prochainement)",
-            "description": "Prochainement, nous intégrerons des outils d'analyse de données avancés pour vous aider à découvrir des tendances, des modèles et des opportunités d'amélioration dans vos opérations."
-          }
-        ]
-    },
-    "dashboard": {
-        "head": "Tableau de bord",
-      "title": "Des analyses puissantes à portée de main",
-      "description": "Transformez vos données en informations exploitables avec nos tableaux de bord intuitifs et outils de visualisation.",
-      "tabs": [
-        {
-            "title": "Analytique",
-            "value": "analytics",
-            "title2": "Tableau de Bord d'Analytique en Temps Réel",
-            "description": "Surveillez les indicateurs clés en temps réel avec des widgets personnalisables, des graphiques interactifs et des options de filtrage.",
-            "keys": ["Graphiques Interactifs", "Mesures Personnalisées", "Mises à Jour en Temps Réel", "Filtrage des Données"]
-        },
-        {
-            "title": "Rapports",
-            "value": "reports",
-            "title2": "Système de Rapports Automatisés",
-            "description": "Planifiez et automatisez les rapports avec des modèles personnalisables, des options d'exportation et des capacités de partage.",
-            "keys": ["Rapports Planifiés", "Plusieurs Formats", "Options de Partage", "Modèles Personnalisés"]
-        },
-        {
-            "title": "Gestion des Données",
-            "value": "management",
-            "title2": "Gestion Centralisée des Données",
-            "description": "Importez, nettoyez et organisez vos données provenant de plusieurs sources dans une plateforme sécurisée.",
-            "keys": ["Importation/Exportation des Données", "Nettoyage des Données", "Contrôle des Versions", "Gestion des Accès"]
-        },
-        {
-            "title": "Prévisions",
-            "value": "forecasting",
-            "title2": "Analyse Prédictive et Prévisions (Prochainement)",
-            "description": "Utilisez la prévision basée sur l'IA pour prédire les tendances et prendre des décisions basées sur les données.",
-            "keys": ["Analyse des Tendances", "Modèles Prédictifs", "Scénarios de Simulation", "Détection d'Anomalies"]
-        }
-        ],
-      "demo": {
-        "watch": "Voir la démo",
-        "try": "Essayer la démo en direct"
-      }
-    },
-    "integrations": {
-      "head":"Intégrations",
-      "title": "Connectez-vous à vos outils préférés",
-      "description": "CathaleIA s'intègre parfaitement à votre pile technologique existante pour centraliser vos données et optimiser votre flux de travail.",
-      "api": {
-        "title": "API et intégrations personnalisées",
-        "description": "Besoin d'une intégration personnalisée ? Notre API robuste et nos outils pour développeurs facilitent la connexion de CathaleIA à n'importe quel système.",
-        "features": [
-          "API RESTful avec une documentation complète",
-          "Support des webhooks pour des mises à jour de données en temps réel",
-          "Développement de connecteurs personnalisés",
-          "Méthodes d'authentification sécurisées",
-          "Capacités de transformation des données"
-        ]
+  "header": {
+    "title": "CathaleIA",
+    "nav": [
+      {
+        "id": "features",
+        "title": "Características"
       },
-      "process": {
-        "title": "Processus d'intégration",
-        "steps": [
-          {
-            "title": "Sélectionnez votre intégration",
-            "description": "Choisissez parmi notre bibliothèque de connecteurs prédéfinis ou utilisez notre API."
-          },
-          {
-            "title": "Authentifiez et configurez",
-            "description": "Connectez vos comptes en toute sécurité avec OAuth ou des clés API."
-          },
-          {
-            "title": "Cartographiez vos données",
-            "description": "Définissez comment les données doivent circuler entre les systèmes."
-          },
-          {
-            "title": "Testez et déployez",
-            "description": "Vérifiez que tout fonctionne correctement et activez votre intégration."
-          }
-        ]
+      {
+        "id": "dashboard",
+        "title": "Panel"
+      },
+      {
+        "id": "integrations",
+        "title": "Integraciones"
+      },
+      {
+        "id": "security",
+        "title": "Seguridad"
+      },
+      {
+        "id": "testimonials",
+        "title": "Testimonios"
+      },
+      {
+        "id": "pricing",
+        "title": "Precios"
+      },
+      {
+        "id": "about",
+        "title": "Sobre Nosotros"
+      },
+      {
+        "id": "contact",
+        "title": "Contacto"
       }
-    },
-    "security": {
-        "head":"Sécurité",
-      "title": "Sécurité de niveau entreprise pour vos données",
-      "description": "Nous prenons la sécurité des données très au sérieux. Vos informations sont protégées par des mesures de sécurité de pointe et des normes de conformité.",
+    ],
+    "buttons": {
+      "login": "Iniciar sesión",
+      "signup": "Registrarse"
+    }
+  },
+  "hero": {
+    "title": "Transforma Datos en Decisiones Poderosas",
+    "description": "Recopila, analiza y visualiza la información de tus clientes en tiempo real. Toma decisiones inteligentes, gestiona proyectos eficientemente y lleva a tu equipo al siguiente nivel.",
+    "buttons": {
+      "getStarted": "Comenzar",
+      "demo": "Reservar una demostración"
+    }
+  },
+  "features": {
+    "head": "Características",
+    "title": "Centraliza y Transforma tus Datos",
+    "description": "Nuestra plataforma recopila y organiza la información operativa y administrativa de tu negocio, ofreciéndote una visión clara y accionable a través de un dashboard intuitivo.",
+    "items": [
+      {
+        "title": "Recolección de Datos",
+        "description": "Captura automáticamente datos operativos y administrativos de múltiples fuentes, asegurando que toda la información relevante esté siempre actualizada y accesible."
+      },
+      {
+        "title": "Visualización en Dashboard",
+        "description": "Accede a un panel de control personalizable que muestra tus datos clave en tiempo real, facilitando la toma de decisiones informadas."
+      },
+      {
+        "title": "Gestión de Informes",
+        "description": "Genera y gestiona informes detallados con solo unos clics, permitiéndote analizar el rendimiento y compartir insights con tu equipo."
+      },
+      {
+        "title": "Análisis de Datos (Próximamente)",
+        "description": "Próximamente, integraremos herramientas avanzadas de análisis de datos para ayudarte a descubrir tendencias, patrones y oportunidades de mejora en tu operación."
+      }
+    ]
+  },
+  "dashboard": {
+    "head": "Dashboard",
+    "title": "Análisis poderosos al alcance de tu mano",
+    "description": "Transforma tus datos en información accionable con nuestros paneles intuitivos y herramientas de visualización.",
+    "tabs": [
+      {
+        "title": "Análisis",
+        "value": "analytics",
+        "title2": "Panel de Análisis en Tiempo Real",
+        "description": "Monitorea métricas clave en tiempo real con widgets personalizables, gráficos interactivos y opciones de filtrado.",
+        "keys": ["Gráficos Interactivos", "Métricas Personalizadas", "Actualizaciones en Tiempo Real", "Filtrado de Datos"]
+      },
+      {
+        "title": "Informes",
+        "value": "reports",
+        "title2": "Sistema de Informes Automatizados",
+        "description": "Programa y automatiza informes con plantillas personalizables, opciones de exportación y capacidades de compartir.",
+        "keys": ["Informes Programados", "Múltiples Formatos", "Opciones de Compartir", "Plantillas Personalizadas"]
+      },
+      {
+        "title": "Gestión de Datos",
+        "value": "management",
+        "title2": "Gestión Centralizada de Datos",
+        "description": "Importa, limpia y organiza tus datos desde múltiples fuentes en una plataforma segura.",
+        "keys": ["Importación/Exportación de Datos", "Limpieza de Datos", "Control de Versiones", "Gestión de Accesos"]
+      },
+      {
+        "title": "Pronósticos",
+        "value": "forecasting",
+        "title2": "Análisis Predictivo y Pronósticos (Proximamente)",
+        "description": "Aprovecha la predicción basada en IA para pronosticar tendencias y tomar decisiones basadas en datos.",
+        "keys": ["Análisis de Tendencias", "Modelos Predictivos", "Escenarios de Qué Pasa Si", "Detección de Anomalías"]
+      }
+    ],
+    "demo": {
+      "watch": "Ver demostración",
+      "try": "Probar demostración en vivo"
+    }
+  },
+  "integrations": {
+    "head": "Integraciones",
+    "title": "Conéctate con tus herramientas favoritas",
+    "description": "CathaleIA se integra perfectamente con tu stack tecnológico existente para centralizar tus datos y optimizar tu flujo de trabajo.",
+    "api": {
+      "title": "API e integraciones personalizadas",
+      "description": "¿Necesitas una integración personalizada? Nuestra API robusta y herramientas para desarrolladores facilitan la conexión de CathaleIA con cualquier sistema.",
       "features": [
-        {
-          "title": "Chiffrement des données",
-          "description": "Toutes les données sont chiffrées au repos et en transit à l'aide des protocoles AES-256 et TLS 1.3."
-        },
-        {
-          "title": "Contrôles d'accès",
-          "description": "Contrôle d'accès basé sur les rôles, MFA et intégration SSO pour garantir un accès autorisé uniquement."
-        },
-        {
-          "title": "Conformité",
-          "description": "Conforme au GDPR, HIPAA, SOC 2 Type II et autres normes de l'industrie."
-        },
-        {
-          "title": "Infrastructure sécurisée",
-          "description": "Hébergé sur une infrastructure cloud sécurisée avec des audits de sécurité réguliers et des tests d'intrusion."
-        }
-      ],
-      "oursecurity": {
-        "title": "Notre Engagement en Matière de Sécurité",
-        "description": "Nous mettons en œuvre un programme de sécurité complet qui comprend :",
-        "listsecurity": [
-            "Évaluations de sécurité régulières et tests d'intrusion",
-            "Surveillance de l'infrastructure 24/7 et détection des menaces",
-            "Politiques strictes d'accès aux données et journalisation des audits",
-            "Formation à la sécurité des employés et vérification des antécédents",
-            "Planification de la reprise après sinistre et de la continuité des activités",
-            "Programme d'évaluation de la sécurité des fournisseurs"
-        ]
-      },
-      "finaltext": "Nos certifications de conformité démontrent notre engagement à maintenir les normes de sécurité les plus élevées."
-    },
-    "testimonials": {
-        "head": "Témoignages",
-        "title": "Ce que disent nos clients",
-        "description": "Ne nous croyez pas sur parole. Voici ce que nos clients disent de notre solution.",
-        "items": [
-          {
-            "quote": "Grâce à cette plateforme, nous avons désormais une visibilité en temps réel de l'état de nos équipements. L'intégration avec DEIF a été essentielle pour optimiser notre maintenance prédictive.",
-            "author": "N/N",
-            "role": "Responsable des Opérations, Compagnie Pétrolière Acacias"
-          },
-          {
-            "quote": "La capacité à analyser les échantillons d'huile Motul et à générer des rapports automatiquement nous a permis de réduire les pannes de machines de 40 %. Un outil indispensable.",
-            "author": "N/N",
-            "role": " Superviseur des Opérations, Motul Solutions"
-          },
-          {
-            "quote": "Le cloud a révolutionné la façon dont nous gérons nos données. Nous pouvons maintenant prendre des décisions basées sur des informations précises et à jour, ce qui a amélioré notre efficacité opérationnelle.",
-            "author": "N/N",
-            "role": "Directeur de Copower LTDA"
-          }
-        ]
-      },
-    "pricing": {
-        "head":"Tarifs",
-      "title": "Tarification simple et transparente",
-      "description": "Choisissez le plan qui convient le mieux à votre équipe. Tous les plans incluent un essai gratuit de 14 jours.",
-      "topics": ["Mensuel", "Annuel"],
-      "add": "Économisez 20%",
-      "button": "Commencer",
-      "plans": [
-        {
-          "name": "Débutant",
-          "monthlyPrice": "12",
-          "description": "Parfait pour les petites équipes qui débutent.",
-          "features": [
-            "Jusqu'à 5 membres d'équipe",
-            "10 projets",
-            "Rapports de base",
-            "Support 24/7"
-          ]
-        },
-        {
-          "name": "Professionnel",
-          "monthlyPrice": "29",
-          "description": "Idéal pour les équipes en croissance avec des besoins plus complexes.",
-          "features": [
-            "Jusqu'à 20 membres d'équipe",
-            "Projets illimités",
-            "Rapports avancés",
-            "Support prioritaire",
-            "Flux de travail personnalisés"
-          ],
-          "popular": true
-        },
-        {
-          "name": "Entreprise",
-          "monthlyPrice": "79",
-          "description": "Pour les grandes organisations avec des exigences avancées.",
-          "features": [
-            "Membres d'équipe illimités",
-            "Projets illimités",
-            "Rapports personnalisés",
-            "Support dédié",
-            "Sécurité avancée",
-            "Accès à l'API"
-          ]
-        }
+        "API RESTful con documentación completa",
+        "Soporte para webhooks para actualizaciones de datos en tiempo real",
+        "Desarrollo de conectores personalizados",
+        "Métodos de autenticación segura",
+        "Capacidades de transformación de datos"
       ]
     },
-    "cta": {
-        "title": "Prêt à rationaliser votre flux de travail ?",
-        "description": "Rejoignez des milliers d'équipes qui utilisent déjà CathaleIA pour améliorer leur productivité.",
-        "button": ["Commencer", "Contacter les Ventes"]
-    },
-    "footer": {
-      "copyright": "© 2025 CPW|I&D. Tous droits réservés.",
-      "social": {
-        "twitter": "Twitter",
-        "linkedin": "LinkedIn",
-        "github": "GitHub"
+    "process": {
+      "title": "Proceso de integración",
+      "steps": [
+        {
+          "title": "Selecciona tu integración",
+          "description": "Elige entre nuestra biblioteca de conectores preconstruidos o usa nuestra API."
+        },
+        {
+          "title": "Autentica y configura",
+          "description": "Conecta tus cuentas de manera segura con OAuth o claves API."
+        },
+        {
+          "title": "Mapea tus datos",
+          "description": "Define cómo deben fluir los datos entre sistemas."
+        },
+        {
+          "title": "Prueba y despliega",
+          "description": "Verifica que todo funcione correctamente y activa tu integración."
+        }
+      ]
+    }
+  },
+  "security": {
+    "head": "Seguridad",
+    "title": "Seguridad de nivel empresarial para tus datos",
+    "description": "Nos tomamos la seguridad de los datos muy en serio. Tu información está protegida con medidas de seguridad líderes en la industria y estándares de cumplimiento.",
+    "features": [
+      {
+        "title": "Cifrado de datos",
+        "description": "Todos los datos se cifran en reposo y en tránsito utilizando los protocolos AES-256 y TLS 1.3."
+      },
+      {
+        "title": "Controles de acceso",
+        "description": "Control de acceso basado en roles, MFA e integración de SSO para garantizar solo acceso autorizado."
+      },
+      {
+        "title": "Cumplimiento",
+        "description": "Cumplimiento con GDPR, HIPAA, SOC 2 Tipo II y otros estándares de la industria."
+      },
+      {
+        "title": "Infraestructura segura",
+        "description": "Alojado en una infraestructura en la nube segura con auditorías de seguridad regulares y pruebas de penetración."
       }
+    ],
+    "oursecurity": {
+      "title": "Nuestro Compromiso con la Seguridad",
+      "description": "Implementamos un programa de seguridad integral que incluye:",
+      "listsecurity": [
+        "Evaluaciones de seguridad regulares y pruebas de penetración",
+        "Monitoreo de infraestructura 24/7 y detección de amenazas",
+        "Políticas estrictas de acceso a datos y registro de auditorías",
+        "Capacitación en seguridad para empleados y verificaciones de antecedentes",
+        "Planificación de recuperación ante desastres y continuidad del negocio",
+        "Programa de evaluación de seguridad de proveedores"
+      ]
+    },
+    "finaltext": "Nuestras certificaciones de cumplimiento demuestran nuestro compromiso con los más altos estándares de seguridad."
+  },
+  "testimonials": {
+    "head": "Testimonios",
+    "title": "Lo que dicen nuestros clientes",
+    "description": "No solo nos creas a nosotros. Esto es lo que nuestros clientes dicen sobre nuestra solución.",
+    "items": [
+      {
+        "quote": "Gracias a esta plataforma, ahora tenemos visibilidad en tiempo real del estado de nuestros equipos. La integración con DEIF ha sido clave para optimizar nuestro mantenimiento predictivo.",
+        "author": "N/N",
+        "role": "Lider de operaciones, Petrolera Acacias"
+      },
+      {
+        "quote": "La capacidad de analizar las muestras de aceite de Motul y generar informes automáticamente nos ha permitido reducir fallos en nuestras máquinas en un 40%. Una herramienta indispensable.",
+        "author": "N/N",
+        "role": "Supervisor de Operaciones, Motul Solutions"
+      },
+      {
+        "quote": "La nube ha revolucionado cómo gestionamos nuestros datos. Ahora podemos tomar decisiones basadas en información precisa y actualizada, lo que ha mejorado nuestra eficiencia operativa.",
+        "author": "N/N",
+        "role": "Gerente de Copower LTDA"
+      }
+    ]
+  },
+  "pricing": {
+    "head": "Precios",
+    "title": "Precios simples y transparentes",
+    "description": "Elige el plan que mejor se adapte a tu equipo. Todos los planes incluyen una prueba gratuita de 14 días.",
+    "topics": ["Mensual", "Anual"],
+    "add": "Ahorra 20%",
+    "button": "Comenzar",
+    "plans": [
+      {
+        "name": "Básico",
+        "monthlyPrice": 12,
+        "description": "Perfecto para equipos pequeños que recién comienzan.",
+        "features": [
+          "Hasta 5 miembros del equipo",
+          "10 proyectos",
+          "Informes básicos",
+          "Soporte 24/7"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Profesional",
+        "monthlyPrice": 29,
+        "description": "Ideal para equipos en crecimiento con necesidades más complejas.",
+        "features": [
+          "Hasta 20 miembros del equipo",
+          "Proyectos ilimitados",
+          "Informes avanzados",
+          "Soporte prioritario",
+          "Flujos de trabajo personalizados"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Empresarial",
+        "monthlyPrice": 79,
+        "description": "Para organizaciones grandes con requisitos avanzados.",
+        "features": [
+          "Miembros del equipo ilimitados",
+          "Proyectos ilimitados",
+          "Informes personalizados",
+          "Soporte dedicado",
+          "Seguridad avanzada",
+          "Acceso a la API"
+        ],
+        "popular": false
+      }
+    ]
+  },
+  "about": {
+    "head": "Sobre Nosotros",
+    "title": "Conoce CathaleIA",
+    "description": "Somos una empresa líder en soluciones de análisis de datos para optimizar operaciones empresariales.",
+    "content": "CathaleIA, fundada en 2023, se especializa en desarrollar tecnología avanzada para la gestión y análisis de datos. Nuestra misión es empoderar a las empresas con herramientas intuitivas que transformen datos en decisiones accionables. Somos líderes en la integración de datos en tiempo real y ofrecemos soluciones personalizadas para industrias como la energética, manufacturera y tecnológica."
+  },
+  "contact": {
+    "head": "Contacto",
+    "title": "Contáctanos para tu Proyecto",
+    "description": "Estamos aquí para ayudarte a optimizar tus operaciones con nuestras soluciones de datos. Completa el formulario y nos pondremos en contacto contigo en menos de 8 horas.",
+    "benefitsTitle": "Beneficios de trabajar con nosotros",
+    "benefits": [
+      "Respuesta profesional en 8 horas",
+      "Soluciones completas y confiables",
+      "El mejor servicio para tu equipo",
+      "Implementación rápida en 35-40 días"
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 CPW|I&D. Todos los derechos reservados.",
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
     }
   }
+}

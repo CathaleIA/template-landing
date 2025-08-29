@@ -3,7 +3,6 @@
 
 import { useEffect, useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import { Description } from '@radix-ui/react-dialog';
 
 // Definir el tipo para las traducciones
 type Translations = {
@@ -24,17 +23,17 @@ type Translations = {
     };
   };
   features: {
-    head: String,
+    head: string;
     title: string;
     description: string;
     items: { title: string; description: string }[];
   };
   dashboard: {
-    head: String,
+    head: string;
     title: string;
     description: string;
-    tabs: { 
-      title: string; 
+    tabs: {
+      title: string;
       value: string;
       title2: string;
       description: string;
@@ -46,7 +45,7 @@ type Translations = {
     };
   };
   integrations: {
-    head: String,
+    head: string;
     title: string;
     description: string;
     api: {
@@ -60,30 +59,30 @@ type Translations = {
     };
   };
   security: {
-    head: String,
+    head: string;
     title: string;
     description: string;
     features: { title: string; description: string }[];
     oursecurity: {
-      title: String;
-      description: String;
-      listsecurity: String[];
+      title: string;
+      description: string;
+      listsecurity: string[];
     };
-    finaltext: String;
+    finaltext: string;
   };
   testimonials: {
-    head: String,
+    head: string;
     title: string;
     description: string;
     items: { quote: string; author: string; role: string }[];
   };
   pricing: {
-    head: String,
+    head: string;
     title: string;
     description: string;
-    topics: String[];
-    add: String;
-    button: String;
+    topics: string[];
+    add: string;
+    button: string;
     plans: {
       name: string;
       monthlyPrice: number;
@@ -92,11 +91,19 @@ type Translations = {
       popular: boolean;
     }[];
   };
-  cta: {
-    title: String,
-    description: String,
-    button: String[],
-  },
+  about: {
+    head: string;
+    title: string;
+    description: string;
+    content: string;
+  };
+  contact: {
+    head: string;
+    title: string;
+    description: string;
+    benefitsTitle: string;
+    benefits: string[];
+  };
   footer: {
     copyright: string;
     social: {
@@ -113,18 +120,12 @@ export const useTranslation = () => {
     header: {
       title: '',
       nav: [],
-      buttons: {
-        login: '',
-        signup: '',
-      },
+      buttons: { login: '', signup: '' },
     },
     hero: {
       title: '',
       description: '',
-      buttons: {
-        getStarted: '',
-        demo: '',
-      },
+      buttons: { getStarted: '', demo: '' },
     },
     features: {
       head: '',
@@ -137,35 +138,21 @@ export const useTranslation = () => {
       title: '',
       description: '',
       tabs: [],
-      demo: {
-        watch: '',
-        try: '',
-      },
+      demo: { watch: '', try: '' },
     },
     integrations: {
       head: '',
       title: '',
       description: '',
-      api: {
-        title: '',
-        description: '',
-        features: [],
-      },
-      process: {
-        title: '',
-        steps: [],
-      },
+      api: { title: '', description: '', features: [] },
+      process: { title: '', steps: [] },
     },
     security: {
       head: '',
       title: '',
       description: '',
       features: [],
-      oursecurity: {
-        title: '',
-        description: '',
-        listsecurity: [],
-      },
+      oursecurity: { title: '', description: '', listsecurity: [] },
       finaltext: '',
     },
     testimonials: {
@@ -183,26 +170,33 @@ export const useTranslation = () => {
       button: '',
       plans: [],
     },
-    cta: {
+    about: {
+      head: '',
       title: '',
       description: '',
-      button: [],
+      content: '',
+    },
+    contact: {
+      head: '',
+      title: '',
+      description: '',
+      benefitsTitle: '',
+      benefits: [],
     },
     footer: {
       copyright: '',
-      social: {
-        twitter: '',
-        linkedin: '',
-        github: '',
-      },
+      social: { twitter: '', linkedin: '', github: '' },
     },
   });
 
-  // Cargar las traducciones según el idioma
   useEffect(() => {
     const loadTranslations = async () => {
-      const translations = await import(`@/../locales/${language}.json`);
-      setTranslations(translations.default);
+      try {
+        const translationsModule = await import(`@/../locales/${language}.json`);
+        setTranslations(translationsModule.default);
+      } catch (error) {
+        console.error('Error loading translations:', error);
+      }
     };
     loadTranslations();
   }, [language]);

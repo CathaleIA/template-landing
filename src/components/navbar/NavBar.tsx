@@ -15,28 +15,35 @@ import { useTranslation } from '@/../hooks/useTranlation';
 
 export default function NavBar() {
 
-  // console.log(currentUser)
   const t = useTranslation();
   const router = useRouter();
 
-  //logica de posicion de navbar despues de hacer scroll
+  // Estado de scroll
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 0); // ✅ ahora detecta en el primer scroll
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <header className={`${scrolled ? 'fixed backdrop-blur-md bg-opacity-10' : 'block'} top-0 z-40 w-full border-b`}>
+<header
+  className={`
+    fixed top-0 z-40 w-full 
+    transition-all duration-300
+    ${scrolled
+      ? 'bg-background border-b border-border backdrop-blur-none' // ✅ sólido al hacer scroll
+      : 'backdrop-blur-md bg-background/10 border-none' // ✅ blur/transparente en el top
+    }
+  `}
+>
+
       <div className='container flex h-16 items-center justify-between py-4 px-4 md:px-6 w-full'>
+        {/* Logo */}
         <div className='flex items-center gap-2'>
           <Link href='/'>
             <div className='flex items-center space-x-1 rtl:space-x-reverse'>
@@ -45,34 +52,41 @@ export default function NavBar() {
                 alt='ctahlkesd'
                 width={20}
                 height={20}
-                // style={{
-                //   width: '100%', // Ocupa el 100% del contenedor
-                //   height: 'auto', // Mantiene la relación de aspecto
-                // }}
               />
-              <span className='text-xl font-bold'>CATHALE<span className='text-slate-400'>IA</span></span>
+              <span className='text-xl font-bold'>
+                CATHALE<span className='text-slate-400'>IA</span>
+              </span>
             </div>
           </Link>
         </div>
+
+        {/* Mobile Menu */}
         <MobileMenu />
+
+        {/* Navegación */}
         <nav className='hidden md:flex items-center gap-2 lg:gap-6'>
           {t.header.nav.map((nav) => (
-            <Link key={nav.id} href={`#${nav.id}`} className='text-sm font-medium hover:text-primary'>
+            <Link
+              key={nav.id}
+              href={`#${nav.id}`}
+              className='text-sm font-medium hover:text-primary'
+            >
               {nav.title}
             </Link>
           ))}
         </nav>
+
+        {/* Acciones */}
         <div className='flex items-center'>
           <div className='mr-2'>|</div>
-              <Button
-                  type="button"
-                  size="lg" className='p-x-1'
-                  onClick={() => {
-                      router.push('/signup');
-                  }}
-              >
-                SignUp
-              </Button>
+          <Button
+            type="button"
+            size="lg"
+            className='px-2'
+            onClick={() => router.push('/signup')}
+          >
+            SignUp
+          </Button>
           <ThemeToggle />
           <LanguageSwitcher />
         </div>
