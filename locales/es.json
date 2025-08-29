@@ -4,35 +4,35 @@
     "nav": [
       {
         "id": "features",
-        "title": "Características"
+        "title": "CARACTERÍSTICAS"
       },
       {
         "id": "dashboard",
-        "title": "Panel"
+        "title": "PANEL"
       },
       {
         "id": "integrations",
-        "title": "Integraciones"
+        "title": "INTEGRACIONES"
       },
       {
         "id": "security",
-        "title": "Seguridad"
+        "title": "SEGURIDAD"
       },
       {
         "id": "testimonials",
-        "title": "Testimonios"
+        "title": "TESTIMONIOS"
       },
       {
         "id": "pricing",
-        "title": "Precios"
+        "title": "PRECIOS"
       },
       {
         "id": "about",
-        "title": "Sobre Nosotros"
+        "title": "SOBRE NOSOTROS"
       },
       {
         "id": "contact",
-        "title": "Contacto"
+        "title": "CONTACTO"
       }
     ],
     "buttons": {
