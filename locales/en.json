@@ -148,40 +148,54 @@
     }
   },
   "security": {
-    "head": "Seguridad",
-    "title": "Seguridad de nivel empresarial para tus datos",
-    "description": "Nos tomamos la seguridad de los datos muy en serio. Tu información está protegida con medidas de seguridad líderes en la industria y estándares de cumplimiento.",
-    "features": [
+  "mainFeatures": [
       {
-        "title": "Cifrado de datos",
-        "description": "Todos los datos se cifran en reposo y en tránsito utilizando los protocolos AES-256 y TLS 1.3."
+        "icon": "/assets/icon-easy.svg",
+        "badge": "SENCILLO",
+        "title": "Haz realidad tus estrategias de datos e IA",
+        "description": "Ahorra tiempo en la creación, configuración y ajuste de la infraestructura con una plataforma sencilla, totalmente gestionada e integrada con distintos tipos de datos y nubes."
       },
       {
-        "title": "Controles de acceso",
-        "description": "Control de acceso basado en roles, MFA e integración de SSO para garantizar solo acceso autorizado."
+        "icon": "/assets/icon-trusted.svg", 
+        "badge": "CONECTADO",
+        "title": "Conecta tu ecosistema empresarial",
+        "description": "El rico ecosistema y la interoperabilidad de nuestra plataforma con formatos de tabla abiertos significa que puedes sacar el máximo provecho de todos tus datos, aplicaciones y modelos."
       },
       {
-        "title": "Cumplimiento",
-        "description": "Cumplimiento con GDPR, HIPAA, SOC 2 Tipo II y otros estándares de la industria."
-      },
-      {
-        "title": "Infraestructura segura",
-        "description": "Alojado en una infraestructura en la nube segura con auditorías de seguridad regulares y pruebas de penetración."
+        "icon": "/assets/icon-connected.svg",
+        "badge": "FIABLE", 
+        "title": "Garantiza la continuidad empresarial global",
+        "description": "Brinda soporte a tus workloads más exigentes con seguridad, gobernanza, observabilidad y recuperación ante desastres, todo ello de forma unificada y permanente, independientemente de la nube o región en que se encuentren."
       }
     ],
-    "oursecurity": {
-      "title": "Nuestro Compromiso con la Seguridad",
-      "description": "Implementamos un programa de seguridad integral que incluye:",
-      "listsecurity": [
-        "Evaluaciones de seguridad regulares y pruebas de penetración",
-        "Monitoreo de infraestructura 24/7 y detección de amenazas",
-        "Políticas estrictas de acceso a datos y registro de auditorías",
-        "Capacitación en seguridad para empleados y verificaciones de antecedentes",
-        "Planificación de recuperación ante desastres y continuidad del negocio",
-        "Programa de evaluación de seguridad de proveedores"
-      ]
-    },
-    "finaltext": "Nuestras certificaciones de cumplimiento demuestran nuestro compromiso con los más altos estándares de seguridad."
+    "subtitle": "EL AI DATA CLOUD",
+    "mainTitle": "OPTIMIZA TU ARQUITECTURA.",
+    "highlightedTitle": "ELIMINA LOS SILOS DE DATOS.",
+    "services": [
+      {
+        "title": "Ingeniería de datos",
+        "description": "Crea flujos de datos fiables y continuos para la empresa en el lenguaje que prefieras."
+      },
+      {
+        "title": "Analíticas", 
+        "description": "Agiliza las analíticas de datos con precios óptimos y un mantenimiento casi nulo."
+      },
+      {
+        "title": "IA",
+        "description": "Crea e implementa LLM y modelos de aprendizaje automático (ML) personalizados con tus datos de forma segura."
+      },
+      {
+        "title": "Aplicaciones y colaboración",
+        "description": "Comparte datos actualizados entre nubes y organizaciones. Desarrolla y distribuye aplicaciones a escala fácilmente."
+      }
+    ],
+    "bottomFeatures": [
+      "Totalmente gestionado",
+      "Entre nubes", 
+      "Interoperable",
+      "Seguro",
+      "Gobernado"
+    ]
   },
   "testimonials": {
     "head": "Testimonios",

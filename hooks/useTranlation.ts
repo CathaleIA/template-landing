@@ -15,7 +15,7 @@ type Translations = {
     };
   };
   hero: {
-hookPhrase: {
+    hookPhrase: {
       line1: string;
       line2: string;
     };
@@ -62,16 +62,20 @@ hookPhrase: {
     };
   };
   security: {
-    head: string;
-    title: string;
-    description: string;
-    features: { title: string; description: string }[];
-    oursecurity: {
+    mainFeatures: {
+      icon: string;
+      badge: string;
       title: string;
       description: string;
-      listsecurity: string[];
-    };
-    finaltext: string;
+    }[];
+    subtitle: string;
+    mainTitle: string;
+    highlightedTitle: string;
+    services: {
+      title: string;
+      description: string;
+    }[];
+    bottomFeatures: string[];
   };
   testimonials: {
     head: string;
@@ -156,12 +160,12 @@ export const useTranslation = () => {
       process: { title: '', steps: [] },
     },
     security: {
-      head: '',
-      title: '',
-      description: '',
-      features: [],
-      oursecurity: { title: '', description: '', listsecurity: [] },
-      finaltext: '',
+      mainFeatures: [],
+      subtitle: '',
+      mainTitle: '',
+      highlightedTitle: '',
+      services: [],
+      bottomFeatures: []
     },
     testimonials: {
       head: '',

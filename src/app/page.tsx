@@ -13,8 +13,8 @@ export default function HomePage() {
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
-        <DashboardSection />
         <SecuritySection />
+        <DashboardSection />
         <ContactSection />
       </main>
       <Footer />
