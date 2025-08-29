@@ -255,10 +255,12 @@
     ]
   },
   "about": {
-    "head": "Sobre Nosotros",
-    "title": "Conoce CathaleIA",
-    "description": "Somos una empresa líder en soluciones de análisis de datos para optimizar operaciones empresariales.",
-    "content": "CathaleIA, fundada en 2023, se especializa en desarrollar tecnología avanzada para la gestión y análisis de datos. Nuestra misión es empoderar a las empresas con herramientas intuitivas que transformen datos en decisiones accionables. Somos líderes en la integración de datos en tiempo real y ofrecemos soluciones personalizadas para industrias como la energética, manufacturera y tecnológica."
+        "badge": "DASHBOARD",
+    "mainTitle": "SIMPLIFICA LA IA",
+    "highlightedTitle": "Y LOS DATOS EMPRESARIALES",
+    "description": "Desde la ingesta y el procesamiento de datos hasta el análisis y modelado de estos, así como la creación y el uso compartido de datos y aplicaciones de IA, CathaleIA te ayuda a innovar con mayor rapidez y a lograr más con tus datos.",
+    "primaryButton": "POR QUÉ ELEGIR CATHALEIA",
+    "secondaryButton": "VER PRECIOS"
   },
   "contact": {
     "head": "Contacto",

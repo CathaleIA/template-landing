@@ -95,10 +95,12 @@ hookPhrase: {
     }[];
   };
   about: {
-    head: string;
-    title: string;
+    badge: string;
+    mainTitle: string;
+    highlightedTitle: string;
     description: string;
-    content: string;
+    primaryButton: string;
+    secondaryButton: string;
   };
   contact: {
     head: string;
@@ -177,10 +179,12 @@ export const useTranslation = () => {
       plans: [],
     },
     about: {
-      head: '',
-      title: '',
+      badge: '',
+      mainTitle: '',
+      highlightedTitle: '',
       description: '',
-      content: '',
+      primaryButton: '',
+      secondaryButton: '',
     },
     contact: {
       head: '',
