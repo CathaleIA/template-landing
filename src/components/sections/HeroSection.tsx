@@ -42,7 +42,7 @@ export default function HeroSection() {
               <Button
                 text={t.hero.buttons.getStarted}
                 withArrow
-                onClick={() => router.push("/signup")}
+                onClick={() => router.push("#contact")}
                 className="px-8 py-4 text-lg font-semibold bg-[hsl(248,39%,24%)] hover:bg-[hsl(248,39%,20%)] text-white rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               />
               <Button

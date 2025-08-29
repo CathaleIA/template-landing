@@ -3,28 +3,16 @@
     "title": "CathaleIA",
     "nav": [
       {
-        "id": "features",
-        "title": "CARACTERÍSTICAS"
-      },
-      {
-        "id": "dashboard",
-        "title": "PANEL"
-      },
-      {
-        "id": "integrations",
-        "title": "INTEGRACIONES"
+        "id": "about",
+        "title": "SOBRE NOSOTROS"
       },
       {
         "id": "security",
         "title": "SEGURIDAD"
       },
       {
-        "id": "pricing",
-        "title": "PRECIOS"
-      },
-      {
-        "id": "about",
-        "title": "SOBRE NOSOTROS"
+        "id": "dashboard",
+        "title": "PANEL"
       },
       {
         "id": "contact",
@@ -72,43 +60,79 @@
     ]
   },
   "dashboard": {
-    "head": "Dashboard",
+     "head": "Dashboard",
     "title": "Análisis poderosos al alcance de tu mano",
-    "description": "Transforma tus datos en información accionable con nuestros paneles intuitivos y herramientas de visualización.",
-    "tabs": [
+    "description": "Transforma tus datos en información accionable con nuestros paneles intuitivos y herramientas de visualización avanzadas.",
+    "features": [
       {
-        "title": "Análisis",
+        "title": "Análisis en Tiempo Real",
         "value": "analytics",
-        "title2": "Panel de Análisis en Tiempo Real",
-        "description": "Monitorea métricas clave en tiempo real con widgets personalizables, gráficos interactivos y opciones de filtrado.",
-        "keys": ["Gráficos Interactivos", "Métricas Personalizadas", "Actualizaciones en Tiempo Real", "Filtrado de Datos"]
+        "badge": "Análisis",
+        "description": "Monitorea métricas clave con dashboards interactivos y visualizaciones dinámicas que se actualizan al instante.",
+        "image": "/assets/analytics-dashboard.jpg",
+        "hoverTitle": "Panel de Control Inteligente",
+        "capabilities": [
+          "Gráficos interactivos personalizables",
+          "Métricas en tiempo real",
+          "Alertas automáticas inteligentes",
+          "Filtrado avanzado de datos",
+          "Exportación de reportes"
+        ],
+        "catchPhrase": " Decisiones más rápidas, resultados mejores",
+        "status": "available"
       },
       {
-        "title": "Informes",
+        "title": "Informes Automatizados",
         "value": "reports",
-        "title2": "Sistema de Informes Automatizados",
-        "description": "Programa y automatiza informes con plantillas personalizables, opciones de exportación y capacidades de compartir.",
-        "keys": ["Informes Programados", "Múltiples Formatos", "Opciones de Compartir", "Plantillas Personalizadas"]
+        "badge": "Informes",
+        "description": "Genera y programa informes profesionales con plantillas personalizables y opciones de distribución automática.",
+        "image": "/assets/automated-reports.jpg",
+        "hoverTitle": "Automatización de Reportes",
+        "capabilities": [
+          "Informes programados automáticamente",
+          "Plantillas profesionales personalizables",
+          "Múltiples formatos de exportación",
+          "Distribución por email automática",
+          "Colaboración en tiempo real"
+        ],
+        "catchPhrase": " Automatiza y libera tu tiempo",
+        "status": "available"
       },
       {
-        "title": "Gestión de Datos",
+        "title": "Gestión Centralizada",
         "value": "management",
-        "title2": "Gestión Centralizada de Datos",
-        "description": "Importa, limpia y organiza tus datos desde múltiples fuentes en una plataforma segura.",
-        "keys": ["Importación/Exportación de Datos", "Limpieza de Datos", "Control de Versiones", "Gestión de Accesos"]
+        "badge": "Gestión",
+        "description": "Centraliza, organiza y optimiza todos tus datos desde múltiples fuentes en una plataforma segura y escalable.",
+        "image": "/assets/data-management.jpg",
+        "hoverTitle": "Control Total de Datos",
+        "capabilities": [
+          "Importación desde múltiples fuentes",
+          "Limpieza automática de datos",
+          "Control de versiones avanzado",
+          "Gestión de permisos granular",
+          "Backup automático y seguro"
+        ],
+        "catchPhrase": " Un solo lugar, todos tus datos",
+        "status": "available"
       },
       {
-        "title": "Pronósticos",
+        "title": "Pronósticos con IA",
         "value": "forecasting",
-        "title2": "Análisis Predictivo y Pronósticos (Proximamente)",
-        "description": "Aprovecha la predicción basada en IA para pronosticar tendencias y tomar decisiones basadas en datos.",
-        "keys": ["Análisis de Tendencias", "Modelos Predictivos", "Escenarios de Qué Pasa Si", "Detección de Anomalías"]
+        "badge": "Predicciones",
+        "description": "Aprovecha el poder de la inteligencia artificial para predecir tendencias y anticiparte al futuro de tu negocio.",
+        "image": "/assets/ai-forecasting.jpg",
+        "hoverTitle": "Inteligencia Predictiva",
+        "capabilities": [
+          "Modelos de machine learning avanzados",
+          "Análisis de tendencias futuras",
+          "Simulaciones de escenarios",
+          "Detección de anomalías automática",
+          "Recomendaciones inteligentes"
+        ],
+        "catchPhrase": " El futuro de tu negocio, hoy",
+        "status": "coming-soon"
       }
-    ],
-    "demo": {
-      "watch": "Ver demostración",
-      "try": "Probar demostración en vivo"
-    }
+    ]
   },
   "integrations": {
     "head": "Integraciones",
@@ -168,7 +192,7 @@
         "description": "Brinda soporte a tus workloads más exigentes con seguridad, gobernanza, observabilidad y recuperación ante desastres, todo ello de forma unificada y permanente, independientemente de la nube o región en que se encuentren."
       }
     ],
-    "subtitle": "EL AI DATA CLOUD",
+    "subtitle": "LA SEGURIDAD ES LO PRIMERO",
     "mainTitle": "OPTIMIZA TU ARQUITECTURA.",
     "highlightedTitle": "ELIMINA LOS SILOS DE DATOS.",
     "services": [
@@ -272,20 +296,20 @@
         "badge": "DASHBOARD",
     "mainTitle": "SIMPLIFICA LA IA",
     "highlightedTitle": "Y LOS DATOS EMPRESARIALES",
-    "description": "Desde la ingesta y el procesamiento de datos hasta el análisis y modelado de estos, así como la creación y el uso compartido de datos y aplicaciones de IA, CathaleIA te ayuda a innovar con mayor rapidez y a lograr más con tus datos.",
+    "description": "CATHALEIA te permite gestrionar desde la ingesta y el procesamiento de datos hasta el análisis y modelado de estos, así como la creación y el uso compartido de datos y aplicaciones de IA, CathaleIA te ayuda a innovar con mayor rapidez y a lograr más con tus datos.",
     "primaryButton": "POR QUÉ ELEGIR CATHALEIA",
     "secondaryButton": "VER PRECIOS"
   },
   "contact": {
     "head": "Contacto",
-    "title": "Contáctanos para tu Proyecto",
-    "description": "Estamos aquí para ayudarte a optimizar tus operaciones con nuestras soluciones de datos. Completa el formulario y nos pondremos en contacto contigo en menos de 8 horas.",
-    "benefitsTitle": "Beneficios de trabajar con nosotros",
+    "title": "Basta de nosotros. Hablemos ahora de su proyecto de datos.",
+    "description": "Estamos aquí para transformar sus datos en ventaja competitiva. Nuestros expertos técnicos están listos para analizar sus necesidades y diseñar la solución perfecta para su empresa.",
+    "benefitsTitle": "¿Por qué elegir nuestros servicios?",
     "benefits": [
-      "Respuesta profesional en 8 horas",
-      "Soluciones completas y confiables",
-      "El mejor servicio para tu equipo",
-      "Implementación rápida en 35-40 días"
+      "Comentarios profesionales en 8 horas",
+      "Capacidades completas en las que confiar",
+      "El mejor servicio posible para usted",
+      "Entrega rápida en 35-40 días"
     ]
   },
   "footer": {

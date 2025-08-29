@@ -35,17 +35,16 @@ type Translations = {
     head: string;
     title: string;
     description: string;
-    tabs: {
+    features: {
       title: string;
       value: string;
-      title2: string;
+      badge: string;
       description: string;
-      keys: string[];
+      image: string;
+      hoverTitle: string;
+      capabilities: string[];
+      catchPhrase: string;
     }[];
-    demo: {
-      watch: string;
-      try: string;
-    };
   };
   integrations: {
     head: string;
@@ -149,8 +148,7 @@ export const useTranslation = () => {
       head: '',
       title: '',
       description: '',
-      tabs: [],
-      demo: { watch: '', try: '' },
+      features: [],
     },
     integrations: {
       head: '',
