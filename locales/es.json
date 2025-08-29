@@ -19,10 +19,6 @@
         "title": "SEGURIDAD"
       },
       {
-        "id": "testimonials",
-        "title": "TESTIMONIOS"
-      },
-      {
         "id": "pricing",
         "title": "PRECIOS"
       },
@@ -41,11 +37,11 @@
     }
   },
   "hero": {
-    "title": "Transforma Datos en Decisiones Poderosas",
-    "description": "Recopila, analiza y visualiza la información de tus clientes en tiempo real. Toma decisiones inteligentes, gestiona proyectos eficientemente y lleva a tu equipo al siguiente nivel.",
-    "buttons": {
-      "getStarted": "Comenzar",
-      "demo": "Reservar una demostración"
+"title": "Donde los Datos Hacen Más",
+  "description": "Potencia tus procesos usando inteligentemente tus datos. Analíticas. IA. Ingeniería de datos. Aplicaciones y colaboración. Todo en nuestra plataforma.",
+  "buttons": {
+    "contact": "Contáctanos",
+    "learnMore": "Saber Más"
     }
   },
   "features": {

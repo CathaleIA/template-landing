@@ -46,8 +46,12 @@ export default function NavBar() {
                 width={20}
                 height={20}
               />
-              <span className='text-xl font-bold text-foreground'>
-                CATHALE<span className='text-muted-foreground'>IA</span>
+              <span className={`text-xl font-black transition-colors duration-300 ${
+                scrolled ? 'text-foreground' : 'text-white'
+              }`}>
+                CATHALE<span className={`font-bold transition-colors duration-300 ${
+                  scrolled ? 'text-muted-foreground' : 'text-white/70'
+                }`}>IA</span>
               </span>
             </div>
           </Link>
@@ -62,7 +66,17 @@ export default function NavBar() {
             <Link
               key={nav.id}
               href={`#${nav.id}`}
-              className='text-sm font-medium text-foreground hover:text-primary transition-colors duration-200'
+              className={`
+                relative px-2 py-1
+                text-sm font-bold
+                hover:text-primary hover:font-black
+                transition-all duration-300 ease-in-out
+                after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0
+                after:h-0.5 after:bg-primary after:scale-x-0 after:origin-center
+                after:transition-transform after:duration-300 after:ease-out
+                hover:after:scale-x-100
+                ${scrolled ? 'text-foreground' : 'text-white'}
+              `}
             >
               {nav.title}
             </Link>
@@ -71,11 +85,13 @@ export default function NavBar() {
         
         {/* Acciones */}
         <div className='flex items-center'>
-          <div className='mr-2 text-muted-foreground'>|</div>
+          <div className={`mr-2 transition-colors duration-300 ${
+            scrolled ? 'text-muted-foreground' : 'text-white/50'
+          }`}>|</div>
           <Button
             type="button"
             size="lg"
-            className='px-2 bg-primary hover:bg-primary/90 text-primary-foreground'
+            className='px-2 font-bold bg-primary hover:bg-primary/90 text-primary-foreground hover:shadow-md transition-all duration-200'
             onClick={() => router.push('/signup')}
           >
             SignUp
