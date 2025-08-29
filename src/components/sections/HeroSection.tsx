@@ -25,7 +25,8 @@ export default function HeroSection() {
               <div className="space-y-6 lg:space-y-24 xl:space-y-24">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-white leading-none">
                   {t.hero.hookPhrase.line1}
-                  <span className="block text-[hsl(248,39%,24%)] mt-2">
+
+                  <span className="block text-[hsl(var(--primary))] mt-2">
                     {t.hero.hookPhrase.line2}
                   </span>
                 </h1>
@@ -43,7 +44,7 @@ export default function HeroSection() {
                 text={t.hero.buttons.getStarted}
                 withArrow
                 onClick={() => router.push("#contact")}
-                className="px-8 py-4 text-lg font-semibold bg-[hsl(248,39%,24%)] hover:bg-[hsl(248,39%,20%)] text-white rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="px-8 py-4 text-[hsl(var(--primary))] font-semibold text-white rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               />
               <Button
                 text={t.hero.buttons.demo}

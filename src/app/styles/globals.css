@@ -10,7 +10,7 @@
     --text-white: 0 0% 100%;           /* Variable adicional para texto blanco */
     
     /* Mantener el morado como accent (10%) */
-    --primary: 248 39% 24%;    /* 10% - Morado (color principal anterior) */
+    --primary: 168 100% 50%;    /* 10% - Morado (color principal anterior) */
     --primary-foreground: 0 0% 100%;   /* Texto blanco sobre morado */
     
     /* Ajustar otros elementos manteniendo la armonía */
