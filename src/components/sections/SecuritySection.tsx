@@ -3,88 +3,98 @@ import Image from "next/image";
 
 export default function SecuritySection() {
   const t = useTranslation();
-  
-  return (
-    <section id="security" className="relative w-full py-8 md:py-12 lg:py-16 bg-gray-50">
-      
-      {/* Línea separadora superior (decorativa) */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
 
+  return (
+    <section id="security" className="relative w-full py-12 md:py-16 lg:py-20 bg-gray-50">
+      {/* Línea separadora superior */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
+      
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
-        
-        {/* Sección principal con título grande */}
-        <div className="text-center mb-8 md:mb-12">
+        {/* Header Section */}
+        <div className="text-center mb-12 md:mb-16">
           <div className="text-sm font-medium text-gray-600 uppercase tracking-wider mb-4">
-            {t.security.subtitle}
+            {t.security?.subtitle || "LA SEGURIDAD ES LO PRIMERO"}
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug mb-2">
-            {t.security.mainTitle}{' '}
-            <span className="text-primary">{t.security.highlightedTitle}</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+            {t.security?.mainTitle || "OPTIMIZA TU ARQUITECTURA."}{' '}
+            <span className="text-primary block mt-2">
+              {t.security?.highlightedTitle || "ELIMINA LOS SILOS DE DATOS."}
+            </span>
           </h2>
         </div>
 
-        {/* Sección de características principales */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8 md:mb-12">
-          {t.security.mainFeatures.map((feature, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg border border-gray-200 shadow-sm p-6 text-center h-full flex flex-col"
+        {/* Main Features Grid - 4 tarjetas principales */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 md:mb-16">
+          {t.security?.mainFeatures?.map((feature, index) => (
+            <div
+              key={index}
+              className="group bg-white rounded-xl border border-gray-200 shadow-sm p-6 text-center 
+                         transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 
+                         hover:border-primary/20 cursor-pointer relative overflow-hidden"
             >
+              {/* Badge superior */}
+              <div className="inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-xs 
+                             font-bold uppercase tracking-wider rounded-full mb-4">
+                {feature.badge}
+              </div>
+
+              {/* Icono principal */}
               <div className="mb-4 flex justify-center">
-                <div className="w-12 h-12 flex items-center justify-center">
-                  <Image
-                    src={feature.icon}
+                <div className="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full 
+                               transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
+                  <Image 
+                    src={feature.icon} 
                     alt={feature.title}
-                    width={32}
+                    width={32} 
                     height={32}
-                    className="text-primary"
+                    className="transition-all duration-300"
                     style={{ 
-                      filter: 'brightness(0) saturate(100%) invert(11%) sepia(26%) saturate(2048%) hue-rotate(225deg) brightness(97%) contrast(96%)' 
+                      filter: 'brightness(0) saturate(100%) invert(47%) sepia(80%) saturate(1969%) hue-rotate(213deg) brightness(97%) contrast(96%)'
                     }}
                   />
                 </div>
               </div>
-              <h3 className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
-                {feature.badge}
-              </h3>
-              <h4 className="text-xl font-bold text-foreground mb-3 flex-grow">
+
+              {/* Título */}
+              <h3 className="text-lg font-bold text-gray-900 mb-3 leading-tight min-h-[3rem] flex items-center justify-center">
                 {feature.title}
-              </h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              </h3>
+
+              {/* Descripción */}
+              <p className="text-sm text-gray-600 leading-relaxed mb-4 min-h-[4rem]">
                 {feature.description}
               </p>
+
+              {/* Botón "Más información" que aparece en hover */}
+              <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                <button className="inline-flex items-center text-primary font-medium text-sm hover:text-primary/80 transition-colors">
+                  Explorar más
+                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Barra inferior animada - completa de lado a lado */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-100 overflow-hidden">
+                <div className="h-full bg-gradient-to-r from-primary to-primary/80 transform -translate-x-full 
+                               transition-transform duration-500 ease-out group-hover:translate-x-0"></div>
+              </div>
             </div>
-          ))}
+          )) || []}
         </div>
 
-        {/* Grid de servicios */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 md:mb-12">
-          {t.security.services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg border border-gray-200 shadow-sm p-6 h-full flex flex-col"
-            >
-              <h3 className="font-bold text-foreground mb-3 flex-grow">
-                {service.title}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Barra inferior con características */}
-        <div className="bg-primary rounded-lg border border-gray-200 shadow-sm p-6">
+        {/* Barra inferior con características de seguridad */}
+        <div className="bg-secondary rounded-xl shadow-sm p-6">
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-            {t.security.bottomFeatures.map((feature, index) => (
-              <div key={index} className="flex items-center text-primary-foreground">
-                <div className="w-4 h-4 bg-primary-foreground rounded-full flex items-center justify-center mr-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+            {t.security?.bottomFeatures?.map((feature, index) => (
+              <div key={index} className="flex items-center text-white">
+                <div className="w-4 h-4 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-2 h-2 bg-white rounded-full"></div>
                 </div>
                 <span className="font-medium text-sm md:text-base">{feature}</span>
               </div>
-            ))}
+            )) || []}
           </div>
         </div>
       </div>

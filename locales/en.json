@@ -25,17 +25,16 @@
     }
   },
   "hero": {
-  "hookPhrase": {
-    "line1": "DONDE TUS DATOS",
-    "line2": "CREAN VENTAJA"
+    "hookPhrase": {
+      "line1": "EL PODER DE TUS DATOS",
+      "line2": "BAJO TU CONTROL"
+    },
+    "description": "Hacemos simple lo complejo: transformamos tus datos y los convertimos en decisiones que optimizan los procesos y generan crecimiento a tu empresa con IA avanzada",
+    "buttons": {
+      "getStarted": "Contáctanos",
+      "demo": "Ver Demo"
+    }
   },
-  "description": "Convierte la complejidad de tus datos en decisiones inteligentes que impulsan eficiencia, innovación y crecimiento en toda tu empresa con IA avanzada.",
-  "buttons": {
-    "getStarted": "Contáctanos",
-    "demo": "Ver Demo"
-  }
-}
-,
   "features": {
     "head": "Características",
     "title": "Centraliza y Transforma tus Datos",
@@ -60,7 +59,7 @@
     ]
   },
   "dashboard": {
-     "head": "Dashboard",
+    "head": "",
     "title": "Análisis poderosos al alcance de tu mano",
     "description": "Transforma tus datos en información accionable con nuestros paneles intuitivos y herramientas de visualización avanzadas.",
     "features": [
@@ -172,82 +171,51 @@
     }
   },
   "security": {
-  "mainFeatures": [
+    "mainFeatures": [
       {
         "icon": "/assets/icon-easy.svg",
-        "badge": "SENCILLO",
-        "title": "Haz realidad tus estrategias de datos e IA",
-        "description": "Ahorra tiempo en la creación, configuración y ajuste de la infraestructura con una plataforma sencilla, totalmente gestionada e integrada con distintos tipos de datos y nubes."
+        "badge": "INTEGRAL",
+        "title": "Gestión completa del ciclo de datos",
+        "description": "Desde la recolección e integración hasta el procesamiento avanzado, CATHALEIA optimiza cada etapa de tus datos para maximizar su valor y reducir la complejidad operativa."
       },
       {
-        "icon": "/assets/icon-trusted.svg", 
-        "badge": "CONECTADO",
-        "title": "Conecta tu ecosistema empresarial",
-        "description": "El rico ecosistema y la interoperabilidad de nuestra plataforma con formatos de tabla abiertos significa que puedes sacar el máximo provecho de todos tus datos, aplicaciones y modelos."
+        "icon": "/assets/icon-trusted.svg",
+        "badge": "INTELIGENTE",
+        "title": "Análisis y modelado con IA avanzada",
+        "description": "Transforma datos en insights accionables mediante algoritmos de inteligencia artificial que impulsan la eficiencia, innovación y crecimiento de tu organización."
       },
       {
         "icon": "/assets/icon-connected.svg",
-        "badge": "FIABLE", 
-        "title": "Garantiza la continuidad empresarial global",
-        "description": "Brinda soporte a tus workloads más exigentes con seguridad, gobernanza, observabilidad y recuperación ante desastres, todo ello de forma unificada y permanente, independientemente de la nube o región en que se encuentren."
+        "badge": "COLABORATIVO",
+        "title": "Plataforma unificada de colaboración",
+        "description": "Facilita el intercambio de modelos analíticos y predicciones entre equipos en una sola plataforma, acelerando la toma de decisiones estratégicas."
+      },
+      {
+        "icon": "/assets/icon-aws.svg",
+        "badge": "SEGURO",
+        "title": "Infraestructura AWS de clase empresarial",
+        "description": "Construido sobre AWS con los más altos estándares de seguridad, cifrado end-to-end y cumplimiento normativo para proteger tus datos más críticos."
       }
     ],
-    "subtitle": "LA SEGURIDAD ES LO PRIMERO",
-    "mainTitle": "OPTIMIZA TU ARQUITECTURA.",
-    "highlightedTitle": "ELIMINA LOS SILOS DE DATOS.",
-    "services": [
-      {
-        "title": "Ingeniería de datos",
-        "description": "Crea flujos de datos fiables y continuos para la empresa en el lenguaje que prefieras."
-      },
-      {
-        "title": "Analíticas", 
-        "description": "Agiliza las analíticas de datos con precios óptimos y un mantenimiento casi nulo."
-      },
-      {
-        "title": "IA",
-        "description": "Crea e implementa LLM y modelos de aprendizaje automático (ML) personalizados con tus datos de forma segura."
-      },
-      {
-        "title": "Aplicaciones y colaboración",
-        "description": "Comparte datos actualizados entre nubes y organizaciones. Desarrolla y distribuye aplicaciones a escala fácilmente."
-      }
-    ],
+    "subtitle": "CATHALEIA DATA PLATFORM",
+    "mainTitle": "OPTIMIZA PROCESOS.",
+    "highlightedTitle": "MAXIMIZA PRODUCCIÓN.",
     "bottomFeatures": [
-      "Totalmente gestionado",
-      "Entre nubes", 
-      "Interoperable",
-      "Seguro",
-      "Gobernado"
-    ]
-  },
-  "testimonials": {
-    "head": "Testimonios",
-    "title": "Lo que dicen nuestros clientes",
-    "description": "No solo nos creas a nosotros. Esto es lo que nuestros clientes dicen sobre nuestra solución.",
-    "items": [
-      {
-        "quote": "Gracias a esta plataforma, ahora tenemos visibilidad en tiempo real del estado de nuestros equipos. La integración con DEIF ha sido clave para optimizar nuestro mantenimiento predictivo.",
-        "author": "N/N",
-        "role": "Lider de operaciones, Petrolera Acacias"
-      },
-      {
-        "quote": "La capacidad de analizar las muestras de aceite de Motul y generar informes automáticamente nos ha permitido reducir fallos en nuestras máquinas en un 40%. Una herramienta indispensable.",
-        "author": "N/N",
-        "role": "Supervisor de Operaciones, Motul Solutions"
-      },
-      {
-        "quote": "La nube ha revolucionado cómo gestionamos nuestros datos. Ahora podemos tomar decisiones basadas en información precisa y actualizada, lo que ha mejorado nuestra eficiencia operativa.",
-        "author": "N/N",
-        "role": "Gerente de Copower LTDA"
-      }
+      "Infraestructura AWS",
+      "Cifrado end-to-end",
+      "Cumplimiento normativo",
+      "Escalabilidad automática",
+      "Monitoreo 24/7"
     ]
   },
   "pricing": {
     "head": "Precios",
     "title": "Precios simples y transparentes",
     "description": "Elige el plan que mejor se adapte a tu equipo. Todos los planes incluyen una prueba gratuita de 14 días.",
-    "topics": ["Mensual", "Anual"],
+    "topics": [
+      "Mensual",
+      "Anual"
+    ],
     "add": "Ahorra 20%",
     "button": "Comenzar",
     "plans": [
@@ -293,31 +261,182 @@
     ]
   },
   "about": {
-        "badge": "DASHBOARD",
-    "mainTitle": "SIMPLIFICA LA IA",
-    "highlightedTitle": "Y LOS DATOS EMPRESARIALES",
-    "description": "CATHALEIA te permite gestrionar desde la ingesta y el procesamiento de datos hasta el análisis y modelado de estos, así como la creación y el uso compartido de datos y aplicaciones de IA, CathaleIA te ayuda a innovar con mayor rapidez y a lograr más con tus datos.",
+    "badge": "",
+    "mainTitle": "SIMPLIFICAMOS LA GESTIÓN",
+    "highlightedTitle": "Y EL ANÁLISIS DE DATOS EN TU EMPRESA",
+    "description": "CATHALEIA te permite gestionar todo el ciclo de tus datos: desde su recolección e integración hasta su procesamiento, análisis y modelado con inteligencia artificial. Además, facilita la colaboración al compartir modelos analíticos y predicciones en una única plataforma, optimice procesos y genere decisiones que impulsen eficiencia, innovación y crecimiento. ¿Qué es cathaleia? Es una estructura computacional dedicada a optimizar procesos, maximizar la producción y reducir costos.",
     "primaryButton": "POR QUÉ ELEGIR CATHALEIA",
     "secondaryButton": "VER PRECIOS"
   },
   "contact": {
     "head": "Contacto",
     "title": "Basta de nosotros. Hablemos ahora de su proyecto de datos.",
-    "description": "Estamos aquí para transformar sus datos en ventaja competitiva. Nuestros expertos técnicos están listos para analizar sus necesidades y diseñar la solución perfecta para su empresa.",
-    "benefitsTitle": "¿Por qué elegir nuestros servicios?",
+    "description": "Estamos aquí para transformar tus datos en decisiones inteligentes. Nuestros expertos están listos para analizar tus necesidades y diseñar la solución perfecta para tu empresa.",
+    "benefitsTitle": "",
     "benefits": [
-      "Comentarios profesionales en 8 horas",
-      "Capacidades completas en las que confiar",
-      "El mejor servicio posible para usted",
-      "Entrega rápida en 35-40 días"
+      "Respuesta profesional en menos de 24 horas",
+      "Soporte confiable y especializado en todo momento",
+      "Atención personalizada con foco en tus necesidades",
+      "Entrega garantizada acorde a tus necesidades"
     ]
   },
   "footer": {
-    "copyright": "© 2025 CPW|I&D. Todos los derechos reservados.",
+    "copyright": "© 2025 CathaleIA . Todos los derechos reservados.",
+    "description": "Especialistas en investigación y desarrollo de plataformas inteligentes para la gestión, integración y análisis de datos, con estándares de calidad globales.",
+    "sections": {
+      "contact": "Contáctenos",
+      "quickLinks": "Enlaces Rápidos",
+      "services": "Nuestros Servicios"
+    },
+    "contact": {
+      "phone": "+57 3228912646",
+      "phoneLabel": "LLAMANOS",
+      "email": "inquiry@copower.com",
+      "emailLabel": "DIRECCIÓN DE CORREO ELECTRÓNICO",
+      "address": "  Bucaramanga, Colombia",
+      "addressLabel": "DIRECCIÓN DE FÁBRICA",
+      "whatsapp": "+57 3228912646",
+      "linkedin": "https://linkedin.com/company/cathaleai",
+      "github": "https://github.com/cathaleai"
+    },
     "social": {
-      "twitter": "Twitter",
+      "whatsapp": "WhatsApp",
       "linkedin": "LinkedIn",
       "github": "GitHub"
+    },
+    "links": {
+      "home": "Inicio",
+      "about": "Acerca De",
+      "products": "Servicios",
+      "news": "Por que escogernos?",
+      "contact": "Contacto"
+    },
+    "services": {
+      "evChargers": "Análisis en tiempo real",
+      "chargingStations": "Automatización de Reportes",
+      "fastCharging": "Inteligencia Predictiva",
+      "dcCharging": "Control Total de Datos",
+      "manufacturers": ""
+    },
+    "legal": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "cookies": "Política de Cookies"
     }
+  },
+  "whyChoose": {
+    "subtitle": "FÁCIL.",
+    "mainTitle": "CONECTADO.",
+    "highlightedTitle": "CONFIABLE.",
+    "description": "Las empresas líderes confían en Cathaleia para potenciar el ciclo completo de datos, desde la ingesta hasta el intercambio, para que puedan innovar más rápido y hacer más con sus datos.",
+    "ctaButton": "COMENZAR GRATIS",
+    "stats": [
+      {
+        "value": "340%",
+        "description": "ROI promedio reportado por empresas que implementan Cathaleia en sus procesos de datos"
+      },
+      {
+        "value": "89%",
+        "description": "Reducción en tiempo de procesamiento de datos comparado con soluciones tradicionales"
+      },
+      {
+        "value": "500+",
+        "description": "Startups y empresas que ya confían en nuestra plataforma SaaS para optimizar sus operaciones"
+      }
+    ],
+    "featuresTitle": "¿Por qué las empresas eligen Cathaleia?",
+    "featuresDescription": "Descubre las ventajas competitivas que hacen de Cathaleia la plataforma preferida para la gestión inteligente de datos.",
+    "features": [
+      {
+        "icon": "🚀",
+        "title": "Implementación Rápida",
+        "description": "Plataforma SaaS lista para usar. Configura y personaliza según tus necesidades en minutos, no en meses.",
+        "benefit": "Reduce tiempo de implementación en 85%"
+      },
+      {
+        "icon": "🔗",
+        "title": "Integración Universal",
+        "description": "Conecta cualquier fuente de datos: bases de datos, APIs, archivos CSV, sistemas legacy y aplicaciones en la nube.",
+        "benefit": "Compatible con 200+ conectores"
+      },
+      {
+        "icon": "🤖",
+        "title": "IA Integrada",
+        "description": "Análisis predictivo y machine learning incorporados. Genera insights automáticamente sin necesidad de científicos de datos.",
+        "benefit": "Automatiza 70% de análisis rutinarios"
+      },
+      {
+        "icon": "☁️",
+        "title": "Infraestructura AWS",
+        "description": "Respaldado por Amazon Web Services. Escalabilidad automática, alta disponibilidad y seguridad empresarial garantizada.",
+        "benefit": "99.9% de tiempo de actividad"
+      },
+      {
+        "icon": "💰",
+        "title": "Modelo Flexible",
+        "description": "Paga solo por lo que usas. Escalamiento automático según demanda sin inversiones iniciales en hardware o licencias.",
+        "benefit": "Reduce costos operativos en 60%"
+      },
+      {
+        "icon": "📊",
+        "title": "Dashboards Inteligentes",
+        "description": "Visualizaciones interactivas en tiempo real. Comparte insights con tu equipo y toma decisiones basadas en datos.",
+        "benefit": "Acelera toma de decisiones en 50%"
+      }
+    ],
+    "techTitle": "Tecnología empresarial de primer nivel",
+    "techDescription": "Construido sobre la infraestructura más confiable del mundo",
+    "techFeatures": [
+      {
+        "name": "AWS Cloud",
+        "description": "Infraestructura escalable y segura"
+      },
+      {
+        "name": "API REST",
+        "description": "Integración simple y potente"
+      },
+      {
+        "name": "ML Nativo",
+        "description": "Inteligencia artificial integrada"
+      },
+      {
+        "name": "SaaS Multi-tenant",
+        "description": "Arquitectura optimizada"
+      }
+    ],
+    "ctaTitle": "¿Listo para transformar tu gestión de datos?",
+    "ctaDescription": "Únete a las empresas que ya están optimizando sus procesos y maximizando su ROI con Cathaleia.",
+    "faqTitle": "PREGUNTAS",
+    "faqSubtitle": "FRECUENTES",
+    "faqs": [
+      {
+        "question": "¿En qué plataformas cloud funciona Cathaleia?",
+        "answer": "Cathaleia está construido nativamente en Amazon Web Services (AWS), garantizando la máxima confiabilidad, escalabilidad y seguridad. También ofrecemos integraciones con otras plataformas cloud según las necesidades específicas de tu empresa."
+      },
+      {
+        "question": "¿Cuál es el modelo de precios de Cathaleia?",
+        "answer": "Ofrecemos un modelo SaaS flexible con planes escalables según el volumen de datos procesados y las funcionalidades requeridas. Incluimos una prueba gratuita de 14 días y no requiere inversión inicial en hardware o licencias."
+      },
+      {
+        "question": "¿Cathaleia funciona para empresas de cualquier tamaño?",
+        "answer": "Sí, nuestra arquitectura SaaS multi-tenant se adapta desde startups hasta grandes corporaciones. La plataforma escala automáticamente según tus necesidades, desde gigabytes hasta petabytes de datos."
+      },
+      {
+        "question": "¿Qué nivel de seguridad y governance ofrece Cathaleia?",
+        "answer": "Implementamos los más altos estándares de seguridad empresarial: encriptación end-to-end, control de acceso basado en roles, auditoría completa de actividades, y cumplimiento con regulaciones como GDPR y SOC 2."
+      },
+      {
+        "question": "¿Cathaleia incluye capacidades de AI/ML nativas?",
+        "answer": "Sí, incluimos algoritmos de machine learning pre-entrenados y herramientas de análisis predictivo. Puedes crear modelos personalizados sin necesidad de expertise técnico avanzado en ciencia de datos."
+      },
+      {
+        "question": "¿Dónde puedo aprender más sobre casos de uso y mejores prácticas?",
+        "answer": "Ofrecemos documentación completa, webinars regulares, casos de estudio detallados y soporte dedicado. Nuestro equipo de Customer Success te acompaña desde la implementación hasta la optimización continua."
+      },
+      {
+        "question": "¿Cómo empezar con la plataforma Cathaleia?",
+        "answer": "Puedes comenzar con nuestra prueba gratuita de 14 días. Solo necesitas registrarte, y en minutos tendrás acceso completo a la plataforma. Nuestro equipo te proporcionará onboarding personalizado y soporte técnico."
+      }
+    ]
   }
 }

@@ -12,13 +12,12 @@
     /* Mantener el morado como accent (10%) */
     --primary: 168 100% 50%;    /* 10% - Morado (color principal anterior) */
     --primary-foreground: 0 0% 100%;   /* Texto blanco sobre morado */
-    
+    --secondary: 160 30% 27%;
     /* Ajustar otros elementos manteniendo la armonía */
     --card: 0 0% 98%;                  /* Blanco ligeramente gris */
     --card-foreground: 0 0% 0%;        /* Negro */
     --popover: 0 0% 100%;              /* Blanco */
-    --popover-foreground: 0 0% 0%;     /* Negro */
-    --secondary: 0 0% 95%;             /* Gris muy claro */
+    --popover-foreground: 0 0% 0%;     /* Negro */          /* Gris muy claro */
     --secondary-foreground: 0 0% 0%;   /* Negro */
     --muted: 0 0% 96%;                 /* Gris claro */
     --muted-foreground: 0 0% 45%;      /* Gris medio */

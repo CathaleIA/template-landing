@@ -14,6 +14,39 @@ type Translations = {
       signup: string;
     };
   };
+  whyChoose: {
+    subtitle: string;
+    mainTitle: string;
+    highlightedTitle: string;
+    description: string;
+    ctaButton: string;
+    stats: {
+      value: string;
+      description: string;
+    }[];
+    featuresTitle: string;
+    featuresDescription: string;
+    features: {
+      icon: string;
+      title: string;
+      description: string;
+      benefit: string;
+    }[];
+    techTitle: string;
+    techDescription: string;
+    techFeatures: {
+      name: string;
+      description: string;
+    }[];
+    ctaTitle: string;
+    ctaDescription: string;
+    faqTitle: string;
+    faqSubtitle: string;
+    faqs: {
+      question: string;
+      answer: string;
+    }[];
+  };
   hero: {
     hookPhrase: {
       line1: string;
@@ -114,10 +147,46 @@ type Translations = {
   };
   footer: {
     copyright: string;
-    social: {
-      twitter: string;
+    description: string;
+    sections: {
+      contact: string;
+      quickLinks: string;
+      services: string;
+    };
+    contact: {
+      phone: string;
+      phoneLabel: string;
+      email: string;
+      emailLabel: string;
+      address: string;
+      addressLabel: string;
+      whatsapp: string;
       linkedin: string;
       github: string;
+    };
+    social: {
+      whatsapp: string;
+      linkedin: string;
+      github: string;
+    };
+    links: {
+      home: string;
+      about: string;
+      products: string;
+      news: string;
+      contact: string;
+    };
+    services: {
+      evChargers: string;
+      chargingStations: string;
+      fastCharging: string;
+      dcCharging: string;
+      manufacturers: string;
+    };
+    legal: {
+      privacy: string;
+      terms: string;
+      cookies: string;
     };
   };
 };
@@ -129,6 +198,25 @@ export const useTranslation = () => {
       title: '',
       nav: [],
       buttons: { login: '', signup: '' },
+    },
+     whyChoose: {
+      subtitle: '',
+      mainTitle: '',
+      highlightedTitle: '',
+      description: '',
+      ctaButton: '',
+      stats: [],
+      featuresTitle: '',
+      featuresDescription: '',
+      features: [],
+      techTitle: '',
+      techDescription: '',
+      techFeatures: [],
+      ctaTitle: '',
+      ctaDescription: '',
+      faqTitle: '',
+      faqSubtitle: '',
+      faqs: [],
     },
     hero: {
       hookPhrase: {
@@ -197,7 +285,47 @@ export const useTranslation = () => {
     },
     footer: {
       copyright: '',
-      social: { twitter: '', linkedin: '', github: '' },
+      description: '',
+      sections: {
+        contact: '',
+        quickLinks: '',
+        services: ''
+      },
+      contact: {
+        phone: '',
+        phoneLabel: '',
+        email: '',
+        emailLabel: '',
+        address: '',
+        addressLabel: '',
+        whatsapp: '',
+        linkedin: '',
+        github: ''
+      },
+      social: { 
+        whatsapp: '', 
+        linkedin: '', 
+        github: '' 
+      },
+      links: {
+        home: '',
+        about: '',
+        products: '',
+        news: '',
+        contact: ''
+      },
+      services: {
+        evChargers: '',
+        chargingStations: '',
+        fastCharging: '',
+        dcCharging: '',
+        manufacturers: ''
+      },
+      legal: {
+        privacy: '',
+        terms: '',
+        cookies: ''
+      }
     },
   });
 

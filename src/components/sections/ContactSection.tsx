@@ -78,7 +78,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
             <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 shadow-2xl">
               <div className="mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  PÓNGASE EN CONTACTO CON NUESTROS EXPERTOS TÉCNICOS
+                  PÓNGASE EN CONTACTO CON NUESTROS EXPERTOS
                 </h3>
               </div>
 
@@ -129,7 +129,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+57 (316) 123-4567"
                   />
                 </div>
 
@@ -154,7 +154,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent"
                 >
-                  Envíe Su Consulta
+                  Enviar
                 </button>
 
                 {/* Nota de privacidad */}
@@ -167,8 +167,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
         </div>
       </div>
 
-      {/* Efecto de superposición para el footer */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-transparent to-primary/20 z-20 pointer-events-none"></div>
+    
     </section>
   );
 }

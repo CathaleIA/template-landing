@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from "@/components/ui/button"
-import ThemeToggle from '@/components/ui/ThemeToggle';
+
 import LanguageSwitcher from '@/components/ui/LenguageToggle';
 import { useTranslation } from '@/../hooks/useTranlation';
 
@@ -96,7 +96,7 @@ export default function NavBar() {
           >
             SignUp
           </Button>
-          <ThemeToggle />
+         
           <LanguageSwitcher />
         </div>
       </div>
