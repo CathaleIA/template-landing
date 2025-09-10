@@ -6,7 +6,8 @@ export default function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
 
   return (
-    <section className="relative w-full py-12 md:py-16 lg:py-20 bg-white">
+<section className="relative w-full py-12 md:py-16 lg:py-20 overflow-hidden">
+  <div className="top-section-bg"></div>
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
       
@@ -14,7 +15,7 @@ export default function PricingSection() {
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
           <div className="text-sm font-medium text-gray-600 uppercase tracking-wider mb-4">
-            {t.pricing?.head || "PRECIOS"}
+            
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
             {t.pricing?.title || "Precios simples y transparentes"}

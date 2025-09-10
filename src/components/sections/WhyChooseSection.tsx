@@ -4,10 +4,11 @@ export default function WhyChooseSection() {
   const t = useTranslation();
 
   return (
-    <section className="relative w-full py-12 md:py-16 lg:py-20 bg-white">
+<section className="relative w-full py-12 md:py-16 lg:py-20 overflow-hidden">
+  <div className="top-section-bg"></div>
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
-      
+
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 md:mb-20">
