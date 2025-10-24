@@ -125,22 +125,7 @@ export default function WhyChooseSection() {
         </div>
 
         {/* CTA Final */}
-        <div className="text-center bg-gray-50 rounded-2xl p-8 lg:p-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            {t.whyChoose?.ctaTitle || "¿Listo para transformar tu gestión de datos?"}
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            {t.whyChoose?.ctaDescription || "Únete a las empresas que ya están optimizando sus procesos y maximizando su ROI con Cathaleia."}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl">
-              Comenzar prueba gratuita
-            </button>
-            <button className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
-              Solicitar demo
-            </button>
-          </div>
-        </div>
+
       </div>
     </section>
   );

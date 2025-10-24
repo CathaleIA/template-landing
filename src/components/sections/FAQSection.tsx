@@ -67,14 +67,7 @@ export default function FAQSection() {
         </div>
 
         {/* CTA adicional */}
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">
-            ¿No encuentras la respuesta que buscas?
-          </p>
-          <button className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors">
-            Contacta con nosotros
-          </button>
-        </div>
+          
       </div>
     </section>
   );
