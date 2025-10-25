@@ -438,5 +438,32 @@
         "answer": "Puedes comenzar con nuestra prueba gratuita de 14 días. Solo necesitas registrarte, y en minutos tendrás acceso completo a la plataforma. Nuestro equipo te proporcionará onboarding personalizado y soporte técnico."
       }
     ]
-  }
+  },
+ "integral": {
+  "head": "Gestión Integral del Ciclo de Datos",
+  "title": "Optimiza cada etapa de tus datos con una plataforma integral",
+  "description": "CATHALEIA ofrece una gestión completa del ciclo de vida de los datos empresariales. Desde la adquisición hasta la analítica avanzada, ayudamos a las organizaciones a maximizar el valor de su información, reducir la complejidad operativa y mejorar la toma de decisiones estratégicas.",
+  "items": [
+    {
+      "title": "1. Recolección e Integración Inteligente",
+      "content": "Conectamos múltiples fuentes de información —sistemas internos, sensores IoT, APIs externas y plataformas cloud— para unificar y centralizar los datos en un entorno seguro y estructurado. Esto permite construir una base sólida para la analítica y el cumplimiento regulatorio."
+    },
+    {
+      "title": "2. Procesamiento y Normalización Eficiente",
+      "content": "Mediante pipelines automáticos y reglas de validación, CATHALEIA limpia, transforma y estandariza los datos en tiempo real. El resultado es información coherente, confiable y lista para ser explotada sin necesidad de procesos manuales extensos."
+    },
+    {
+      "title": "3. Almacenamiento Escalable y Gobernanza",
+      "content": "Diseñamos arquitecturas de datos escalables y seguras, con controles de acceso, trazabilidad y cumplimiento normativo. Nuestra capa de gobernanza garantiza que cada conjunto de datos esté disponible solo para los usuarios y sistemas autorizados."
+    },
+    {
+      "title": "4. Análisis Avanzado y Modelado Predictivo",
+      "content": "Integramos analítica descriptiva, predictiva y prescriptiva para transformar los datos en información estratégica. Desde dashboards interactivos hasta modelos de machine learning, CATHALEIA impulsa decisiones basadas en evidencia y mejora continua."
+    },
+    {
+      "title": "5. Automatización y Optimización Operativa",
+      "content": "Nuestra plataforma permite la automatización de flujos de trabajo y la integración con sistemas empresariales existentes. Esto reduce costos, acelera procesos y garantiza una mejora continua basada en indicadores de desempeño y resultados medibles."
+    }
+  ]
+}
 }

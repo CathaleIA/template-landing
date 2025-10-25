@@ -187,8 +187,14 @@ type Translations = {
       privacy: string;
       terms: string;
       cookies: string;
-    };
+    }
   };
+    integral: {
+      head: string;
+      title: string;
+      description: string;
+      items: { title: string; content: string }[];
+    };
 };
 
 export const useTranslation = () => {
@@ -199,7 +205,7 @@ export const useTranslation = () => {
       nav: [],
       buttons: { login: '', signup: '' },
     },
-     whyChoose: {
+    whyChoose: {
       subtitle: '',
       mainTitle: '',
       highlightedTitle: '',
@@ -302,10 +308,10 @@ export const useTranslation = () => {
         linkedin: '',
         github: ''
       },
-      social: { 
-        whatsapp: '', 
-        linkedin: '', 
-        github: '' 
+      social: {
+        whatsapp: '',
+        linkedin: '',
+        github: ''
       },
       links: {
         home: '',
@@ -327,6 +333,33 @@ export const useTranslation = () => {
         cookies: ''
       }
     },
+    integral: {
+        head: '',
+        title: '',
+        description: '',
+        items: [
+          {
+            title: '',
+            content: ''
+          },
+          {
+            title: '',
+            content: ''
+          },
+          {
+            title: '',
+            content: ''
+          },
+          {
+            title: '',
+            content: ''
+          },
+          {
+            title: '',
+            content: ''
+          }
+        ]
+      }
   });
 
   useEffect(() => {

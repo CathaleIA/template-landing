@@ -1,5 +1,6 @@
 import { useTranslation } from '@/../hooks/useTranlation';
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function SecuritySection() {
   const t = useTranslation();
@@ -8,7 +9,7 @@ export default function SecuritySection() {
     <section id="security" className="relative w-full py-12 md:py-16 lg:py-20 bg-gray-50">
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
-      
+
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
@@ -42,13 +43,13 @@ export default function SecuritySection() {
               <div className="mb-4 flex justify-center">
                 <div className="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full 
                                transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
-                  <Image 
-                    src={feature.icon} 
+                  <Image
+                    src={feature.icon}
                     alt={feature.title}
-                    width={32} 
+                    width={32}
                     height={32}
                     className="transition-all duration-300"
-                    style={{ 
+                    style={{
                       filter: 'brightness(0) saturate(100%) invert(47%) sepia(80%) saturate(1969%) hue-rotate(213deg) brightness(97%) contrast(96%)'
                     }}
                   />
@@ -67,12 +68,15 @@ export default function SecuritySection() {
 
               {/* Botón "Más información" que aparece en hover */}
               <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                <button className="inline-flex items-center text-primary font-medium text-sm hover:text-primary/80 transition-colors">
+                <Link
+                  href="/integral"
+                  className="inline-flex items-center text-primary font-medium text-sm hover:text-primary/80 transition-colors"
+                >
                   Explorar más
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </button>
+                </Link>
               </div>
 
               {/* Barra inferior animada - completa de lado a lado */}
