@@ -1,69 +1,7 @@
-import { FC } from "react";
+import { useTranslation } from '@/../hooks/useTranlation'; 
 
-interface Feature {
-  badge: string;
-  icon: string;
-  title: string;
-  description: string;
-}
-
-interface AnalysisData {
-  subtitle: string;
-  mainTitle: string;
-  highlightedTitle: string;
-  description: string;
-  mainFeatures: Feature[];
-  bottomFeatures: string[];
-}
-
-const defaultData: AnalysisData = {
-  subtitle: "ANÁLISIS AVANZADO",
-  mainTitle: "ANÁLISIS EN TIEMPO REAL",
-  highlightedTitle: "DATOS QUE IMPULSAN DECISIONES",
-  description:
-    "Monitorea métricas clave con dashboards interactivos y visualizaciones dinámicas que se actualizan al instante para mantener tu negocio siempre un paso adelante.",
-  mainFeatures: [
-    {
-      badge: "TIEMPO REAL",
-      icon: "/icons/dashboard.svg",
-      title: "Dashboards Interactivos",
-      description:
-        "Visualiza tus datos más importantes con gráficos dinámicos y personalizables que se actualizan automáticamente.",
-    },
-    {
-      badge: "MÉTRICAS",
-      icon: "/icons/analytics.svg",
-      title: "Métricas Clave",
-      description:
-        "Identifica KPIs críticos y monitorea el rendimiento de tu negocio con alertas inteligentes.",
-    },
-    {
-      badge: "VISUALIZACIÓN",
-      icon: "/icons/chart.svg",
-      title: "Gráficos Dinámicos",
-      description:
-        "Transforma datos complejos en visualizaciones claras y fáciles de interpretar para todos los niveles.",
-    },
-    {
-      badge: "ALERTAS",
-      icon: "/icons/notification.svg",
-      title: "Alertas Inteligentes",
-      description:
-        "Recibe notificaciones automáticas cuando tus métricas superen umbrales predefinidos.",
-    },
-  ],
-  bottomFeatures: [
-    "Actualizaciones en tiempo real",
-    "Dashboards personalizables",
-    "Múltiples fuentes de datos",
-    "Alertas automáticas",
-    "Exportación de reportes",
-  ],
-};
-
-const AnalysisSection: FC = () => {
-  // Si no hay traducción disponible, usamos defaultData
-  const data: AnalysisData = defaultData;
+export default function AboutAnalysis() {
+  const t = useTranslation();
 
   return (
     <section
@@ -106,19 +44,19 @@ const AnalysisSection: FC = () => {
               className="w-2 h-2 rounded-full mr-2 animate-pulse"
               style={{ backgroundColor: `hsl(var(--primary))` }}
             />
-            {data.subtitle}
+            {t.analysis.subtitle}
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
-            {data.mainTitle}{" "}
+            {t.analysis.mainTitle}{" "}
             <span 
               className="block mt-2"
               style={{ color: `hsl(var(--primary))` }}
             >
-              {data.highlightedTitle}
+              {t.analysis.highlightedTitle}
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            {data.description}
+            {t.analysis.description}
           </p>
         </div>
 
@@ -192,7 +130,7 @@ const AnalysisSection: FC = () => {
 
         {/* Main Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 md:mb-20">
-          {data.mainFeatures.map((feature, index) => (
+          {t.analysis.mainFeatures.map((feature, index) => (
             <div
               key={index}
               className="group bg-card rounded-2xl border shadow-lg p-8 text-center 
@@ -323,7 +261,7 @@ const AnalysisSection: FC = () => {
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-              {data.bottomFeatures.map((feature, index) => (
+              {t.analysis.bottomFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center text-white group">
                   <div
                     className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center mr-3 
@@ -346,5 +284,3 @@ const AnalysisSection: FC = () => {
     </section>
   );
 };
-
-export default AnalysisSection;

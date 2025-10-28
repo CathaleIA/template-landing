@@ -176,25 +176,29 @@
         "icon": "/assets/icon-easy.svg",
         "badge": "INTEGRAL",
         "title": "Gestión completa del ciclo de datos",
-        "description": "Desde la recolección e integración hasta el procesamiento avanzado, CATHALEIA optimiza cada etapa de tus datos para maximizar su valor y reducir la complejidad operativa."
+        "description": "Desde la recolección e integración hasta el procesamiento avanzado, CATHALEIA optimiza cada etapa de tus datos para maximizar su valor y reducir la complejidad operativa.",
+        "link": ""
       },
       {
         "icon": "/assets/icon-trusted.svg",
         "badge": "INTELIGENTE",
         "title": "Análisis y modelado con IA avanzada",
-        "description": "Transforma datos en insights accionables mediante algoritmos de inteligencia artificial que impulsan la eficiencia, innovación y crecimiento de tu organización."
+        "description": "Transforma datos en insights accionables mediante algoritmos de inteligencia artificial que impulsan la eficiencia, innovación y crecimiento de tu organización.",
+        "link": "/inteligent/"
       },
       {
         "icon": "/assets/icon-connected.svg",
-        "badge": "COLABORATIVO",
-        "title": "Plataforma unificada de colaboración",
-        "description": "Facilita el intercambio de modelos analíticos y predicciones entre equipos en una sola plataforma, acelerando la toma de decisiones estratégicas."
+        "badge": "FLEXIBLE",
+        "title": "Soluciones Empresariales a la Medida",
+        "description": "Invierta solo en lo que necesita. Nuestro modelo de servicio modular le permite activar herramientas específicas y escalar recursos conforme su empresa evoluciona, optimizando su presupuesto.",
+        "link": "/flexible/"
       },
       {
         "icon": "/assets/icon-aws.svg",
         "badge": "SEGURO",
         "title": "Infraestructura AWS de clase empresarial",
-        "description": "Construido sobre AWS con los más altos estándares de seguridad, cifrado end-to-end y cumplimiento normativo para proteger tus datos más críticos."
+        "description": "Construid o sobre AWS con los más altos estándares de seguridad, cifrado end-to-end y cumplimiento normativo para proteger tus datos más críticos.",
+        "link": "/security_standar/"
       }
     ],
     "subtitle": "CATHALEIA DATA PLATFORM",
@@ -267,6 +271,45 @@
     "description": "CATHALEIA te permite gestionar todo el ciclo de tus datos: desde su recolección e integración hasta su procesamiento, análisis y modelado con inteligencia artificial. Además, facilita la colaboración al compartir modelos analíticos y predicciones en una única plataforma, optimice procesos y genere decisiones que impulsen eficiencia, innovación y crecimiento. ¿Qué es cathaleia? Es una estructura computacional dedicada a optimizar procesos, maximizar la producción y reducir costos.",
     "primaryButton": "POR QUÉ ELEGIR CATHALEIA",
     "secondaryButton": "VER PRECIOS"
+  },
+  "analysis": {
+    "subtitle": "ANÁLISIS AVANZADO",
+    "mainTitle": "ANÁLISIS EN TIEMPO REAL",
+    "highlightedTitle": "DATOS QUE IMPULSAN DECISIONES",
+    "description": "Monitorea métricas clave con dashboards interactivos y visualizaciones dinámicas que se actualizan al instante para mantener tu negocio siempre un paso adelante.",
+    "mainFeatures": [
+      {
+        "badge": "TIEMPO REAL",
+        "icon": "/icons/dashboard.svg",
+        "title": "Dashboards Interactivos",
+        "description": "Visualiza tus datos más importantes con gráficos dinámicos y personalizables que se actualizan automáticamente."
+      },
+      {
+        "badge": "MÉTRICAS",
+        "icon": "/icons/analytics.svg",
+        "title": "Métricas Clave",
+        "description": "Identifica KPIs críticos y monitorea el rendimiento de tu negocio con alertas inteligentes."
+      },
+      {
+        "badge": "VISUALIZACIÓN",
+        "icon": "/icons/chart.svg",
+        "title": "Gráficos Dinámicos",
+        "description": "Transforma datos complejos en visualizaciones claras y fáciles de interpretar para todos los niveles."
+      },
+      {
+        "badge": "ALERTAS",
+        "icon": "/icons/notification.svg",
+        "title": "Alertas Inteligentes",
+        "description": "Recibe notificaciones automáticas cuando tus métricas superen umbrales predefinidos."
+      }
+    ],
+    "bottomFeatures": [
+      "Actualizaciones en tiempo real",
+      "Dashboards personalizables",
+      "Múltiples fuentes de datos",
+      "Alertas automáticas",
+      "Exportación de reportes"
+    ]
   },
   "contact": {
     "head": "Contacto",
@@ -438,5 +481,232 @@
         "answer": "Puedes comenzar con nuestra prueba gratuita de 14 días. Solo necesitas registrarte, y en minutos tendrás acceso completo a la plataforma. Nuestro equipo te proporcionará onboarding personalizado y soporte técnico."
       }
     ]
+  },
+  "inteligent": {
+  "head": "Análisis Estratégico",
+  "subtitle": "La Próxima Generación de Business Intelligence",
+  "mainTitle": "Transforma Datos en",
+  "highlightedTitle": "Insights Accionables",
+  "description": "Nuestra plataforma de IA avanzada no solo centraliza tu información, sino que aplica algoritmos de aprendizaje profundo para desvelar patrones ocultos, generar proyecciones de alta precisión y automatizar la optimización en todas las áreas de tu negocio.",
+  "items": [
+    {
+      "title": "Modelado Predictivo (ML/DL)",
+      "description": "Implementamos modelos de Machine Learning y Deep Learning a medida para pronosticar demanda, fallas de equipo o rotación de clientes con una precisión superior al 95%.",
+      "icon": "ml-icon"
+    },
+    {
+      "title": "Optimización de Procesos en Tiempo Real",
+      "description": "El motor de IA sugiere y ejecuta ajustes automáticos en cadenas de suministro, inventario o campañas de marketing para maximizar la eficiencia y rentabilidad minuto a minuto.",
+      "icon": "realtime-icon"
+    },
+    {
+      "title": "Detección Inteligente de Anomalías",
+      "description": "Monitoreo 24/7 para identificar fraudes, desviaciones operativas o fallos de seguridad. La IA aprende de lo normal para alertar solo lo verdaderamente crítico.",
+      "icon": "anomaly-icon"
+    },
+    {
+      "title": "Generación de Estrategias Automatizada",
+      "description": "La plataforma no solo reporta, sino que sugiere la próxima mejor acción (Next Best Action) y ayuda a planificar escenarios futuros basados en simulaciones impulsadas por IA.",
+      "icon": "strategy-icon"
+    }
+  ]
+  },
+  "flexible": {
+    "valueProposition": {
+      "id": "value-prop-flexible",
+      "title": "Potencie su Crecimiento con Datos",
+      "description": "Ofrecemos un conjunto de herramientas de análisis y gestión diseñadas para escalar con usted. Concéntrese en sus objetivos de negocio; nosotros nos encargamos de la infraestructura tecnológica.",
+      "tag": "FLEXIBLE",
+      "link": {
+        "text": "Explorar más",
+        "href": "/modelo-flexible"
+      }
+    },
+    "servicesSection": {
+      "title": "Conozca Nuestras Capacidades",
+      "list": [
+        {
+          "id": "service-monitoring",
+          "icon": "IconoMonitoreo",
+          "title": "Monitoreo en Tiempo Real",
+          "description": "Supervise sus operaciones críticas 24/7 y obtenga alertas instantáneas para asegurar la continuidad de su negocio.",
+          "tag": "",
+          "link": {
+            "text": "Ver detalles",
+            "href": "/servicios/monitoreo"
+          }
+        },
+        {
+          "id": "service-analysis",
+          "icon": "IconoAnalisis",
+          "title": "Análisis Avanzado de Datos",
+          "description": "Transforme grandes volúmenes de datos en decisiones estratégicas. Identifique tendencias y oportunidades.",
+          "tag": "",
+          "link": {
+            "text": "Ver detalles",
+            "href": "/servicios/analisis"
+          }
+        },
+        {
+          "id": "service-reporting",
+          "icon": "IconoReportes",
+          "title": "Generación de Reportes",
+          "description": "Automatice sus informes gerenciales y operativos. Visualice métricas clave de forma clara y accesible.",
+          "tag": "",
+          "link": {
+            "text": "Ver detalles",
+            "href": "/servicios/reportes"
+          }
+        },
+        {
+          "id": "service-inventory",
+          "icon": "IconoInventario",
+          "title": "Control de Inventarios",
+          "description": "Gestione su stock de forma eficiente, optimice niveles de inventario y reduzca costos operativos.",
+          "tag": "",
+          "link": {
+            "text": "Ver detalles",
+            "href": "/servicios/inventario"
+          }
+        },
+        {
+          "id": "service-bi",
+          "icon": "IconoBI",
+          "title": "Inteligencia de Negocios (BI)",
+          "description": "Combine datos de múltiples fuentes en dashboards interactivos para una visión 360° de su rendimiento empresarial.",
+          "tag": "",
+          "link": {
+            "text": "Ver detalles",
+            "href": "/servicios/business-intelligence"
+          }
+        },
+        {
+          "id": "service-logistics",
+          "icon": "IconoRutas",
+          "title": "Optimización de Rutas",
+          "description": "Reduzca costos de combustible y tiempos de entrega planificando las rutas logísticas más eficientes para su flota.",
+          "tag": "",
+          "link": {
+            "text": "Ver detalles",
+            "href": "/servicios/optimizacion-rutas"
+          }
+        },
+        {
+          "id": "service-predictive",
+          "icon": "IconoPredictivo",
+          "title": "Mantenimiento Predictivo",
+          "description": "Anticípese a fallos en maquinaria y equipos. Use el análisis de datos para programar mantenimientos antes de que ocurran averías.",
+          "tag": "",
+          "link": {
+            "text": "Ver detalles",
+            "href": "/servicios/mantenimiento-predictivo"
+          }
+        },
+        {
+      "id": "service-billing",
+      "icon": "IconoFactura",
+      "title": "Gestión de Facturación",
+      "description": "Automatice la creación y envío de facturas recurrentes, gestione cobros y controle el flujo de caja de su empresa.",
+      "tag": "",
+      "link": null
+    },
+    {
+      "id": "service-hr",
+      "icon": "IconoHR",
+      "title": "Gestión de Talento Humano",
+      "description": "Administre el ciclo de vida de sus empleados, desde la contratación hasta la nómina y la evaluación de desempeño.",
+      "tag": "",
+      "link": null
+    },
+    {
+      "id": "service-projects",
+      "icon": "IconoProyecto",
+      "title": "Gestión de Proyectos",
+      "description": "Planifique, asigne y dé seguimiento a tareas y proyectos en tiempo real, asegurando la colaboración de su equipo.",
+      "tag": "",
+      "link": null
+    },
+    {
+      "id": "service-scm",
+      "icon": "IconoCadena",
+      "title": "Cadena de Suministro (SCM)",
+      "description": "Optimice su cadena de suministro de extremo a extremo, desde la gestión de proveedores hasta la entrega final.",
+      "tag": "",
+      "link": null
+    },
+    {
+      "id": "service-quality",
+      "icon": "IconoCalidad",
+      "title": "Control de Calidad",
+      "description": "Implemente y monitoree protocolos de calidad en sus procesos de producción para garantizar la conformidad del producto.",
+      "tag": "",
+      "link": null
+    }
+      ]
+    }
+  },
+  "security_standar": {
+    "intro": {
+      "title": "Seguridad Diseñada para Proteger su Negocio",
+      "description": "Entendemos que la integridad de sus datos es crítica. Por eso, nuestra plataforma se construye sobre una base de defensa proactiva, combinando infraestructura de clase mundial, cifrado avanzado y un monitoreo constante",
+        "link": {
+        "text": "Explorar más",
+        "href": "/seguridad/aws-whitepaper"
+      }
+    },
+    "features": {
+      "title": "Protección Integral en Múltiples Niveles",
+      "list": [
+        {
+          "id": "sec-feature-1",
+          "icon": "IconoCifrado",
+          "title": "Cifrado de Datos Avanzado",
+          "description": "Utilizamos cifrado AES-256 para todos sus datos en reposo y protocolos TLS 1.3 para la información en tránsito, garantizando confidencialidad total."
+        },
+        {
+          "id": "sec-feature-2",
+          "icon": "IconoAcceso",
+          "title": "Control de Acceso Granular",
+          "description": "Defina roles y permisos específicos para cada usuario. Integramos IAM (Identity and Access Management) para una gestión de identidad robusta."
+        },
+        {
+          "id": "sec-feature-3",
+          "icon": "IconoAuditoria",
+          "title": "Monitoreo y Auditoría 24/7",
+          "description": "Registramos toda la actividad de la plataforma y utilizamos sistemas de detección de intrusos (IDS) para responder a amenazas en tiempo real."
+        },
+        {
+          "id": "sec-feature-4",
+          "icon": "IconoDisponibilidad",
+          "title": "Alta Disponibilidad y Respaldo",
+          "description": "Nuestra infraestructura se replica en múltiples Zonas de Disponibilidad (AZ) de AWS, asegurando la continuidad del negocio ante cualquier fallo."
+        }
+      ]
+    },
+    "trustSection": {
+      "title": "Cumplimiento y Estándares Globales",
+      "logos": [
+        {
+          "id": "trust-logo-iso",
+          "name": "ISO 27001",
+          "icon": "IconoISO"
+        },
+        {
+          "id": "trust-logo-gdpr",
+          "name": "GDPR Compliant",
+          "icon": "IconoGDPR"
+        },
+        {
+          "id": "trust-logo-soc2",
+          "name": "SOC 2 Type II",
+          "icon": "IconoSOC2"
+        },
+        {
+          "id": "trust-logo-ccpa",
+          "name": "CCPA Ready",
+          "icon": "IconoCCPA"
+        }
+      ]
+    }
   }
 }

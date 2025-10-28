@@ -3,7 +3,8 @@ import Image from 'next/image'
 import MobileMenu from '@/components/mobile-menu/MobileMenu';
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+// 1. Importa usePathname
+import { useRouter, usePathname } from 'next/navigation';
 import { Button } from "@/components/ui/button"
 
 import LanguageSwitcher from '@/components/ui/LenguageToggle';
@@ -13,25 +14,49 @@ export default function NavBar() {
   const t = useTranslation();
   const router = useRouter();
   
+  // 2. Obtén la ruta actual
+  const pathname = usePathname();
+
+  // 1. Define tu lista de rutas sólidas
+// (Agrega aquí todas las rutas que necesites)
+const solidRoutes = [
+  '/analysis', 
+  '/reports', 
+  '/inteligent',
+  '/flexible',
+  '/security_standar/'
+];
+
+// 2. Comprueba si la ruta actual COMIENZA con alguna de las de la lista
+const isSolidPage = solidRoutes.some(route => pathname.startsWith(route));
+  
   // Estado de scroll
   const [scrolled, setScrolled] = useState(false);
   
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0); // ✅ ahora detecta en el primer scroll
+      setScrolled(window.scrollY > 0);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // 4. Lógica de estilo actualizada
+  // El navbar será sólido SI:
+  //    a) El usuario ha hecho scroll (scrolled)
+  //    b) O, si estamos en la página de análisis (isAnalysisPage)
+  const isSolid = scrolled || isSolidPage;
   
   return (
     <header
       className={`
         fixed top-0 z-40 w-full
         transition-all duration-300
-        ${scrolled
-          ? 'bg-background border-b border-border backdrop-blur-none shadow-sm' // ✅ sólido al hacer scroll con sombra sutil
-          : 'backdrop-blur-md bg-background/10 border-none' // ✅ blur/transparente en el top
+        ${
+          // 5. Aplica la nueva lógica 'isSolid'
+          isSolid
+            ? 'bg-background border-b border-border backdrop-blur-none shadow-sm' // Sólido
+            : 'backdrop-blur-md bg-background/10 border-none' // Transparente
         }
       `}
     >
@@ -47,10 +72,11 @@ export default function NavBar() {
                 height={20}
               />
               <span className={`text-xl font-black transition-colors duration-300 ${
-                scrolled ? 'text-foreground' : 'text-white'
+                // 6. Aplica 'isSolid' al texto del logo
+                isSolid ? 'text-foreground' : 'text-white'
               }`}>
                 CATHALE<span className={`font-bold transition-colors duration-300 ${
-                  scrolled ? 'text-muted-foreground' : 'text-white/70'
+                  isSolid ? 'text-muted-foreground' : 'text-white/70'
                 }`}>IA</span>
               </span>
             </div>
@@ -65,17 +91,17 @@ export default function NavBar() {
           {t.header.nav.map((nav) => (
             <Link
               key={nav.id}
-              href={`#${nav.id}`}
+              // (Sigo asumiendo que estos links van a la homepage)
+              href={`/#${nav.id}`}
               className={`
                 relative px-2 py-1
                 text-sm font-bold
                 hover:text-primary hover:font-black
-                transition-all duration-300 ease-in-out
-                after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0
-                after:h-0.5 after:bg-primary after:scale-x-0 after:origin-center
-                after:transition-transform after:duration-300 after:ease-out
-                hover:after:scale-x-100
-                ${scrolled ? 'text-foreground' : 'text-white'}
+                /* ...otras clases... */
+                ${
+                  // 7. Aplica 'isSolid' al texto de los links
+                  isSolid ? 'text-foreground' : 'text-white'
+                }
               `}
             >
               {nav.title}
@@ -86,7 +112,8 @@ export default function NavBar() {
         {/* Acciones */}
         <div className='flex items-center'>
           <div className={`mr-2 transition-colors duration-300 ${
-            scrolled ? 'text-muted-foreground' : 'text-white/50'
+            // 8. Aplica 'isSolid' al separador
+            isSolid ? 'text-muted-foreground' : 'text-white/50'
           }`}>|</div>
           <Button
             type="button"
@@ -96,7 +123,7 @@ export default function NavBar() {
           >
             SignUp
           </Button>
-         
+          
           <LanguageSwitcher />
         </div>
       </div>

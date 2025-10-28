@@ -1,8 +1,8 @@
 // hooks/useTranslation.ts
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { useLanguage } from '@/context/LanguageContext';
+import { useEffect, useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Definir el tipo para las traducciones
 type Translations = {
@@ -99,6 +99,7 @@ type Translations = {
       badge: string;
       title: string;
       description: string;
+      link: string;
     }[];
     subtitle: string;
     mainTitle: string;
@@ -137,6 +138,19 @@ type Translations = {
     description: string;
     primaryButton: string;
     secondaryButton: string;
+  };
+  analysis: {
+    subtitle: string;
+    mainTitle: string;
+    highlightedTitle: string;
+    description: string;
+    mainFeatures: {
+      badge: string;
+      icon: string;
+      title: string;
+      description: string;
+    }[];
+    bottomFeatures: string[];
   };
   contact: {
     head: string;
@@ -189,153 +203,275 @@ type Translations = {
       cookies: string;
     };
   };
+  inteligent: {
+    head: string;
+    subtitle: string;
+    mainTitle: string;
+    highlightedTitle: string;
+    description: string;
+    items: {
+      title: string;
+      description: string;
+      icon: string;
+    }[];
+  };
+  flexible: {
+    valueProposition: {
+      id: string;
+      title: string;
+      description: string;
+      tag?: string;
+      link?: {
+        text: string;
+        href: string;
+      };
+    };
+    servicesSection: {
+      title: string;
+      list: {
+        id: string;
+        icon: string;
+        title: string;
+        description: string;
+        tag?: string;
+        link?: {
+          text: string;
+          href: string;
+        };
+      }[];
+    };
+  };
+  security_standar: {
+    // 1. La introducción, basada en tu tarjeta
+    intro: {
+      title: string;
+      description: string;
+      link?: {
+        text: string;
+        href: string;
+      };
+    };
+
+    // 2. Una lista de características de seguridad
+    features: {
+      title: string; // Ej: "Un Enfoque de Seguridad en Capas"
+      list: {
+        id: string;
+        icon: string;
+        title: string;
+        description: string;
+      }[]; // Un array de features
+    };
+
+    // 3. Una sección para logos de confianza/cumplimiento
+    trustSection: {
+      title: string; // Ej: "Cumplimiento Normativo"
+      logos: {
+        id: string;
+        name: string; // El nombre del logo, ej: "ISO 27001"
+        icon: string; // El nombre del icono del logo
+      }[];
+    };
+  };
 };
 
 export const useTranslation = () => {
   const { language } = useLanguage();
   const [translations, setTranslations] = useState<Translations>({
     header: {
-      title: '',
+      title: "",
       nav: [],
-      buttons: { login: '', signup: '' },
+      buttons: { login: "", signup: "" },
     },
-     whyChoose: {
-      subtitle: '',
-      mainTitle: '',
-      highlightedTitle: '',
-      description: '',
-      ctaButton: '',
+    whyChoose: {
+      subtitle: "",
+      mainTitle: "",
+      highlightedTitle: "",
+      description: "",
+      ctaButton: "",
       stats: [],
-      featuresTitle: '',
-      featuresDescription: '',
+      featuresTitle: "",
+      featuresDescription: "",
       features: [],
-      techTitle: '',
-      techDescription: '',
+      techTitle: "",
+      techDescription: "",
       techFeatures: [],
-      ctaTitle: '',
-      ctaDescription: '',
-      faqTitle: '',
-      faqSubtitle: '',
+      ctaTitle: "",
+      ctaDescription: "",
+      faqTitle: "",
+      faqSubtitle: "",
       faqs: [],
     },
     hero: {
       hookPhrase: {
-        line1: '',
-        line2: '',
+        line1: "",
+        line2: "",
       },
-      description: '',
-      buttons: { getStarted: '', demo: '' },
+      description: "",
+      buttons: { getStarted: "", demo: "" },
     },
     features: {
-      head: '',
-      title: '',
-      description: '',
+      head: "",
+      title: "",
+      description: "",
       items: [],
     },
     dashboard: {
-      head: '',
-      title: '',
-      description: '',
+      head: "",
+      title: "",
+      description: "",
       features: [],
     },
     integrations: {
-      head: '',
-      title: '',
-      description: '',
-      api: { title: '', description: '', features: [] },
-      process: { title: '', steps: [] },
+      head: "",
+      title: "",
+      description: "",
+      api: { title: "", description: "", features: [] },
+      process: { title: "", steps: [] },
     },
     security: {
       mainFeatures: [],
-      subtitle: '',
-      mainTitle: '',
-      highlightedTitle: '',
+      subtitle: "",
+      mainTitle: "",
+      highlightedTitle: "",
       services: [],
-      bottomFeatures: []
+      bottomFeatures: [],
     },
     testimonials: {
-      head: '',
-      title: '',
-      description: '',
+      head: "",
+      title: "",
+      description: "",
       items: [],
     },
     pricing: {
-      head: '',
-      title: '',
-      description: '',
+      head: "",
+      title: "",
+      description: "",
       topics: [],
-      add: '',
-      button: '',
+      add: "",
+      button: "",
       plans: [],
     },
     about: {
-      badge: '',
-      mainTitle: '',
-      highlightedTitle: '',
-      description: '',
-      primaryButton: '',
-      secondaryButton: '',
+      badge: "",
+      mainTitle: "",
+      highlightedTitle: "",
+      description: "",
+      primaryButton: "",
+      secondaryButton: "",
+    },
+    analysis: {
+      subtitle: "",
+      mainTitle: "",
+      highlightedTitle: "",
+      description: "",
+      mainFeatures: [],
+      bottomFeatures: [],
     },
     contact: {
-      head: '',
-      title: '',
-      description: '',
-      benefitsTitle: '',
+      head: "",
+      title: "",
+      description: "",
+      benefitsTitle: "",
       benefits: [],
     },
     footer: {
-      copyright: '',
-      description: '',
+      copyright: "",
+      description: "",
       sections: {
-        contact: '',
-        quickLinks: '',
-        services: ''
+        contact: "",
+        quickLinks: "",
+        services: "",
       },
       contact: {
-        phone: '',
-        phoneLabel: '',
-        email: '',
-        emailLabel: '',
-        address: '',
-        addressLabel: '',
-        whatsapp: '',
-        linkedin: '',
-        github: ''
+        phone: "",
+        phoneLabel: "",
+        email: "",
+        emailLabel: "",
+        address: "",
+        addressLabel: "",
+        whatsapp: "",
+        linkedin: "",
+        github: "",
       },
-      social: { 
-        whatsapp: '', 
-        linkedin: '', 
-        github: '' 
+      social: {
+        whatsapp: "",
+        linkedin: "",
+        github: "",
       },
       links: {
-        home: '',
-        about: '',
-        products: '',
-        news: '',
-        contact: ''
+        home: "",
+        about: "",
+        products: "",
+        news: "",
+        contact: "",
       },
       services: {
-        evChargers: '',
-        chargingStations: '',
-        fastCharging: '',
-        dcCharging: '',
-        manufacturers: ''
+        evChargers: "",
+        chargingStations: "",
+        fastCharging: "",
+        dcCharging: "",
+        manufacturers: "",
       },
       legal: {
-        privacy: '',
-        terms: '',
-        cookies: ''
-      }
+        privacy: "",
+        terms: "",
+        cookies: "",
+      },
+    },
+    inteligent: {
+      head: "",
+      subtitle: "",
+      mainTitle: "",
+      highlightedTitle: "",
+      description: "",
+      items: [],
+    },
+    flexible: {
+      valueProposition: {
+        id: "",
+        title: "",
+        description: "",
+        tag: "",
+        link: {
+          text: "",
+          href: "",
+        },
+      },
+      servicesSection: {
+        title: "",
+        list: [], // Un array vacío como en tu ejemplo 'items: []'
+      },
+    },
+    security_standar: {
+      intro: {
+        title: "",
+        description: "",
+        link: {
+          text: "",
+          href: "",
+        },
+      },
+      features: {
+        title: "",
+        list: [],
+      },
+      trustSection: {
+        title: "",
+        logos: [],
+      },
     },
   });
 
   useEffect(() => {
     const loadTranslations = async () => {
       try {
-        const translationsModule = await import(`@/../locales/${language}.json`);
+        const translationsModule = await import(
+          `@/../locales/${language}.json`
+        );
         setTranslations(translationsModule.default);
       } catch (error) {
-        console.error('Error loading translations:', error);
+        console.error("Error loading translations:", error);
       }
     };
     loadTranslations();
