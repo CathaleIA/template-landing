@@ -6,17 +6,16 @@ export default function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
 
   return (
-<section className="relative w-full py-12 md:py-16 lg:py-20 overflow-hidden">
-  <div className="top-section-bg"></div>
+    <section className="relative w-full py-12 md:py-16 lg:py-20 overflow-hidden">
+      <div className="top-section-bg"></div>
+
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
-      
+
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
-          <div className="text-sm font-medium text-gray-600 uppercase tracking-wider mb-4">
-            
-          </div>
+          <div className="text-sm font-medium text-gray-600 uppercase tracking-wider mb-4"></div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
             {t.pricing?.title || "Precios simples y transparentes"}
           </h1>
@@ -95,7 +94,7 @@ export default function PricingSection() {
                 </div>
                 {isAnnual && (
                   <div className="text-sm text-gray-500 mt-1">
-                    Facturado anualmente (${Math.round(plan.monthlyPrice * 0.8 * 12)}/año)
+                    {t.pricing?.texto3} (${Math.round(plan.monthlyPrice * 0.8 * 12)}/{t.pricing?.texto4})
                   </div>
                 )}
               </div>
@@ -118,16 +117,21 @@ export default function PricingSection() {
                 </ul>
               </div>
 
-              {/* CTA Button */}
-              <button
-                className={`w-full py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-200 ${
+              {/* CTA Button → ahora es un link a WhatsApp */}
+              <a
+                href={`https://api.whatsapp.com/send/?phone=573164438383&text=${encodeURIComponent(
+                  `¡Hola! Me interesa obtener más información sobre el plan ${plan.name} de Cathaleia.`
+                )}&type=phone_number&app_absent=0`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block text-center w-full py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-200 ${
                   plan.popular
                     ? 'bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl'
                     : 'bg-gray-900 text-white hover:bg-gray-800'
                 }`}
               >
                 {t.pricing?.button || "Comenzar"}
-              </button>
+              </a>
 
               {/* Bottom border animation */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-100 overflow-hidden rounded-b-2xl">
@@ -151,12 +155,14 @@ export default function PricingSection() {
               {t.pricing?.texto2 || "Todos los planes incluyen una prueba gratuita de 14 días. Sin compromiso, sin tarjeta de crédito requerida."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors">
-                {t.pricing?.boton1 || "Comenzar prueba gratuita"}
-              </button>
-              <button className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
+              <a
+                href="https://api.whatsapp.com/send/?phone=573164438383&text=%C2%A1Hola%21+Estoy+interesado+en+recibir+asesor%C3%ADa+sobre+los+planes+de+Cathaleia.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
+              >
                 {t.pricing?.boton2 || "Contactar ventas"}
-              </button>
+              </a>
             </div>
           </div>
         </div>

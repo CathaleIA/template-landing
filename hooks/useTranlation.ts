@@ -127,6 +127,8 @@ type Translations = {
     texto2: string;
     boton1: string;
     boton2: string;
+    texto3: string;
+    texto4: string;
     topics: string[];
     add: string;
     button: string;
@@ -443,6 +445,8 @@ export const useTranslation = () => {
       texto2: "",
       boton1: "",
       boton2: "",
+      texto3: "",
+      texto4: "",
       topics: [],
       add: "",
       button: "",

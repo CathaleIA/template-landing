@@ -223,6 +223,8 @@
     "texto2" : "Todos los planes incluyen una prueba gratuita de 14 días. Sin compromiso, sin tarjeta de crédito requerida.",
     "boton1" : "Comenzar prueba gratuita",
     "boton2" : "Contactar ventas",
+    "texto3" : "Facturado anualmente",
+    "texto4" : "año",
     "topics": [
       "Mensual",
       "Anual"
