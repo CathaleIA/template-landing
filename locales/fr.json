@@ -876,7 +876,7 @@
           { "label": "Disponibilidad", "value": "99.9%" },
           { "label": "Ahorro en incidentes", "value": "15–30%" }
         ],
-        "cta": { "label": "Ir a Análisis en tiempo real", "targetId": "realtime" }
+        "cta": { "label": "Más Información Acerca de: Análisis en tiempo real", "targetId": "realtime" }
       },
       {
         "id": "reports",
@@ -896,7 +896,7 @@
           { "label": "Errores manuales", "value": "-70%" },
           { "label": "Formatos soportados", "value": "PDF/XLXS/CSV" }
         ],
-        "cta": { "label": "Ir a Automatización de Reportes", "targetId": "reports" }
+        "cta": { "label": "Más Información", "targetId": "reports" }
       },
       {
         "id": "predictive",
@@ -916,7 +916,7 @@
           { "label": "Disminución de churn", "value": "8–15%" },
           { "label": "ROI típico 6–12 meses", "value": "x3–x7" }
         ],
-        "cta": { "label": "Ir a Inteligencia Predictiva", "targetId": "predictive" }
+        "cta": { "label": "Más Información", "targetId": "predictive" }
       },
       {
         "id": "control",
@@ -936,7 +936,7 @@
           { "label": "Tiempo de respuesta a requerimientos", "value": "-35%" },
           { "label": "Cobertura de dominios", "value": "100%" }
         ],
-        "cta": { "label": "Ir a Control Total de Datos", "targetId": "control" }
+        "cta": { "label": "Más Información", "targetId": "control" }
       }
     ]
   }
