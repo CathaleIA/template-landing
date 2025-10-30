@@ -62,10 +62,11 @@
     "head": "",
     "title": "Análisis poderosos al alcance de tu mano",
     "description": "Transforma tus datos en información accionable con nuestros paneles intuitivos y herramientas de visualización avanzadas.",
+    "text": "Conocer más",
     "features": [
       {
         "title": "Análisis en Tiempo Real",
-        "value": "analytics",
+        "value": "/servicesShowcase/#realtime",
         "badge": "Análisis",
         "description": "Monitorea métricas clave con dashboards interactivos y visualizaciones dinámicas que se actualizan al instante.",
         "image": "/assets/analytics-dashboard.jpg",
@@ -82,7 +83,7 @@
       },
       {
         "title": "Informes Automatizados",
-        "value": "reports",
+        "value": "/servicesShowcase/#reports",
         "badge": "Informes",
         "description": "Genera y programa informes profesionales con plantillas personalizables y opciones de distribución automática.",
         "image": "/assets/automated-reports.jpg",
@@ -99,7 +100,7 @@
       },
       {
         "title": "Gestión Centralizada",
-        "value": "management",
+        "value": "/servicesShowcase/#control",
         "badge": "Gestión",
         "description": "Centraliza, organiza y optimiza todos tus datos desde múltiples fuentes en una plataforma segura y escalable.",
         "image": "/assets/data-management.jpg",
@@ -116,7 +117,7 @@
       },
       {
         "title": "Pronósticos con IA",
-        "value": "forecasting",
+        "value": "/servicesShowcase/#predictive",
         "badge": "Predicciones",
         "description": "Aprovecha el poder de la inteligencia artificial para predecir tendencias y anticiparte al futuro de tu negocio.",
         "image": "/assets/ai-forecasting.jpg",
@@ -876,7 +877,7 @@
           { "label": "Disponibilidad", "value": "99.9%" },
           { "label": "Ahorro en incidentes", "value": "15–30%" }
         ],
-        "cta": { "label": "Más Información Acerca de: Análisis en tiempo real", "targetId": "realtime" }
+        "cta": { "label": "Más Información", "targetId": "realtime" }
       },
       {
         "id": "reports",

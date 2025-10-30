@@ -3,6 +3,7 @@ import SectionHeader from "../atoms/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 
 export default function DashboardSection() {
   const t = useTranslation();
@@ -10,6 +11,39 @@ export default function DashboardSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const sectionRef = useRef<HTMLElement | null>(null);
+
+  const router = useRouter();
+
+  const navigateWithHash = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+
+    // Normaliza: soporta "/ruta#id" y "/ruta/#id"
+    const [rawPath, rawHash] = href.split("#");
+    const path = rawPath.replace(/\/+$/, ""); // quita "/" final si viene "/servicesShowcase/"
+    const hash = (rawHash || "").trim();
+
+    router.push(path || "/");
+
+    if (hash) {
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        } else {
+          // intenta varias veces si el elemento aún no existe
+          let attempts = 0;
+          const interval = setInterval(() => {
+            const target = document.getElementById(hash);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+              clearInterval(interval);
+            }
+            if (++attempts > 20) clearInterval(interval);
+          }, 100);
+        }
+      }, 300); // da tiempo a que cargue la nueva ruta
+    }
+  };
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -197,24 +231,25 @@ export default function DashboardSection() {
 
                     {/* Lista: Con ancho máximo para centrarla y que no se expanda */}
                     {/* CÓDIGO CORREGIDO */}
-<div className="space-y-3 mb-8 max-w-xs mx-auto">
-  {feature.capabilities.map((capability, capIndex) => (
-    <div 
-      key={capIndex} 
-      className={`
-        flex items-center text-left text-sm md:text-base  <-- ¡SOLUCIÓN!
-        transition-all duration-300 transform 
-        ${hoveredCard === feature.value 
-          ? 'translate-x-0 opacity-100' 
-          : 'translate-x-4 opacity-0'
-        }`}
-      style={{ transitionDelay: `${capIndex * 100}ms` }}
-    >
-      <div className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></div>
-      <span className="font-medium">{capability}</span>
-    </div>
-  ))}
-</div>
+                    <div className="space-y-3 mb-8 max-w-xs mx-auto">
+                      {feature.capabilities.map((capability, capIndex) => (
+                        <div
+                          key={capIndex}
+                          className={`
+                        flex items-center text-left text-sm md:text-base  <-- ¡SOLUCIÓN!
+                        transition-all duration-300 transform 
+                        ${
+                          hoveredCard === feature.value
+                            ? "translate-x-0 opacity-100"
+                            : "translate-x-4 opacity-0"
+                        }`}
+                          style={{ transitionDelay: `${capIndex * 100}ms` }}
+                        >
+                          <div className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></div>
+                          <span className="font-medium">{capability}</span>
+                        </div>
+                      ))}
+                    </div>
 
                     {/* Botones: Con más espacio entre ellos */}
                     <div className="space-y-4">
@@ -223,10 +258,11 @@ export default function DashboardSection() {
                       </div>
                       <div className="mt-4">
                         <Link
-                          href={`/${feature.value}`}
+                          href={feature.value}
+                          onClick={(e) => navigateWithHash(e, feature.value)}
                           className="inline-flex items-center px-6 py-3 bg-white text-gray-900 rounded-full text-sm font-bold transition-all duration-300 hover:bg-gray-100 hover:scale-105 hover:shadow-lg transform group"
                         >
-                          <span>Conocer más</span>
+                          <span>{t.dashboard.text}</span>
                           <svg
                             className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
                             fill="none"

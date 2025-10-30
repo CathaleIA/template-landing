@@ -68,6 +68,7 @@ type Translations = {
     head: string;
     title: string;
     description: string;
+    text: string;
     features: {
       title: string;
       value: string;
@@ -402,6 +403,7 @@ export const useTranslation = () => {
       head: "",
       title: "",
       description: "",
+      text: "",
       features: [],
     },
     integrations: {
