@@ -1,17 +1,23 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useTranslation } from '@/../hooks/useTranlation';
+import { useTranslation } from "@/../hooks/useTranlation";
 import Button from "../atoms/Button";
 
 export default function HeroSection() {
   const router = useRouter();
   const t = useTranslation();
-  
+
   return (
     <section className="w-full relative h-screen">
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
-        <video className="w-full h-full object-cover" autoPlay muted loop playsInline>
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
           <source src="/assets/hero_video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -44,6 +50,9 @@ export default function HeroSection() {
               <Button
                 text={t.hero.buttons.demo}
                 variant="outline"
+                onClick={() =>
+                  window.open("https://api.whatsapp.com/send/?phone=573164438383&text=%C2%A1Hola!+Estoy+interesado+en+solicitar+una+demo+de+Cathaleia.+%C2%BFPodr%C3%ADan+darme+m%C3%A1s+informaci%C3%B3n%3F&type=phone_number&app_absent=0", "_blank")
+                }
                 className="px-8 py-4 text-lg font-semibold bg-white/15 text-white border-2 border-white/40 hover:bg-white/25 rounded-full backdrop-blur-sm transform hover:scale-105 transition-all duration-300"
               />
             </div>
@@ -53,8 +62,18 @@ export default function HeroSection() {
       {/* Elementos decorativos opcionales */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
         <div className="animate-bounce">
-          <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <svg
+            className="w-6 h-6 text-white/60"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
           </svg>
         </div>
       </div>

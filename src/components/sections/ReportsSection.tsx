@@ -1,3 +1,7 @@
+import React from "react";
+import { useTranslation } from "@/../hooks/useTranlation";
+
+// --- 1. VOLVEMOS A DEFINIR LAS INTERFACES ---
 interface Feature {
   badge: string;
   icon: string;
@@ -13,56 +17,29 @@ interface ReportsData {
   mainFeatures: Feature[];
   bottomFeatures: string[];
 }
+// --- FIN DE LAS INTERFACES ---
 
 export default function ReportsSection() {
-  // Datos por defecto si no están disponibles en las traducciones
-  const defaultData: ReportsData = {
-    subtitle: "REPORTERÍA INTELIGENTE",
-    mainTitle: "INFORMES AUTOMATIZADOS",
-    highlightedTitle: "PROFESIONALES Y PERSONALIZABLES",
-    description:
-      "Genera y programa informes profesionales con plantillas personalizables y opciones de distribución automática que ahorran tiempo y mejoran la comunicación empresarial.",
-    mainFeatures: [
-      {
-        badge: "AUTOMÁTICO",
-        icon: "/icons/automation.svg",
-        title: "Generación Automática",
-        description:
-          "Programa la creación y envío de informes de forma automática según tus necesidades de negocio.",
-      },
-      {
-        badge: "PLANTILLAS",
-        icon: "/icons/template.svg",
-        title: "Plantillas Profesionales",
-        description:
-          "Utiliza plantillas prediseñadas o crea las tuyas propias con un editor visual intuitivo.",
-      },
-      {
-        badge: "DISTRIBUCIÓN",
-        icon: "/icons/distribution.svg",
-        title: "Distribución Inteligente",
-        description:
-          "Envía informes automáticamente por email, almacena en la nube o integra con otras plataformas.",
-      },
-      {
-        badge: "ANÁLISIS",
-        icon: "/icons/insights.svg",
-        title: "Insights Avanzados",
-        description:
-          "Incluye análisis predictivos y recomendaciones basadas en inteligencia artificial.",
-      },
-    ],
-    bottomFeatures: [
-      "Programación flexible",
-      "Múltiples formatos de exportación",
-      "Branding personalizado",
-      "Firma digital integrada",
-      "Historial de versiones",
-    ],
-  };
+  
+  const t = useTranslation();
 
-  const data: ReportsData = defaultData;
+  // 2. Asignamos los datos de 't.reports' a 'data'
+  // y le decimos a TypeScript que 'data' usa la plantilla 'ReportsData'
+  const data: ReportsData = t.reports;
 
+  // 3. Manejamos el estado de carga
+  if (!data.subtitle) {
+    return (
+      <section
+        id="reports"
+        className="relative w-full py-16 md:py-20 lg:py-24 bg-background"
+      >
+        <div className="container text-center">Cargando...</div>
+      </section>
+    );
+  }
+
+  // 4. El resto de tu JSX funciona sin cambios, ya que sigue usando 'data' 
   return (
     <section
       id="reports"
@@ -71,22 +48,22 @@ export default function ReportsSection() {
       <div className="top-section-bg"></div>
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div 
+        <div
           className="absolute -top-40 -right-40 w-80 h-80 rounded-full blur-3xl"
           style={{
-            backgroundColor: `hsl(var(--primary) / 0.05)`
+            backgroundColor: `hsl(var(--primary) / 0.05)`,
           }}
         />
-        <div 
+        <div
           className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full blur-3xl"
           style={{
-            backgroundColor: `hsl(var(--secondary) / 0.05)`
+            backgroundColor: `hsl(var(--secondary) / 0.05)`,
           }}
         />
       </div>
 
       {/* Línea separadora superior */}
-      <div 
+      <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-32 border-t-4"
         style={{ borderColor: `hsl(var(--primary))` }}
       />
@@ -94,14 +71,14 @@ export default function ReportsSection() {
       <div className="container relative px-4 md:px-6 max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16 md:mb-20">
-          <div 
+          <div
             className="inline-flex items-center px-4 py-2 text-sm font-bold uppercase tracking-wider rounded-full mb-6"
             style={{
               backgroundColor: `hsl(var(--primary) / 0.1)`,
-              color: `hsl(var(--primary))`
+              color: `hsl(var(--primary))`,
             }}
           >
-            <div 
+            <div
               className="w-2 h-2 rounded-full mr-2 animate-pulse"
               style={{ backgroundColor: `hsl(var(--primary))` }}
             />
@@ -109,7 +86,7 @@ export default function ReportsSection() {
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
             {data.mainTitle}{" "}
-            <span 
+            <span
               className="block mt-2"
               style={{ color: `hsl(var(--primary))` }}
             >
@@ -121,12 +98,14 @@ export default function ReportsSection() {
           </p>
         </div>
 
-        {/* Report Preview Section */}
+        {/* Report Preview Section (Esta sección es estática y se queda igual) */}
         <div className="mb-16 md:mb-20">
-          <div 
+          {/* ... (Todo el JSX de la simulación de reporte va aquí, no se toca) ... */}
+          {/* ... (Tu código de simulación de informe) ... */}
+          <div
             className="relative rounded-2xl p-8 md:p-12 overflow-hidden shadow-2xl"
             style={{
-              backgroundColor: `hsl(var(--secondary))`
+              backgroundColor: `hsl(var(--secondary))`,
             }}
           >
             <div className="absolute inset-0 bg-grid-white/10" />
@@ -140,8 +119,9 @@ export default function ReportsSection() {
                 </p>
               </div>
 
-              {/* Simulación de reporte */}
+              {/* Simulación de reporte (Estático) */}
               <div className="grid md:grid-cols-2 gap-8">
+                {/* ... (Inicio de tarjeta 1) ... */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                   <div className="flex items-center justify-between mb-4">
                     <h4 className="font-bold text-white">
@@ -160,7 +140,7 @@ export default function ReportsSection() {
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-white/70">Nuevos clientes:</span>
-                      <span 
+                      <span
                         className="font-semibold"
                         style={{ color: `hsl(var(--primary) / 0.8)` }}
                       >
@@ -174,7 +154,7 @@ export default function ReportsSection() {
                       </span>
                     </div>
                     <div className="mt-4 h-2 bg-white/20 rounded-full overflow-hidden">
-                      <div 
+                      <div
                         className="h-full w-3/4 rounded-full"
                         style={{ backgroundColor: `hsl(var(--primary))` }}
                       ></div>
@@ -184,7 +164,9 @@ export default function ReportsSection() {
                     </p>
                   </div>
                 </div>
+                {/* ... (Fin de tarjeta 1) ... */}
 
+                {/* ... (Inicio de tarjeta 2) ... */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                   <div className="flex items-center justify-between mb-4">
                     <h4 className="font-bold text-white">
@@ -200,27 +182,33 @@ export default function ReportsSection() {
                       <span className="text-sm text-white/70 flex-1">
                         Objetivo cumplido
                       </span>
-                      <span className="text-sm font-semibold text-white">85%</span>
+                      <span className="text-sm font-semibold text-white">
+                        85%
+                      </span>
                     </div>
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-orange-400 rounded mr-3"></div>
                       <span className="text-sm text-white/70 flex-1">
                         En progreso
                       </span>
-                      <span className="text-sm font-semibold text-white">12%</span>
+                      <span className="text-sm font-semibold text-white">
+                        12%
+                      </span>
                     </div>
                     <div className="flex items-center">
                       <div className="w-4 h-4 bg-red-400 rounded mr-3"></div>
                       <span className="text-sm text-white/70 flex-1">
                         Requiere atención
                       </span>
-                      <span className="text-sm font-semibold text-white">3%</span>
+                      <span className="text-sm font-semibold text-white">
+                        3%
+                      </span>
                     </div>
-                    <div 
+                    <div
                       className="mt-4 p-3 rounded-lg"
                       style={{ backgroundColor: `hsl(var(--primary) / 0.2)` }}
                     >
-                      <p 
+                      <p
                         className="text-xs font-medium"
                         style={{ color: `hsl(var(--primary))` }}
                       >
@@ -232,6 +220,7 @@ export default function ReportsSection() {
                     </div>
                   </div>
                 </div>
+                {/* ... (Fin de tarjeta 2) ... */}
               </div>
             </div>
           </div>
@@ -239,6 +228,7 @@ export default function ReportsSection() {
 
         {/* Main Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 md:mb-20">
+          {/* AHORA ESTA LÍNEA FUNCIONA */}
           {data.mainFeatures.map((feature: Feature, index: number) => (
             <div
               key={index}
@@ -259,7 +249,7 @@ export default function ReportsSection() {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
-                  backgroundColor: `hsl(var(--primary) / 0.02)`
+                  backgroundColor: `hsl(var(--primary) / 0.02)`,
                 }}
               />
 
@@ -269,24 +259,24 @@ export default function ReportsSection() {
                   className="inline-flex items-center px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-full mb-6 transition-colors duration-300"
                   style={{
                     backgroundColor: `hsl(var(--primary) / 0.1)`,
-                    color: `hsl(var(--primary))`
+                    color: `hsl(var(--primary))`,
                   }}
                 >
                   {feature.badge}
                 </div>
 
-                {/* Icono principal */}
+                {/* Icono principal (Sigue mostrando el número de índice) */}
                 <div className="mb-6 flex justify-center">
                   <div
                     className="w-20 h-20 flex items-center justify-center rounded-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-lg"
                     style={{
-                      backgroundColor: `hsl(var(--primary) / 0.1)`
+                      backgroundColor: `hsl(var(--primary) / 0.1)`,
                     }}
                   >
-                    <div 
+                    <div
                       className="w-10 h-10 rounded-lg flex items-center justify-center"
                       style={{
-                        backgroundColor: `hsl(var(--primary))`
+                        backgroundColor: `hsl(var(--primary))`,
                       }}
                     >
                       <span className="text-white font-bold text-lg">
@@ -311,7 +301,7 @@ export default function ReportsSection() {
                   <button
                     className="inline-flex items-center px-6 py-3 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                     style={{
-                      backgroundColor: `hsl(var(--primary))`
+                      backgroundColor: `hsl(var(--primary))`,
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.backgroundColor = `hsl(var(--primary) / 0.9)`;
@@ -349,7 +339,7 @@ export default function ReportsSection() {
                 <div
                   className="h-full transform -translate-x-full transition-transform duration-700 ease-out group-hover:translate-x-0"
                   style={{
-                    backgroundColor: `hsl(var(--primary))`
+                    backgroundColor: `hsl(var(--primary))`,
                   }}
                 ></div>
               </div>
@@ -358,10 +348,10 @@ export default function ReportsSection() {
         </div>
 
         {/* Bottom Features Banner */}
-        <div 
+        <div
           className="rounded-2xl shadow-2xl p-8 md:p-12 relative overflow-hidden"
           style={{
-            backgroundColor: `hsl(var(--primary))`
+            backgroundColor: `hsl(var(--secondary))`,
           }}
         >
           <div className="absolute inset-0 bg-grid-white/10" />
@@ -380,13 +370,13 @@ export default function ReportsSection() {
                 <div key={index} className="flex items-center text-white group">
                   <div
                     className="w-3 h-3 bg-white/30 rounded-full flex items-center justify-center mr-3 
-                                 transition-all duration-300 group-hover:bg-white/50 group-hover:scale-125"
+                                   transition-all duration-300 group-hover:bg-white/50 group-hover:scale-125"
                   >
                     <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                   </div>
                   <span
                     className="font-medium text-sm md:text-base transition-all duration-300 
-                                 group-hover:text-white/90"
+                                   group-hover:text-white/90"
                   >
                     {feature}
                   </span>

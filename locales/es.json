@@ -216,7 +216,10 @@
     "head": "Precios",
     "title": "Precios simples y transparentes",
     "description": "Elige el plan que mejor se adapte a tu equipo. Todos los planes incluyen una prueba gratuita de 14 días.",
-    "topics": ["Mensual", "Anual"],
+    "topics": [
+      "Mensual",
+      "Anual"
+    ],
     "add": "Ahorra 20%",
     "button": "Comenzar",
     "plans": [
@@ -512,132 +515,82 @@
     "valueProposition": {
       "id": "value-prop-flexible",
       "title": "Potencie su Crecimiento con Datos",
-      "description": "Ofrecemos un conjunto de herramientas de análisis y gestión diseñadas para escalar con usted. Concéntrese en sus objetivos de negocio; nosotros nos encargamos de la infraestructura tecnológica.",
-      "tag": "FLEXIBLE",
-      "link": {
-        "text": "Explorar más",
-        "href": "/modelo-flexible"
-      }
+      "description": "Ofrecemos un conjunto de herramientas de análisis y gestión diseñadas para escalar con usted. Concéntrese en sus objetivos de negocio; nosotros nos encargamos de la infraestructura tecnológica."
     },
     "servicesSection": {
-      "title": "Conozca Nuestras Capacidades",
+      "title": "Conozca Nuestros Diferentes Servicios",
       "list": [
         {
           "id": "service-monitoring",
           "icon": "IconoMonitoreo",
           "title": "Monitoreo en Tiempo Real",
-          "description": "Supervise sus operaciones críticas 24/7 y obtenga alertas instantáneas para asegurar la continuidad de su negocio.",
-          "tag": "",
-          "link": {
-            "text": "Ver detalles",
-            "href": "/servicios/monitoreo"
-          }
+          "description": "Supervise sus operaciones críticas 24/7 y obtenga alertas instantáneas para asegurar la continuidad de su negocio."
         },
         {
           "id": "service-analysis",
           "icon": "IconoAnalisis",
           "title": "Análisis Avanzado de Datos",
-          "description": "Transforme grandes volúmenes de datos en decisiones estratégicas. Identifique tendencias y oportunidades.",
-          "tag": "",
-          "link": {
-            "text": "Ver detalles",
-            "href": "/servicios/analisis"
-          }
+          "description": "Transforme grandes volúmenes de datos en decisiones estratégicas. Identifique tendencias y oportunidades."
         },
         {
           "id": "service-reporting",
           "icon": "IconoReportes",
           "title": "Generación de Reportes",
-          "description": "Automatice sus informes gerenciales y operativos. Visualice métricas clave de forma clara y accesible.",
-          "tag": "",
-          "link": {
-            "text": "Ver detalles",
-            "href": "/servicios/reportes"
-          }
+          "description": "Automatice sus informes gerenciales y operativos. Visualice métricas clave de forma clara y accesible."
         },
         {
           "id": "service-inventory",
           "icon": "IconoInventario",
           "title": "Control de Inventarios",
-          "description": "Gestione su stock de forma eficiente, optimice niveles de inventario y reduzca costos operativos.",
-          "tag": "",
-          "link": {
-            "text": "Ver detalles",
-            "href": "/servicios/inventario"
-          }
+          "description": "Gestione su stock de forma eficiente, optimice niveles de inventario y reduzca costos operativos."
         },
         {
           "id": "service-bi",
           "icon": "IconoBI",
           "title": "Inteligencia de Negocios (BI)",
-          "description": "Combine datos de múltiples fuentes en dashboards interactivos para una visión 360° de su rendimiento empresarial.",
-          "tag": "",
-          "link": {
-            "text": "Ver detalles",
-            "href": "/servicios/business-intelligence"
-          }
+          "description": "Combine datos de múltiples fuentes en dashboards interactivos para una visión 360° de su rendimiento empresarial."
         },
         {
           "id": "service-logistics",
           "icon": "IconoRutas",
           "title": "Optimización de Rutas",
-          "description": "Reduzca costos de combustible y tiempos de entrega planificando las rutas logísticas más eficientes para su flota.",
-          "tag": "",
-          "link": {
-            "text": "Ver detalles",
-            "href": "/servicios/optimizacion-rutas"
-          }
+          "description": "Reduzca costos de combustible y tiempos de entrega planificando las rutas logísticas más eficientes para su flota."
         },
         {
           "id": "service-predictive",
           "icon": "IconoPredictivo",
           "title": "Mantenimiento Predictivo",
-          "description": "Anticípese a fallos en maquinaria y equipos. Use el análisis de datos para programar mantenimientos antes de que ocurran averías.",
-          "tag": "",
-          "link": {
-            "text": "Ver detalles",
-            "href": "/servicios/mantenimiento-predictivo"
-          }
+          "description": "Anticípese a fallos en maquinaria y equipos. Use el análisis de datos para programar mantenimientos antes de que ocurran averías."
         },
         {
           "id": "service-billing",
           "icon": "IconoFactura",
           "title": "Gestión de Facturación",
-          "description": "Automatice la creación y envío de facturas recurrentes, gestione cobros y controle el flujo de caja de su empresa.",
-          "tag": "",
-          "link": null
+          "description": "Automatice la creación y envío de facturas recurrentes, gestione cobros y controle el flujo de caja de su empresa."
         },
         {
           "id": "service-hr",
           "icon": "IconoHR",
           "title": "Gestión de Talento Humano",
-          "description": "Administre el ciclo de vida de sus empleados, desde la contratación hasta la nómina y la evaluación de desempeño.",
-          "tag": "",
-          "link": null
+          "description": "Administre el ciclo de vida de sus empleados, desde la contratación hasta la nómina y la evaluación de desempeño."
         },
         {
           "id": "service-projects",
           "icon": "IconoProyecto",
           "title": "Gestión de Proyectos",
-          "description": "Planifique, asigne y dé seguimiento a tareas y proyectos en tiempo real, asegurando la colaboración de su equipo.",
-          "tag": "",
-          "link": null
+          "description": "Planifique, asigne y dé seguimiento a tareas y proyectos en tiempo real, asegurando la colaboración de su equipo."
         },
         {
           "id": "service-scm",
           "icon": "IconoCadena",
           "title": "Cadena de Suministro (SCM)",
-          "description": "Optimice su cadena de suministro de extremo a extremo, desde la gestión de proveedores hasta la entrega final.",
-          "tag": "",
-          "link": null
+          "description": "Optimice su cadena de suministro de extremo a extremo, desde la gestión de proveedores hasta la entrega final."
         },
         {
           "id": "service-quality",
           "icon": "IconoCalidad",
           "title": "Control de Calidad",
-          "description": "Implemente y monitoree protocolos de calidad en sus procesos de producción para garantizar la conformidad del producto.",
-          "tag": "",
-          "link": null
+          "description": "Implemente y monitoree protocolos de calidad en sus procesos de producción para garantizar la conformidad del producto."
         }
       ]
     }
@@ -646,7 +599,7 @@
     "intro": {
       "title": "Seguridad Diseñada para Proteger su Negocio",
       "description": "Entendemos que la integridad de sus datos es crítica. Por eso, nuestra plataforma se construye sobre una base de defensa proactiva, combinando infraestructura de clase mundial, cifrado avanzado y un monitoreo constante",
-        "link": {
+      "link": {
         "text": "Explorar más",
         "href": "/seguridad/aws-whitepaper"
       }
@@ -705,5 +658,286 @@
         }
       ]
     }
+  },
+  "reports": {
+    "subtitle": "REPORTERÍA INTELIGENTE",
+    "mainTitle": "INFORMES AUTOMATIZADOS",
+    "highlightedTitle": "PROFESIONALES Y PERSONALIZABLES",
+    "description": "Genera y programa informes profesionales con plantillas personalizables y opciones de distribución automática que ahorran tiempo y mejoran la comunicación empresarial.",
+    "mainFeatures": [
+      {
+        "badge": "AUTOMÁTICO",
+        "icon": "IconoAutomation",
+        "title": "Generación Automática",
+        "description": "Programa la creación y envío de informes de forma automática según tus necesidades de negocio."
+      },
+      {
+        "badge": "PLANTILLAS",
+        "icon": "IconoTemplate",
+        "title": "Plantillas Profesionales",
+        "description": "Utiliza plantillas prediseñadas o crea las tuyas propias con un editor visual intuitivo."
+      },
+      {
+        "badge": "DISTRIBUCIÓN",
+        "icon": "IconoDistribution",
+        "title": "Distribución Inteligente",
+        "description": "Envía informes automáticamente por email, almacena en la nube o integra con otras plataformas."
+      },
+      {
+        "badge": "ANÁLISIS",
+        "icon": "IconoInsights",
+        "title": "Insights Avanzados",
+        "description": "Incluye análisis predictivos y recomendaciones basadas en inteligencia artificial."
+      }
+    ],
+    "bottomFeatures": [
+      "Programación flexible",
+      "Múltiples formatos de exportación",
+      "Branding personalizado",
+      "Firma digital integrada",
+      "Historial de versiones"
+    ]
+  },
+  "aboutUs": {
+    "hero": {
+      "title": "Datos en acción para decisiones medibles",
+      "subtitle": "Orquestamos ingesta, monitoreo y reportes para que tu operación sea trazable, auditable y escalable.",
+      "kpis": [
+        {
+          "label": "SLA ingestión",
+          "value": "99.5%"
+        },
+        {
+          "label": "Time-to-Value",
+          "value": "4–6 semanas"
+        },
+        {
+          "label": "Reducción en tiempos de reporte",
+          "value": "-45%"
+        }
+      ]
+    },
+    "missionVision": {
+      "title": "Nuestra razón de ser",
+      "subtitle": "Conozca los pilares que guían nuestras acciones y decisiones estratégicas.",
+      "items": [
+        {
+          "id": "mision",
+          "heading": "Misión",
+          "shortDescription": "Conectamos organizaciones con tecnología inteligente para impulsar su crecimiento sostenible.",
+          "longDescription": "Nuestra misión es ofrecer soluciones tecnológicas integrales que optimicen la gestión de datos, automatización y toma de decisiones estratégicas. Creemos en el poder de la innovación para mejorar la productividad y competitividad de las empresas en la era digital."
+        },
+        {
+          "id": "vision",
+          "heading": "Visión",
+          "shortDescription": "Convertirnos en el aliado tecnológico líder en soluciones empresariales basadas en datos.",
+          "longDescription": "Aspiramos a ser reconocidos por nuestra excelencia técnica, compromiso ético y enfoque humano. Nuestra visión es construir ecosistemas digitales inteligentes que impulsen la eficiencia, la sostenibilidad y la transformación digital en Latinoamérica y más allá."
+        },
+        {
+          "id": "valores",
+          "heading": "Valores",
+          "shortDescription": "Compromiso, innovación y confianza definen nuestra cultura.",
+          "longDescription": "Guiamos cada acción con integridad, colaboración y responsabilidad. Valoramos el aprendizaje continuo, la empatía con nuestros clientes y la búsqueda constante de soluciones que generen impacto real en las organizaciones y comunidades que servimos."
+        }
+      ]
+    },
+    "differentiators": {
+      "title": "Lo que nos hace distintos",
+      "items": [
+        {
+          "id": "modular",
+          "icon": "Boxes",
+          "heading": "Arquitectura modular",
+          "description": "Integramos ERP/BI/IoT por capas, evitando proyectos monolíticos.",
+          "metric": "Integraciones en semanas"
+        },
+        {
+          "id": "ttv",
+          "icon": "Timer",
+          "heading": "Time-to-Value acelerado",
+          "description": "Despliegues guiados y plantillas listas para usar.",
+          "metric": "4–6 semanas"
+        },
+        {
+          "id": "observability",
+          "icon": "Activity",
+          "heading": "Observabilidad end-to-end",
+          "description": "Registro, auditoría y alertas con priorización operativa.",
+          "metric": "Trazabilidad 100%"
+        },
+        {
+          "id": "security",
+          "icon": "ShieldCheck",
+          "heading": "Seguridad y cumplimiento",
+          "description": "Cifrado en tránsito y reposo, controles y bitácora ampliada.",
+          "metric": "SLA ≥ 99,5%"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Nuestra historia en hitos",
+      "items": [
+        {
+          "year": "2021",
+          "title": "Primer prototipo",
+          "description": "MVP de ingesta y reportería para operaciones."
+        },
+        {
+          "year": "2022",
+          "title": "Primer cliente enterprise",
+          "description": "Onboarding con monitoreo 24/7 y dashboards ejecutivos."
+        },
+        {
+          "year": "2023",
+          "title": "Módulos avanzados",
+          "description": "Alertas priorizadas y auditoría extendida."
+        },
+        {
+          "year": "2024",
+          "title": "Expansión regional",
+          "description": "Implementaciones multi-sede y mejores prácticas DevOps."
+        }
+      ]
+    }
+  },
+  "aboutContact": {
+    "header": {
+      "title": "Contáctanos",
+      "subtitle": "Nuestro equipo está listo para ayudarte con soporte, licenciamiento o una guía de implementación.",
+      "items": [
+        { "text": "Respuesta profesional < 24 horas." },
+        { "text": "Atención especializada según tu industria." },
+        { "text": "Diagnóstico sin costo para dimensionar alcance." }
+      ]
+    },
+    "contacts": [
+      {
+        "id": "phone",
+        "icon": "Phone",
+        "title": "Teléfono / WhatsApp",
+        "value": "+57 316 123 4567",
+        "href": "tel:+573161234567",
+        "description": "Lunes a viernes 8:00–18:00"
+      },
+      {
+        "id": "mail",
+        "icon": "Mail",
+        "title": "Correo",
+        "value": "hola@cathaleia.com",
+        "href": "mailto:hola@cathaleia.com",
+        "description": "Respondemos en menos de 24 horas"
+      },
+      {
+        "id": "map",
+        "icon": "MapPin",
+        "title": "Ubicación",
+        "value": "Bucaramanga, Colombia",
+        "description": "Atención híbrida (remota/presencial)"
+      }
+    ],
+    "presence": {
+      "title": "Presencia y atención regional",
+      "subtitle": "Cobertura internacional con soporte localizado",
+      "subtext": "Atención híbrida (remota/presencial) según disponibilidad regional",
+      "text": "Regiones de Soporte",
+      "items": [
+        { "name": "Latinoamérica", "note": "Soporte en español" },
+        { "name": "Norteamérica", "note": "Soporte en inglés" },
+        { "name": "Europa", "note": "Proyectos remotos" }
+      ]
+    },
+    "closing": {
+      "text": "¿Necesita atención inmediata? Respondemos en menos de 24 horas.",
+      "subtext": "Soporte priorizado para incidentes críticos y asistencia de implementación."
+    }
+  },
+  "servicesShowcase": {
+    "head": {
+      "title": "Soluciones que impulsan tu operación",
+      "subtitle": "De la captura del dato a la decisión operativa, en un solo flujo",
+      "intro": "Diseñamos e integramos capacidades que convierten tus datos en resultados. Cada bloque a continuación es navegable y profundiza en los casos de uso, beneficios y métricas clave. Haz clic en cualquiera para ir directamente a su sección detallada."
+    },
+    "items": [
+      {
+        "id": "realtime",
+        "icon": "Activity",
+        "image": "/assets/services/realtime.jpg",
+        "title": "Análisis en tiempo real",
+        "summary": "Monitorea indicadores críticos y toma decisiones al instante con tableros vivos, alertas inteligentes y pipelines de streaming.",
+        "body": "Procesamos eventos a medida que ocurren para que tu equipo reaccione con segundos de ventaja. \\n\\nConectamos fuentes transaccionales, sensores IoT, logs de aplicaciones y APIs externas para unificar la observabilidad del negocio. Los tableros se actualizan sin refrescar la página y las alertas se disparan por umbrales, anomalías o reglas personalizadas. \\n\\nEl resultado: visibilidad inmediata, menor tiempo de respuesta y reducción de pérdidas por incidentes no detectados.",
+        "bullets": [
+          { "text": "Tableros y KPIs con latencia de segundos (streaming)" },
+          { "text": "Alertas proactivas por umbrales y detección de anomalías" },
+          { "text": "Enriquecimiento de eventos con contexto de negocio" },
+          { "text": "Integración con Slack/Teams, email y webhooks" }
+        ],
+        "stats": [
+          { "label": "Latencia típica", "value": "≤ 3 s" },
+          { "label": "Disponibilidad", "value": "99.9%" },
+          { "label": "Ahorro en incidentes", "value": "15–30%" }
+        ],
+        "cta": { "label": "Ir a Análisis en tiempo real", "targetId": "realtime" }
+      },
+      {
+        "id": "reports",
+        "icon": "FileBarChart2",
+        "image": "/assets/services/reports.jpg",
+        "title": "Automatización de Reportes",
+        "summary": "Elimina tareas repetitivas con reportes programados, versionados y auditables, listos para enviar.",
+        "body": "Estandarizamos plantillas, validamos datos y automatizamos su distribución. \\n\\nLos reportes se generan de forma recurrente (diaria, semanal, mensual) con controles de calidad (completitud, duplicados, reglas de negocio) y quedan centralizados con historial y trazabilidad. \\n\\nReduce errores humanos, acelera cierres y libera horas del equipo analítico para enfocarse en análisis de valor.",
+        "bullets": [
+          { "text": "Programación flexible (CRON) y disparadores por evento" },
+          { "text": "Validaciones de calidad con bitácora de hallazgos" },
+          { "text": "Salida en PDF, Excel, CSV y envío por email/Drive/SharePoint" },
+          { "text": "Versionado y auditoría de cambios" }
+        ],
+        "stats": [
+          { "label": "Reducción de tiempo", "value": "40–60%" },
+          { "label": "Errores manuales", "value": "-70%" },
+          { "label": "Formatos soportados", "value": "PDF/XLXS/CSV" }
+        ],
+        "cta": { "label": "Ir a Automatización de Reportes", "targetId": "reports" }
+      },
+      {
+        "id": "predictive",
+        "icon": "Brain",
+        "image": "/assets/services/predictive.jpg",
+        "title": "Inteligencia Predictiva",
+        "summary": "Modelos que anticipan demanda, rotación, fraude o fallas para optimizar decisiones con evidencia.",
+        "body": "Desarrollamos y operacionalizamos modelos de machine learning adaptados a tu dominio: pronóstico de demanda, scoring de riesgo, churn, mantenimiento predictivo y más. \\n\\nDesde la experimentación hasta el despliegue, gestionamos el ciclo completo (datos, features, entrenamiento, validación, monitoreo y retraining). \\n\\nLa prioridad es la utilidad: explicabilidad, métricas de negocio y adopción por parte de los equipos.",
+        "bullets": [
+          { "text": "Casos listos: demanda, churn, riesgo, mantenimiento" },
+          { "text": "MLOps: despliegue, monitoreo y retraining automatizado" },
+          { "text": "Explicabilidad y reportes de impacto" },
+          { "text": "Integración con APIs y aplicaciones internas" }
+        ],
+        "stats": [
+          { "label": "Mejora de pronóstico", "value": "±10–25%" },
+          { "label": "Disminución de churn", "value": "8–15%" },
+          { "label": "ROI típico 6–12 meses", "value": "x3–x7" }
+        ],
+        "cta": { "label": "Ir a Inteligencia Predictiva", "targetId": "predictive" }
+      },
+      {
+        "id": "control",
+        "icon": "ShieldCheck",
+        "image": "/assets/services/control.jpg",
+        "title": "Control Total de Datos",
+        "summary": "Gobierno, seguridad y trazabilidad de extremo a extremo para operar con confianza.",
+        "body": "Establecemos políticas claras de gobierno de datos: catálogo, linaje, permisos granulares y cumplimiento normativo. \\n\\nDefinimos roles, dominios y estándares de calidad para asegurar que cada dato tenga dueño, propósito y ciclo de vida controlado. \\n\\nCon esto, habilitamos auditorías ágiles, minimizamos riesgos y elevamos la confianza en los tableros y modelos que consumen la organización.",
+        "bullets": [
+          { "text": "Catálogo de datos y linaje visual" },
+          { "text": "RBAC/ABAC y registros de acceso" },
+          { "text": "Políticas de retención y clasificación" },
+          { "text": "Controles de calidad con métricas y SLA" }
+        ],
+        "stats": [
+          { "label": "Hallazgos en auditoría", "value": "-50%" },
+          { "label": "Tiempo de respuesta a requerimientos", "value": "-35%" },
+          { "label": "Cobertura de dominios", "value": "100%" }
+        ],
+        "cta": { "label": "Ir a Control Total de Datos", "targetId": "control" }
+      }
+    ]
   }
 }

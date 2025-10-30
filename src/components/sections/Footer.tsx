@@ -111,7 +111,6 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-primary mb-4 relative group">
               {t.footer.sections.quickLinks}
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary/60 transition-all duration-500 group-hover:w-full"></div>
             </h3>
             <nav className="space-y-1">
               <Link 
@@ -122,21 +121,21 @@ export default function Footer() {
                 {t.footer.links.home}
               </Link>
               <Link 
-                href="/about" 
+                href="/aboutus" 
                 className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
               >
                 <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"></div>
                 {t.footer.links.about}
               </Link>
               <Link 
-                href="/products" 
+                href="/flexible" 
                 className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
               >
                 <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"> </div>
                 {t.footer.links.products}
               </Link>
               <Link 
-                href="/news" 
+                href="/whyUs" 
                 className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
               >
                 <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"></div>
@@ -156,7 +155,6 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-primary mb-4 relative group">
               {t.footer.sections.services}
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary/60 transition-all duration-500 group-hover:w-full"></div>
             </h3>
             <nav className="space-y-1">
               <Link 

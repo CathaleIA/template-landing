@@ -4,15 +4,14 @@ import MobileMenu from '@/components/mobile-menu/MobileMenu';
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 // 1. Importa usePathname
-import { useRouter, usePathname } from 'next/navigation';
-import { Button } from "@/components/ui/button"
+import { usePathname } from 'next/navigation';
+
 
 import LanguageSwitcher from '@/components/ui/LenguageToggle';
 import { useTranslation } from '@/../hooks/useTranlation';
 
 export default function NavBar() {
   const t = useTranslation();
-  const router = useRouter();
   
   // 2. Obtén la ruta actual
   const pathname = usePathname();
@@ -24,7 +23,10 @@ const solidRoutes = [
   '/reports', 
   '/inteligent',
   '/flexible',
-  '/security_standar/'
+  '/security_standar/',
+  '/aboutus/',
+  '/contact/',
+  '/servicesShowcase/',
 ];
 
 // 2. Comprueba si la ruta actual COMIENZA con alguna de las de la lista
@@ -115,14 +117,6 @@ const isSolidPage = solidRoutes.some(route => pathname.startsWith(route));
             // 8. Aplica 'isSolid' al separador
             isSolid ? 'text-muted-foreground' : 'text-white/50'
           }`}>|</div>
-          <Button
-            type="button"
-            size="lg"
-            className='px-2 font-bold bg-primary hover:bg-primary/90 text-primary-foreground hover:shadow-md transition-all duration-200'
-            onClick={() => router.push('/signup')}
-          >
-            SignUp
-          </Button>
           
           <LanguageSwitcher />
         </div>

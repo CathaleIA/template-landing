@@ -1,11 +1,11 @@
-import { useTranslation } from '@/../hooks/useTranlation';
+import { useTranslation } from "@/../hooks/useTranlation";
 
 export default function WhyChooseSection() {
   const t = useTranslation();
 
   return (
-<section className="relative w-full py-12 md:py-16 lg:py-20 overflow-hidden">
-  <div className="top-section-bg"></div>
+    <section className="relative w-full py-12 md:py-16 lg:py-20 overflow-hidden">
+      <div className="top-section-bg"></div>
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
 
@@ -18,15 +18,21 @@ export default function WhyChooseSection() {
               {t.whyChoose?.subtitle || "FÁCIL."}
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-              {t.whyChoose?.mainTitle || "CONECTADO."}{' '}
+              {t.whyChoose?.mainTitle || "CONECTADO."}{" "}
               <span className="text-primary block mt-2">
                 {t.whyChoose?.highlightedTitle || "CONFIABLE."}
               </span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              {t.whyChoose?.description || "Las empresas líderes confían en Cathaleia para potenciar el ciclo completo de datos, desde la ingesta hasta el intercambio, para que puedan innovar más rápido y hacer más con sus datos."}
+              {t.whyChoose?.description ||
+                "Las empresas líderes confían en Cathaleia para potenciar el ciclo completo de datos, desde la ingesta hasta el intercambio, para que puedan innovar más rápido y hacer más con sus datos."}
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl">
+            <button
+              onClick={() =>
+                window.open("https://api.whatsapp.com/send/?phone=573164438383&text=%C2%A1Hola!+Estoy+interesado+en+iniciar+una+prueba+gratuita+de+Cathaleia.&type=phone_number&app_absent=0", "_blank")
+              }
+              className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
               {t.whyChoose?.ctaButton || "COMENZAR GRATIS"}
             </button>
           </div>
@@ -55,10 +61,12 @@ export default function WhyChooseSection() {
         <div className="mb-16 md:mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {t.whyChoose?.featuresTitle || "¿Por qué las empresas eligen Cathaleia?"}
+              {t.whyChoose?.featuresTitle ||
+                "¿Por qué las empresas eligen Cathaleia?"}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              {t.whyChoose?.featuresDescription || "Descubre las ventajas competitivas que hacen de Cathaleia la plataforma preferida para la gestión inteligente de datos."}
+              {t.whyChoose?.featuresDescription ||
+                "Descubre las ventajas competitivas que hacen de Cathaleia la plataforma preferida para la gestión inteligente de datos."}
             </p>
           </div>
 
@@ -72,8 +80,10 @@ export default function WhyChooseSection() {
               >
                 {/* Icono */}
                 <div className="mb-4">
-                  <div className="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg 
-                                 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
+                  <div
+                    className="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg 
+                                 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110"
+                  >
                     <span className="text-2xl">{feature.icon}</span>
                   </div>
                 </div>
@@ -95,8 +105,10 @@ export default function WhyChooseSection() {
 
                 {/* Barra inferior animada */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-100 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-primary to-primary/80 transform -translate-x-full 
-                                 transition-transform duration-500 ease-out group-hover:translate-x-0"></div>
+                  <div
+                    className="h-full bg-gradient-to-r from-primary to-primary/80 transform -translate-x-full 
+                                 transition-transform duration-500 ease-out group-hover:translate-x-0"
+                  ></div>
                 </div>
               </div>
             )) || []}
@@ -104,28 +116,30 @@ export default function WhyChooseSection() {
         </div>
 
         {/* Sección de tecnología */}
-        <div className="bg-secondary rounded-2xl p-8 lg:p-12 mb-16 md:mb-20">
+        <div className="bg-secondary rounded-2xl p-8 lg:p-12 mb-16 md:mb-16">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              {t.whyChoose?.techTitle || "Tecnología empresarial de primer nivel"}
+              {t.whyChoose?.techTitle ||
+                "Tecnología empresarial de primer nivel"}
             </h2>
             <p className="text-white/90 text-lg max-w-3xl mx-auto">
-              {t.whyChoose?.techDescription || "Construido sobre la infraestructura más confiable del mundo"}
+              {t.whyChoose?.techDescription ||
+                "Construido sobre la infraestructura más confiable del mundo"}
             </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 text-center">
             {t.whyChoose?.techFeatures?.map((tech, index) => (
-              <div key={index} className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+              <div
+                key={index}
+                className="bg-white/10 rounded-lg p-4 backdrop-blur-sm"
+              >
                 <div className="text-white font-semibold mb-2">{tech.name}</div>
                 <div className="text-white/80 text-sm">{tech.description}</div>
               </div>
             )) || []}
           </div>
         </div>
-
-        {/* CTA Final */}
-
       </div>
     </section>
   );

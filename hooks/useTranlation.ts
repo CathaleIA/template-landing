@@ -220,11 +220,6 @@ type Translations = {
       id: string;
       title: string;
       description: string;
-      tag?: string;
-      link?: {
-        text: string;
-        href: string;
-      };
     };
     servicesSection: {
       title: string;
@@ -233,11 +228,6 @@ type Translations = {
         icon: string;
         title: string;
         description: string;
-        tag?: string;
-        link?: {
-          text: string;
-          href: string;
-        };
       }[];
     };
   };
@@ -272,6 +262,98 @@ type Translations = {
         icon: string; // El nombre del icono del logo
       }[];
     };
+  };
+  reports: {
+    subtitle: string;
+    mainTitle: string;
+    highlightedTitle: string;
+    description: string;
+    mainFeatures: {
+      badge: string;
+      icon: string;
+      title: string;
+      description: string;
+    }[];
+    bottomFeatures: string[];
+  };
+  aboutUs: {
+    hero: {
+      title: string;
+      subtitle: string;
+      kpis: { label: string; value: string }[];
+    };
+    missionVision: {
+      title: string;
+      items: {
+        id: string;
+        icon: string;
+        heading: string;
+        shortDescription: string;
+        longDescription: string;
+      }[];
+    };
+    differentiators: {
+      title: string;
+      items: {
+        id: string;
+        icon: string; // clave de icono lucide
+        heading: string;
+        description: string;
+        metric?: string; // opcional (ej. “4–6 semanas”)
+      }[];
+    };
+    timeline: {
+      title: string;
+      items: {
+        year: string;
+        title: string;
+        description: string;
+      }[];
+    };
+  };
+  aboutContact: {
+    header: {
+      title: string;
+      subtitle: string;
+      items?: { text: string }[];
+    };
+    contacts: {
+      id: string;
+      icon: string;
+      title: string;
+      value: string;
+      description?: string;
+      href?: string;
+    }[];
+    presence?: {
+      title: string;
+      subtitle?: string;
+      subtext?: string;
+      text?: string;
+      items: { name: string; note?: string }[];
+    };
+    closing?: {
+      text: string;
+      subtext?: string;
+    };
+  };
+  servicesShowcase: {
+    head: {
+      title: string; // Título de la sección (distinto a "Nuestros servicios")
+      subtitle?: string; // Subtítulo amplio
+      intro?: string; // Párrafo introductorio largo
+    };
+    items: {
+      id: string; // ancla única: "realtime", "reports", "predictive", "control"
+      icon?: string; // nombre de icono lucide (opcional)
+      image?: string; // ruta opcional de imagen decorativa
+      title: string; // Título del bloque (p. ej. "Análisis en tiempo real")
+      summary: string; // Resumen corto para la tarjeta
+      body: string; // Texto largo (varios párrafos permitidos con \\n)
+      bullets?: { text: string }[]; // Lista de beneficios
+      stats?: { label: string; value: string }[]; // Métricas destacadas
+      cta?: { label: string; href?: string; targetId?: string }; // href o targetId interno para scroll
+    }[];
   };
 };
 
@@ -432,11 +514,6 @@ export const useTranslation = () => {
         id: "",
         title: "",
         description: "",
-        tag: "",
-        link: {
-          text: "",
-          href: "",
-        },
       },
       servicesSection: {
         title: "",
@@ -460,6 +537,43 @@ export const useTranslation = () => {
         title: "",
         logos: [],
       },
+    },
+    reports: {
+      subtitle: "",
+      mainTitle: "",
+      highlightedTitle: "",
+      description: "",
+      mainFeatures: [],
+      bottomFeatures: [],
+    },
+    aboutUs: {
+      hero: {
+        title: "",
+        subtitle: "",
+        kpis: [],
+      },
+      missionVision: {
+        title: "",
+        items: [],
+      },
+      differentiators: {
+        title: "",
+        items: [],
+      },
+      timeline: {
+        title: "",
+        items: [],
+      },
+    },
+    aboutContact: {
+      header: { title: "", subtitle: "", items: [] },
+      contacts: [],
+      presence: { title: "", subtitle: "", subtext: "", text: "", items: [] },
+      closing: { text: "", subtext: "" },
+    },
+    servicesShowcase: {
+      head: { title: "", subtitle: "", intro: "" },
+      items: [],
     },
   });
 

@@ -1,12 +1,17 @@
-import { useState } from 'react';
-import { useTranslation } from '@/../hooks/useTranlation';
+import { useState } from "react";
+import { useTranslation } from "@/../hooks/useTranlation";
 
 export default function FAQSection() {
   const t = useTranslation();
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([]);
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndexes(
+      (prev) =>
+        prev.includes(index)
+          ? prev.filter((i) => i !== index) // si ya está abierto, lo cierra
+          : [...prev, index] // si no, lo agrega
+    );
   };
 
   return (
@@ -38,7 +43,7 @@ export default function FAQSection() {
                 </span>
                 <svg
                   className={`w-5 h-5 text-gray-500 transition-transform duration-200 flex-shrink-0 ${
-                    openIndex === index ? 'rotate-180' : ''
+                    openIndexes.includes(index) ? "rotate-180" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -52,10 +57,12 @@ export default function FAQSection() {
                   />
                 </svg>
               </button>
-              
+
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  openIndexes.includes(index)
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="px-6 pb-5 text-gray-600 leading-relaxed">
@@ -65,9 +72,6 @@ export default function FAQSection() {
             </div>
           )) || []}
         </div>
-
-        {/* CTA adicional */}
-          
       </div>
     </section>
   );
