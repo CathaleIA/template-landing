@@ -123,6 +123,10 @@ type Translations = {
     head: string;
     title: string;
     description: string;
+    texto1: string;
+    texto2: string;
+    boton1: string;
+    boton2: string;
     topics: string[];
     add: string;
     button: string;
@@ -435,6 +439,10 @@ export const useTranslation = () => {
       head: "",
       title: "",
       description: "",
+      texto1: "",
+      texto2: "",
+      boton1: "",
+      boton2: "",
       topics: [],
       add: "",
       button: "",

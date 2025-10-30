@@ -145,17 +145,17 @@ export default function PricingSection() {
         <div className="text-center mt-12 md:mt-16">
           <div className="bg-gray-50 rounded-xl p-8 max-w-3xl mx-auto">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              ¿No estás seguro de qué plan elegir?
+              {t.pricing?.texto1 || "¿No estás seguro de qué plan elegir?"}
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Todos los planes incluyen una prueba gratuita de 14 días. Sin compromiso, sin tarjeta de crédito requerida.
+              {t.pricing?.texto2 || "Todos los planes incluyen una prueba gratuita de 14 días. Sin compromiso, sin tarjeta de crédito requerida."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors">
-                Comenzar prueba gratuita
+                {t.pricing?.boton1 || "Comenzar prueba gratuita"}
               </button>
               <button className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
-                Contactar ventas
+                {t.pricing?.boton2 || "Contactar ventas"}
               </button>
             </div>
           </div>
