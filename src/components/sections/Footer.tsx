@@ -9,9 +9,49 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { useRouter } from "next/navigation"; // <-- (Línea ~6) NUEVO
 
 export default function Footer() {
   const t = useTranslation();
+  const router = useRouter(); // <-- (Línea ~14) NUEVO
+
+  // (Líneas ~18–48) NUEVO: navegar a ruta y luego hacer scroll al hash
+  const navigateWithHash = (e: React.MouseEvent, href: string) => {
+    // Solo interceptar si hay hash y es ruta interna
+    const isInternal = href.startsWith("/") || href.startsWith("services");
+    const hasHash = href.includes("#");
+    if (!isInternal || !hasHash) return; // dejar comportamiento normal
+
+    e.preventDefault();
+
+    // Normaliza "/ruta#id" o "/ruta/#id"
+    const [rawPath, rawHash] = href.split("#");
+    const path = (rawPath || "/").replace(/\/+$/, ""); // quita barra final
+    const hash = (rawHash || "").trim();
+
+    router.push(path || "/");
+
+    if (hash) {
+      // da tiempo a que la página destino monte
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        } else {
+          // reintentos por si el elemento tarda en renderizar
+          let attempts = 0;
+          const interval = setInterval(() => {
+            const target = document.getElementById(hash);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+              clearInterval(interval);
+            }
+            if (++attempts > 20) clearInterval(interval);
+          }, 100);
+        }
+      }, 300);
+    }
+  };
 
   return (
     <footer className="w-full bg-white text-gray-800 border-t border-gray-100">
@@ -193,40 +233,46 @@ export default function Footer() {
               </Link>
             </h3>
             <nav className="space-y-1">
+              {/* (Línea ~147) CAMBIO: href y onClick */}
               <Link
-                href="/services/ev-chargers"
+                href="/servicesShowcase#realtime"
+                onClick={(e) => navigateWithHash(e, "/servicesShowcase#realtime")}
                 className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
               >
                 <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"></div>
                 {t.footer.services.evChargers}
               </Link>
+
+              {/* (Línea ~157) CAMBIO */}
               <Link
-                href="/services/charging-stations"
+                href="/servicesShowcase#reports"
+                onClick={(e) => navigateWithHash(e, "/servicesShowcase#reports")}
                 className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
               >
                 <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"></div>
                 {t.footer.services.chargingStations}
               </Link>
+
+              {/* (Línea ~167) CAMBIO */}
               <Link
-                href="/services/fast-charging"
+                href="/servicesShowcase#predictive"
+                onClick={(e) =>
+                  navigateWithHash(e, "/servicesShowcase#predictive")
+                }
                 className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
               >
                 <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"></div>
                 {t.footer.services.fastCharging}
               </Link>
+
+              {/* (Línea ~177) CAMBIO */}
               <Link
-                href="/services/dc-charging"
+                href="/servicesShowcase#control"
+                onClick={(e) => navigateWithHash(e, "/servicesShowcase#control")}
                 className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
               >
                 <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"></div>
                 {t.footer.services.dcCharging}
-              </Link>
-              <Link
-                href="/services/manufacturers"
-                className="group flex items-center text-gray-600 text-sm hover:text-primary transition-all duration-300 py-2 px-3 rounded-lg hover:bg-primary/5 hover:translate-x-1"
-              >
-                <div className="w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2 rounded-full"></div>
-                {t.footer.services.manufacturers}
               </Link>
             </nav>
           </div>
@@ -251,7 +297,7 @@ export default function Footer() {
                 className="group relative text-gray-500 text-sm hover:text-primary transition-all duration-300 py-1"
               >
                 {t.footer.legal.terms}
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                <div className="absolute bottom-0 left-0 w-0.5 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
               </Link>
               <Link
                 href="/cookies"

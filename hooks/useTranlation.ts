@@ -69,6 +69,8 @@ type Translations = {
     title: string;
     description: string;
     text: string;
+    title2: string;
+    description2: string;
     features: {
       title: string;
       value: string;
@@ -404,6 +406,8 @@ export const useTranslation = () => {
       title: "",
       description: "",
       text: "",
+      title2: "",
+      description2: "",
       features: [],
     },
     integrations: {

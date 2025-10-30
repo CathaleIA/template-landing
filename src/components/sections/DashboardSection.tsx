@@ -329,11 +329,10 @@ export default function DashboardSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
 
             <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 relative z-10">
-              ¿Listo para transformar tus datos?
+              {t.dashboard.title2}
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto relative z-10">
-              Descubre cómo nuestras herramientas pueden potenciar tu negocio
-              con análisis inteligentes y automatización.
+              {t.dashboard.description2}
             </p>
           </div>
         </div>
