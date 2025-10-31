@@ -48,7 +48,8 @@ export default function DataExperienceSection() {
       id="data-experience"
       className="relative w-full overflow-hidden bg-white py-16 md:py-20 lg:py-24 text-gray-800"
     >
-      <div className="container mx-auto max-w-6xl px-4 md:px-6">
+      {/* L40: Alineación global: max-w-6xl → max-w-7xl */}
+      <div className="container mx-auto max-w-7xl px-4 md:px-6">
         {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
@@ -103,10 +104,14 @@ export default function DataExperienceSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.25 }}
                   transition={{ duration: 0.5, delay: 0.05 * idx }}
-                  className="group relative overflow-hidden rounded-2xl border-2 border-secundary bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+                  className="
+                              group relative overflow-hidden rounded-2xl border-2 border-secondary/40 
+                              bg-white p-6 shadow-sm transition-all duration-500 
+                              hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_25px_-5px_rgba(16,185,129,0.3)]
+                            "
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 transition-colors duration-300 group-hover:bg-secondary/10">
+                    <Icon className="h-6 w-6 text-secondary group-hover:text-primary transition-colors duration-300" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">
                     {p.title}
@@ -158,11 +163,9 @@ export default function DataExperienceSection() {
                       <p className="mt-2 text-gray-700">{step.text}</p>
                     </div>
 
-                    {/* Punto/onda decorativa → CAMBIO: Badge con ícono y borde reactivo */}
-                    {/* LÍNEAS ~150–170 */}
+                    {/* Badge centrado y verde */}
                     <div className="relative hidden md:block">
                       {(() => {
-                        // Array con variedad de íconos para cada paso
                         const icons = [
                           Cloud,
                           ShieldCheck,
@@ -175,33 +178,22 @@ export default function DataExperienceSection() {
                         return (
                           <div
                             className="
-                              group absolute left-1/2 top-11 -translate-x-1/2 
-                              inline-flex h-14 w-14 items-center justify-center
-                              rounded-xl border-4 border-primary bg-white text-secondary
-                              shadow-sm transition-all duration-300
+                                        absolute left-1/2 top-11 -translate-x-1/2 
+                                        inline-flex h-14 w-14 items-center justify-center
+                                        rounded-xl border-4 border-secondary bg-white text-secondary
+                                        shadow-sm transition-all duration-300 ease-out
 
-                              /* Ring base y hover */
-                              ring-2 ring-transparent ring-offset-2 ring-offset-white
-                              group-hover:ring-secondary/60 group-hover:ring-offset-[3px]
-
-                              /* Glow radial verde */
-                              before:pointer-events-none before:absolute before:inset-0 before:rounded-xl
-                              before:opacity-0 before:blur before:transition before:duration-300
-                              group-hover:before:opacity-100
-                              before:bg-[radial-gradient(closest-side,theme(colors.secondary/40),transparent_70%)]
-
-                              /* Focus accesible (sin azul) */
-                              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-white
-                            "
+                                        /* 🔁 Hover directo */
+                                        hover:border-primary hover:text-primary hover:scale-105
+                                      "
                             aria-hidden="true"
                           >
-                            {/* Ícono centrado y grande */}
-                            <TimelineIcon className="h-8 w-8 transition-transform duration-300 group-hover:scale-110" />
+                            <TimelineIcon className="h-8 w-8 transition-transform duration-300" />
                           </div>
                         );
                       })()}
                     </div>
-                    {/* FIN CAMBIO */}
+                    {/* FIN badge */}
                   </motion.div>
                 ))}
               </div>
