@@ -24,6 +24,7 @@ export default function AboutAnalysis() {
         />
       </div>
 
+
       {/* Línea separadora superior */}
       <div 
         className="absolute top-0 left-1/2 -translate-x-1/2 w-32 border-t-4"

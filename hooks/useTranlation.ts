@@ -210,7 +210,7 @@ type Translations = {
       privacy: string;
       terms: string;
       cookies: string;
-    };
+    }
   };
   inteligent: {
     head: string;
@@ -746,7 +746,7 @@ export const useTranslation = () => {
     whatsApp: {
       tooltip: "",
       defaultMessage: "",
-    },
+    }
   });
 
   useEffect(() => {

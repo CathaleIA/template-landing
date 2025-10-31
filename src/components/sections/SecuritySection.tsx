@@ -9,7 +9,7 @@ export default function SecuritySection() {
     <section id="security" className="relative w-full pt-12 md:pt-16 lg:pt-20 pb-4 bg-gray-50">
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
-      
+
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
         {/* Header Section (sin cambios) */}
         <div className="text-center mb-12 md:mb-16">
