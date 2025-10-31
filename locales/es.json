@@ -180,7 +180,7 @@
         "badge": "INTEGRAL",
         "title": "Gestión completa del ciclo de datos",
         "description": "Desde la recolección e integración hasta el procesamiento avanzado, CATHALEIA optimiza cada etapa de tus datos para maximizar su valor y reducir la complejidad operativa.",
-        "link": ""
+        "link": "/integral/"
       },
       {
         "icon": "/assets/icon-trusted.svg",
@@ -219,12 +219,12 @@
     "head": "Precios",
     "title": "Precios simples y transparentes",
     "description": "Elige el plan que mejor se adapte a tu equipo. Todos los planes incluyen una prueba gratuita de 14 días.",
-    "texto1" : "¿No estás seguro de qué plan elegir?",
-    "texto2" : "Todos los planes incluyen una prueba gratuita de 14 días. Sin compromiso, sin tarjeta de crédito requerida.",
-    "boton1" : "Comenzar prueba gratuita",
-    "boton2" : "Contactar ventas",
-    "texto3" : "Facturado anualmente",
-    "texto4" : "año",
+    "texto1": "¿No estás seguro de qué plan elegir?",
+    "texto2": "Todos los planes incluyen una prueba gratuita de 14 días. Sin compromiso, sin tarjeta de crédito requerida.",
+    "boton1": "Comenzar prueba gratuita",
+    "boton2": "Contactar ventas",
+    "texto3": "Facturado anualmente",
+    "texto4": "año",
     "topics": [
       "Mensual",
       "Anual"
@@ -814,9 +814,15 @@
       "title": "Contáctanos",
       "subtitle": "Nuestro equipo está listo para ayudarte con soporte, licenciamiento o una guía de implementación.",
       "items": [
-        { "text": "Respuesta profesional < 24 horas." },
-        { "text": "Atención especializada según tu industria." },
-        { "text": "Diagnóstico sin costo para dimensionar alcance." }
+        {
+          "text": "Respuesta profesional < 24 horas."
+        },
+        {
+          "text": "Atención especializada según tu industria."
+        },
+        {
+          "text": "Diagnóstico sin costo para dimensionar alcance."
+        }
       ]
     },
     "contacts": [
@@ -850,9 +856,18 @@
       "subtext": "Atención híbrida (remota/presencial) según disponibilidad regional",
       "text": "Regiones de Soporte",
       "items": [
-        { "name": "Latinoamérica", "note": "Soporte en español" },
-        { "name": "Norteamérica", "note": "Soporte en inglés" },
-        { "name": "Europa", "note": "Proyectos remotos" }
+        {
+          "name": "Latinoamérica",
+          "note": "Soporte en español"
+        },
+        {
+          "name": "Norteamérica",
+          "note": "Soporte en inglés"
+        },
+        {
+          "name": "Europa",
+          "note": "Proyectos remotos"
+        }
       ]
     },
     "closing": {
@@ -875,17 +890,37 @@
         "summary": "Monitorea indicadores críticos y toma decisiones al instante con tableros vivos, alertas inteligentes y pipelines de streaming.",
         "body": "Procesamos eventos a medida que ocurren para que tu equipo reaccione con segundos de ventaja. \\n\\nConectamos fuentes transaccionales, sensores IoT, logs de aplicaciones y APIs externas para unificar la observabilidad del negocio. Los tableros se actualizan sin refrescar la página y las alertas se disparan por umbrales, anomalías o reglas personalizadas. \\n\\nEl resultado: visibilidad inmediata, menor tiempo de respuesta y reducción de pérdidas por incidentes no detectados.",
         "bullets": [
-          { "text": "Tableros y KPIs con latencia de segundos (streaming)" },
-          { "text": "Alertas proactivas por umbrales y detección de anomalías" },
-          { "text": "Enriquecimiento de eventos con contexto de negocio" },
-          { "text": "Integración con Slack/Teams, email y webhooks" }
+          {
+            "text": "Tableros y KPIs con latencia de segundos (streaming)"
+          },
+          {
+            "text": "Alertas proactivas por umbrales y detección de anomalías"
+          },
+          {
+            "text": "Enriquecimiento de eventos con contexto de negocio"
+          },
+          {
+            "text": "Integración con Slack/Teams, email y webhooks"
+          }
         ],
         "stats": [
-          { "label": "Latencia típica", "value": "≤ 3 s" },
-          { "label": "Disponibilidad", "value": "99.9%" },
-          { "label": "Ahorro en incidentes", "value": "15–30%" }
+          {
+            "label": "Latencia típica",
+            "value": "≤ 3 s"
+          },
+          {
+            "label": "Disponibilidad",
+            "value": "99.9%"
+          },
+          {
+            "label": "Ahorro en incidentes",
+            "value": "15–30%"
+          }
         ],
-        "cta": { "label": "Más Información", "targetId": "realtime" }
+        "cta": {
+          "label": "Más Información",
+          "targetId": "realtime"
+        }
       },
       {
         "id": "reports",
@@ -895,17 +930,37 @@
         "summary": "Elimina tareas repetitivas con reportes programados, versionados y auditables, listos para enviar.",
         "body": "Estandarizamos plantillas, validamos datos y automatizamos su distribución. \\n\\nLos reportes se generan de forma recurrente (diaria, semanal, mensual) con controles de calidad (completitud, duplicados, reglas de negocio) y quedan centralizados con historial y trazabilidad. \\n\\nReduce errores humanos, acelera cierres y libera horas del equipo analítico para enfocarse en análisis de valor.",
         "bullets": [
-          { "text": "Programación flexible (CRON) y disparadores por evento" },
-          { "text": "Validaciones de calidad con bitácora de hallazgos" },
-          { "text": "Salida en PDF, Excel, CSV y envío por email/Drive/SharePoint" },
-          { "text": "Versionado y auditoría de cambios" }
+          {
+            "text": "Programación flexible (CRON) y disparadores por evento"
+          },
+          {
+            "text": "Validaciones de calidad con bitácora de hallazgos"
+          },
+          {
+            "text": "Salida en PDF, Excel, CSV y envío por email/Drive/SharePoint"
+          },
+          {
+            "text": "Versionado y auditoría de cambios"
+          }
         ],
         "stats": [
-          { "label": "Reducción de tiempo", "value": "40–60%" },
-          { "label": "Errores manuales", "value": "-70%" },
-          { "label": "Formatos soportados", "value": "PDF/XLXS/CSV" }
+          {
+            "label": "Reducción de tiempo",
+            "value": "40–60%"
+          },
+          {
+            "label": "Errores manuales",
+            "value": "-70%"
+          },
+          {
+            "label": "Formatos soportados",
+            "value": "PDF/XLXS/CSV"
+          }
         ],
-        "cta": { "label": "Más Información", "targetId": "reports" }
+        "cta": {
+          "label": "Más Información",
+          "targetId": "reports"
+        }
       },
       {
         "id": "predictive",
@@ -915,17 +970,37 @@
         "summary": "Modelos que anticipan demanda, rotación, fraude o fallas para optimizar decisiones con evidencia.",
         "body": "Desarrollamos y operacionalizamos modelos de machine learning adaptados a tu dominio: pronóstico de demanda, scoring de riesgo, churn, mantenimiento predictivo y más. \\n\\nDesde la experimentación hasta el despliegue, gestionamos el ciclo completo (datos, features, entrenamiento, validación, monitoreo y retraining). \\n\\nLa prioridad es la utilidad: explicabilidad, métricas de negocio y adopción por parte de los equipos.",
         "bullets": [
-          { "text": "Casos listos: demanda, churn, riesgo, mantenimiento" },
-          { "text": "MLOps: despliegue, monitoreo y retraining automatizado" },
-          { "text": "Explicabilidad y reportes de impacto" },
-          { "text": "Integración con APIs y aplicaciones internas" }
+          {
+            "text": "Casos listos: demanda, churn, riesgo, mantenimiento"
+          },
+          {
+            "text": "MLOps: despliegue, monitoreo y retraining automatizado"
+          },
+          {
+            "text": "Explicabilidad y reportes de impacto"
+          },
+          {
+            "text": "Integración con APIs y aplicaciones internas"
+          }
         ],
         "stats": [
-          { "label": "Mejora de pronóstico", "value": "±10–25%" },
-          { "label": "Disminución de churn", "value": "8–15%" },
-          { "label": "ROI típico 6–12 meses", "value": "x3–x7" }
+          {
+            "label": "Mejora de pronóstico",
+            "value": "±10–25%"
+          },
+          {
+            "label": "Disminución de churn",
+            "value": "8–15%"
+          },
+          {
+            "label": "ROI típico 6–12 meses",
+            "value": "x3–x7"
+          }
         ],
-        "cta": { "label": "Más Información", "targetId": "predictive" }
+        "cta": {
+          "label": "Más Información",
+          "targetId": "predictive"
+        }
       },
       {
         "id": "control",
@@ -935,18 +1010,305 @@
         "summary": "Gobierno, seguridad y trazabilidad de extremo a extremo para operar con confianza.",
         "body": "Establecemos políticas claras de gobierno de datos: catálogo, linaje, permisos granulares y cumplimiento normativo. \\n\\nDefinimos roles, dominios y estándares de calidad para asegurar que cada dato tenga dueño, propósito y ciclo de vida controlado. \\n\\nCon esto, habilitamos auditorías ágiles, minimizamos riesgos y elevamos la confianza en los tableros y modelos que consumen la organización.",
         "bullets": [
-          { "text": "Catálogo de datos y linaje visual" },
-          { "text": "RBAC/ABAC y registros de acceso" },
-          { "text": "Políticas de retención y clasificación" },
-          { "text": "Controles de calidad con métricas y SLA" }
+          {
+            "text": "Catálogo de datos y linaje visual"
+          },
+          {
+            "text": "RBAC/ABAC y registros de acceso"
+          },
+          {
+            "text": "Políticas de retención y clasificación"
+          },
+          {
+            "text": "Controles de calidad con métricas y SLA"
+          }
         ],
         "stats": [
-          { "label": "Hallazgos en auditoría", "value": "-50%" },
-          { "label": "Tiempo de respuesta a requerimientos", "value": "-35%" },
-          { "label": "Cobertura de dominios", "value": "100%" }
+          {
+            "label": "Hallazgos en auditoría",
+            "value": "-50%"
+          },
+          {
+            "label": "Tiempo de respuesta a requerimientos",
+            "value": "-35%"
+          },
+          {
+            "label": "Cobertura de dominios",
+            "value": "100%"
+          }
         ],
-        "cta": { "label": "Más Información", "targetId": "control" }
+        "cta": {
+          "label": "Más Información",
+          "targetId": "control"
+        }
       }
     ]
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdatedLabel": "Última actualización: Octubre 2025",
+    "intro": "En Cathaleia valoramos profundamente tu privacidad y la protección de tu información personal. Esta Política de Privacidad explica cómo recopilamos, utilizamos, protegemos y compartimos tus datos cuando utilizas nuestros servicios, sitios web o cualquier otra plataforma relacionada con nuestra marca. Al acceder o usar nuestros servicios, aceptas los términos aquí descritos.",
+    "sections": [
+      {
+        "id": "info-collection",
+        "title": "1. Información que recopilamos",
+        "text": "Recopilamos información para ofrecerte una mejor experiencia y mejorar continuamente nuestros servicios. Esto incluye datos de contacto (nombre, correo electrónico, número de teléfono), información técnica (dirección IP, tipo de navegador, sistema operativo), datos de navegación (páginas visitadas, tiempo en el sitio, interacciones) y comunicaciones que nos envíes por medios como formularios o mensajería. No solicitamos datos sensibles; en caso de hacerlo, se te informará claramente el propósito y las condiciones de tratamiento."
+      },
+      {
+        "id": "data-purpose",
+        "title": "2. Finalidad del tratamiento de datos",
+        "text": "Utilizamos tus datos personales para prestar nuestros servicios de manera eficaz, mantener la relación comercial y ofrecerte información relevante. Esto incluye gestionar tus consultas, personalizar tu experiencia, mejorar el contenido del sitio, realizar análisis estadísticos, enviar comunicaciones (previo consentimiento) y cumplir obligaciones legales. Todo tratamiento se realiza bajo los principios de legalidad, transparencia, proporcionalidad y responsabilidad."
+      },
+      {
+        "id": "data-retention",
+        "title": "3. Conservación de la información",
+        "text": "Tus datos personales se conservarán únicamente durante el tiempo necesario para cumplir los fines para los que fueron recopilados o durante los plazos exigidos por la ley. Una vez finalizado el propósito, los datos serán eliminados o anonimizados de manera segura, garantizando que no puedan ser recuperados o utilizados indebidamente."
+      },
+      {
+        "id": "data-sharing",
+        "title": "4. Transferencia y comunicación de datos",
+        "text": "Cathaleia no vende, alquila ni cede tus datos personales. Sin embargo, podemos compartir información con proveedores tecnológicos y socios estratégicos que actúan bajo nuestras instrucciones y garantizan un nivel adecuado de protección. También podemos divulgar datos cuando sea requerido por autoridades competentes en cumplimiento de obligaciones legales o judiciales."
+      },
+      {
+        "id": "security",
+        "title": "5. Seguridad de la información",
+        "text": "Implementamos medidas técnicas, administrativas y organizativas para proteger tus datos personales frente a accesos no autorizados, pérdida, uso indebido o alteración. Entre ellas se incluyen cifrado, controles de acceso, auditorías internas y almacenamiento seguro. Aunque ningún sistema es completamente infalible, mantenemos un compromiso continuo de mejora y actualización de nuestros protocolos de seguridad."
+      },
+      {
+        "id": "user-rights",
+        "title": "6. Derechos de los usuarios",
+        "text": "Como titular de los datos, tienes derecho a acceder, actualizar, rectificar, oponerte, limitar o solicitar la eliminación de tu información personal. También puedes ejercer el derecho a la portabilidad de datos. Para hacerlo, contáctanos mediante los canales indicados al final de esta política. Daremos respuesta dentro de los plazos establecidos por la normativa vigente."
+      },
+      {
+        "id": "cookies",
+        "title": "7. Uso de cookies y tecnologías similares",
+        "text": "Utilizamos cookies y tecnologías similares para mejorar la funcionalidad del sitio, analizar patrones de navegación y ofrecer contenido personalizado. Puedes configurar tu navegador para rechazar o eliminar cookies, aunque esto podría afectar el funcionamiento óptimo del sitio. En nuestra Política de Cookies encontrarás información más detallada sobre los tipos y finalidades de cada cookie."
+      },
+      {
+        "id": "external-links",
+        "title": "8. Enlaces a sitios de terceros",
+        "text": "Nuestro sitio puede contener enlaces a páginas externas administradas por terceros. Cathaleia no es responsable de las prácticas de privacidad ni del contenido de esos sitios. Te recomendamos leer las políticas de privacidad de cada servicio externo antes de compartir información personal."
+      },
+      {
+        "id": "policy-changes",
+        "title": "9. Cambios en esta política",
+        "text": "Podemos actualizar esta Política de Privacidad en cualquier momento para reflejar cambios en la legislación, en nuestras prácticas internas o en los servicios ofrecidos. Cualquier modificación será publicada en esta misma página, incluyendo la fecha de la última revisión. El uso continuado de nuestros servicios después de los cambios implica la aceptación de la nueva versión."
+      },
+      {
+        "id": "contact",
+        "title": "10. Contacto",
+        "text": "Si tienes preguntas, inquietudes o solicitudes sobre esta Política de Privacidad, puedes escribirnos a contacto@cathaleia.com o utilizar los formularios de contacto disponibles en nuestro sitio web. Estaremos encantados de atenderte y garantizar la protección de tus datos personales."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdatedLabel": "Última actualización: Octubre 2025",
+    "intro": "Estos Términos de Servicio establecen las condiciones bajo las cuales Cathaleia ofrece acceso y uso de su sitio web, productos y servicios digitales. Al utilizar nuestros servicios, el usuario acepta cumplir plenamente con estos términos. Si no está de acuerdo, debe abstenerse de acceder o utilizar nuestras plataformas.",
+    "sections": [
+      {
+        "id": "acceptance",
+        "title": "1. Aceptación de los términos",
+        "text": "Al acceder o utilizar el sitio web de Cathaleia, confirmas que has leído, comprendido y aceptado los presentes Términos de Servicio. Estos términos constituyen un acuerdo legalmente vinculante entre el usuario y Cathaleia. Nos reservamos el derecho de modificar estos términos en cualquier momento; las modificaciones entrarán en vigor desde su publicación en este mismo sitio."
+      },
+      {
+        "id": "services",
+        "title": "2. Descripción de los servicios",
+        "text": "Cathaleia proporciona soluciones digitales enfocadas en análisis de datos, automatización y servicios de inteligencia empresarial. Nos esforzamos por mantener los servicios disponibles y actualizados, aunque no garantizamos la ausencia de interrupciones, errores o modificaciones temporales. Nos reservamos el derecho de suspender o modificar parcial o totalmente los servicios en cualquier momento sin previo aviso."
+      },
+      {
+        "id": "user-responsibility",
+        "title": "3. Responsabilidad del usuario",
+        "text": "El usuario se compromete a utilizar los servicios de forma legal, ética y conforme a los presentes términos. Está prohibido usar los servicios para actividades ilícitas, fraudulentas, difamatorias, o que afecten la seguridad y funcionamiento de la plataforma. El usuario será responsable de toda actividad realizada bajo su cuenta o por medio de sus credenciales."
+      },
+      {
+        "id": "intellectual-property",
+        "title": "4. Propiedad intelectual",
+        "text": "Todo el contenido, diseño, logotipos, gráficos, textos, interfaces y software relacionados con Cathaleia están protegidos por derechos de autor y propiedad industrial. El uso del sitio o los servicios no concede al usuario ningún derecho de propiedad sobre dichos elementos. Cualquier reproducción, distribución o uso no autorizado será considerado una infracción."
+      },
+      {
+        "id": "pricing-and-payments",
+        "title": "5. Planes, precios y pagos",
+        "text": "Los precios de los servicios ofrecidos por Cathaleia se presentan en la página correspondiente y pueden variar según el tipo de plan y funcionalidades contratadas. Todos los pagos se procesan a través de plataformas seguras. Nos reservamos el derecho de modificar precios o condiciones de pago, informando previamente a los usuarios activos."
+      },
+      {
+        "id": "limitations",
+        "title": "6. Limitaciones de responsabilidad",
+        "text": "Cathaleia no será responsable por daños directos o indirectos derivados del uso o imposibilidad de uso de los servicios, ni por pérdidas de datos, ingresos o reputación. Aunque implementamos medidas de seguridad robustas, el usuario comprende que ninguna transmisión electrónica o almacenamiento digital es completamente seguro."
+      },
+      {
+        "id": "third-party-links",
+        "title": "7. Enlaces a terceros",
+        "text": "El sitio puede contener enlaces o integraciones con servicios de terceros. Cathaleia no se responsabiliza por el contenido, políticas o prácticas de dichos sitios externos. El acceso a ellos es bajo responsabilidad del usuario, quien debe revisar sus políticas de privacidad y condiciones de uso."
+      },
+      {
+        "id": "termination",
+        "title": "8. Terminación del servicio",
+        "text": "Cathaleia puede suspender o cancelar el acceso del usuario al servicio en caso de incumplimiento de estos términos, uso indebido o sospecha de actividad ilícita. En tales casos, se podrá restringir el acceso a la cuenta o eliminar información asociada según las políticas de retención aplicables."
+      },
+      {
+        "id": "governing-law",
+        "title": "9. Legislación aplicable",
+        "text": "Estos Términos de Servicio se rigen por las leyes de la República de Colombia. Cualquier disputa derivada del uso de los servicios será resuelta ante los tribunales competentes de la ciudad de Bucaramanga, renunciando expresamente a cualquier otro fuero que pudiera corresponder."
+      },
+      {
+        "id": "contact",
+        "title": "10. Contacto",
+        "text": "Si tienes dudas, comentarios o inquietudes sobre estos Términos de Servicio, puedes comunicarte con nuestro equipo a través del correo electrónico contacto@cathaleia.com o mediante los canales disponibles en nuestro sitio web. Estaremos disponibles para atender tus solicitudes de manera oportuna."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "lastUpdatedLabel": "Última actualización: Octubre 2025",
+    "intro": "En Cathaleia utilizamos cookies y tecnologías similares para mejorar la experiencia de navegación, optimizar el rendimiento de nuestro sitio web y ofrecer contenidos personalizados. Esta política explica qué son las cookies, cómo las usamos y cómo puedes gestionarlas.",
+    "consentNote": "Al continuar navegando en nuestro sitio, aceptas el uso de cookies de acuerdo con esta política. Puedes modificar tus preferencias en cualquier momento.",
+    "managePrefsLabel": "Gestionar preferencias",
+    "sections": [
+      {
+        "id": "what-are-cookies",
+        "title": "1. ¿Qué son las cookies?",
+        "text": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo al visitar un sitio web. Permiten recordar tus preferencias, reconocer tu sesión y analizar el comportamiento de navegación. No recopilan información personal directa, pero pueden vincularse a datos que nos proporciones a través de otros medios."
+      },
+      {
+        "id": "how-we-use",
+        "title": "2. Cómo usamos las cookies",
+        "text": "En Cathaleia utilizamos cookies propias y de terceros para fines esenciales, analíticos y de personalización. Estas cookies nos ayudan a asegurar el correcto funcionamiento del sitio, entender cómo los usuarios interactúan con nuestras páginas y mejorar nuestros servicios."
+      },
+      {
+        "id": "types",
+        "title": "3. Tipos de cookies que utilizamos",
+        "text": "Clasificamos las cookies según su finalidad. A continuación, se describen las principales categorías que empleamos y su propósito dentro del sitio."
+      },
+      {
+        "id": "manage",
+        "title": "4. Cómo gestionar las cookies",
+        "text": "Puedes aceptar, rechazar o modificar tus preferencias de cookies en cualquier momento mediante la configuración de tu navegador. Ten en cuenta que al desactivar ciertas cookies, algunas funcionalidades del sitio podrían verse limitadas o no funcionar correctamente."
+      },
+      {
+        "id": "changes",
+        "title": "5. Cambios en esta política",
+        "text": "Podemos actualizar esta Política de Cookies ocasionalmente para reflejar cambios en las tecnologías o en la normativa aplicable. La fecha de la última actualización se indica al inicio de esta página."
+      },
+      {
+        "id": "contact",
+        "title": "6. Contacto",
+        "text": "Si tienes preguntas o comentarios sobre nuestra Política de Cookies, puedes escribirnos a contacto@cathaleia.com o utilizar los formularios disponibles en nuestro sitio web."
+      }
+    ],
+    "categories": [
+      {
+        "id": "necessary",
+        "name": "Cookies necesarias",
+        "description": "Estas cookies son esenciales para el funcionamiento del sitio web. Permiten la navegación, el acceso seguro a áreas privadas y la correcta prestación de los servicios solicitados."
+      },
+      {
+        "id": "analytics",
+        "name": "Cookies analíticas",
+        "description": "Nos ayudan a comprender cómo los usuarios interactúan con el sitio recopilando información de forma anónima. Utilizamos estos datos para mejorar el contenido y la experiencia del usuario."
+      },
+      {
+        "id": "marketing",
+        "name": "Cookies de marketing",
+        "description": "Se emplean para personalizar la publicidad que ves y medir la efectividad de nuestras campañas. Pueden ser establecidas por nosotros o por socios externos de confianza."
+      }
+    ]
+  },
+  "dataExperience": {
+    "hero": {
+      "badge": "EXPERIENCIA VISUAL",
+      "title": "Gestión integral de datos, de principio a fin",
+      "subtitle": "Del dato crudo al conocimiento accionable: visualizamos cada etapa del ciclo para que veas cómo fluye, se transforma y se activa el valor en tu organización."
+    },
+    "highlights": [
+      {
+        "id": "uptime",
+        "label": "Disponibilidad",
+        "value": "99.9%"
+      },
+      {
+        "id": "latency",
+        "label": "Latencia promedio",
+        "value": "< 200 ms"
+      },
+      {
+        "id": "pipelines",
+        "label": "Pipelines orquestados",
+        "value": "120+"
+      },
+      {
+        "id": "savings",
+        "label": "Tiempo ahorrado en reportes",
+        "value": "−45%"
+      }
+    ],
+    "pillars": [
+      {
+        "id": "collect",
+        "title": "Recolectar",
+        "text": "Conectores listos para APIs, archivos, bases de datos y eventos. Trae tus datos sin fricción y con trazabilidad desde el primer minuto.",
+        "icon": "DownloadCloud"
+      },
+      {
+        "id": "transform",
+        "title": "Transformar",
+        "text": "Limpieza, normalización y enriquecimiento con reglas auditable. Estandariza formatos y asegúrate de que cada dato sea confiable.",
+        "icon": "Wand2"
+      },
+      {
+        "id": "analyze",
+        "title": "Analizar",
+        "text": "Modelos analíticos y métricas de negocio consistentes. Observa tendencias, anomalías y oportunidades en tiempo casi real.",
+        "icon": "LineChart"
+      },
+      {
+        "id": "activate",
+        "title": "Activar",
+        "text": "Acciona el valor: notificaciones, automatizaciones y feeds hacia tus apps. Convierte el insight en impacto operativo.",
+        "icon": "Zap"
+      }
+    ],
+    "process": [
+      {
+        "id": "step-1",
+        "title": "Ingesta sin fricciones",
+        "text": "Selecciona las fuentes, define frecuencia y formato. La ingesta gestiona colas, reintentos y control de duplicados."
+      },
+      {
+        "id": "step-2",
+        "title": "Calidad y validaciones",
+        "text": "Reglas de negocio y checks automáticos: tipos, rangos, unicidad y consistencia entre entidades."
+      },
+      {
+        "id": "step-3",
+        "title": "Modelado semántico",
+        "text": "Dimensiones y métricas reutilizables para que toda el área hable el mismo idioma de datos."
+      },
+      {
+        "id": "step-4",
+        "title": "Analítica en vivo",
+        "text": "Dashboards y vistas materializadas optimizadas para exploración ágil y seguimiento operativo."
+      },
+      {
+        "id": "step-5",
+        "title": "Orquestación y activación",
+        "text": "Workflows que disparan acciones: enviar alertas, actualizar CRMs o sincronizar reportes a tus canales."
+      }
+    ],
+    "visuals": [
+      {
+        "id": "wave-gradient",
+        "caption": "Ondas en degradado que representan el flujo continuo de datos a través del pipeline."
+      },
+      {
+        "id": "nodes-network",
+        "caption": "Red de nodos con conexiones sutiles para simbolizar integraciones y orquestaciones."
+      },
+      {
+        "id": "spark-points",
+        "caption": "Puntos brillantes que se activan al final del recorrido: del insight a la acción."
+      }
+    ],
+    "note": "Cathaleia unifica tu ciclo de datos con un enfoque visual y operativo: claridad para decidir, precisión para accionar."
   }
 }

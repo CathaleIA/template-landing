@@ -364,6 +364,71 @@ type Translations = {
       cta?: { label: string; href?: string; targetId?: string }; // href o targetId interno para scroll
     }[];
   };
+  privacy: {
+    title: string;
+    lastUpdatedLabel: string;
+    intro: string;
+    sections: {
+      id: string;
+      title: string;
+      text: string;
+    }[];
+  };
+  terms: {
+    title: string;
+    lastUpdatedLabel: string;
+    intro: string;
+    sections: {
+      id: string;
+      title: string;
+      text: string;
+    }[];
+  };
+  cookies: {
+    title: string;
+    lastUpdatedLabel: string;
+    intro: string;
+    consentNote: string; // Texto breve sobre consentimiento de cookies
+    managePrefsLabel: string; // Etiqueta para "Gestionar preferencias" (solo texto)
+    sections: {
+      id: string;
+      title: string;
+      text: string;
+    }[];
+    categories: {
+      id: string; // ej: "necessary", "analytics", "marketing"
+      name: string; // ej: "Necesarias", "Analíticas", "Marketing"
+      description: string; // descripción de la categoría
+    }[];
+  };
+  dataExperience: {
+    hero: {
+      badge: string;
+      title: string;
+      subtitle: string;
+    };
+    highlights: {
+      id: string;
+      label: string;
+      value: string;
+    }[];
+    pillars: {
+      id: string;
+      title: string;
+      text: string;
+      icon: string;
+    }[];
+    process: {
+      id: string;
+      title: string;
+      text: string;
+    }[];
+    visuals: {
+      id: string;
+      caption: string;
+    }[];
+    note: string;
+  };
 };
 
 export const useTranslation = () => {
@@ -592,6 +657,87 @@ export const useTranslation = () => {
     servicesShowcase: {
       head: { title: "", subtitle: "", intro: "" },
       items: [],
+    },
+    privacy: {
+      title: "",
+      lastUpdatedLabel: "",
+      intro: "",
+      sections: [
+        {
+          id: "",
+          title: "",
+          text: "",
+        },
+      ],
+    },
+    terms: {
+      title: "",
+      lastUpdatedLabel: "",
+      intro: "",
+      sections: [
+        {
+          id: "",
+          title: "",
+          text: "",
+        },
+      ],
+    },
+    cookies: {
+      title: "",
+      lastUpdatedLabel: "",
+      intro: "",
+      consentNote: "",
+      managePrefsLabel: "",
+      sections: [
+        {
+          id: "",
+          title: "",
+          text: "",
+        },
+      ],
+      categories: [
+        {
+          id: "",
+          name: "",
+          description: "",
+        },
+      ],
+    },
+    dataExperience: {
+      hero: {
+        badge: "",
+        title: "",
+        subtitle: "",
+      },
+      highlights: [
+        {
+          id: "",
+          label: "",
+          value: "",
+        },
+      ],
+      pillars: [
+        {
+          id: "",
+          title: "",
+          text: "",
+          icon: "",
+        },
+      ],
+      process: [
+        {
+          id: "",
+          title: "",
+          text: "",
+        },
+      ],
+      visuals: [
+        {
+          id: "",
+          caption: "",
+        },
+      ],
+      note: "",
     },
   });
 

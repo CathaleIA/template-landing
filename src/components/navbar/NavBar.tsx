@@ -26,6 +26,10 @@ export default function NavBar() {
     "/aboutus/",
     "/contact/",
     "/servicesShowcase/",
+    "/privacy/",
+    "/terms/",
+    "/cookies/",
+    "/integral/",
   ];
 
   // 2. Comprueba si la ruta actual COMIENZA con alguna de las de la lista
