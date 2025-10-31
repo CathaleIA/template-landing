@@ -138,10 +138,10 @@ export default function Footer() {
                 <div>
                   <Link
                     href={`mailto:${t.footer.contact.email}`}
-                    className="text-gray-700 text-sm font-medium hover:text-primary transition-all duration-300 relative group-hover:text-primary"
+                    className="text-gray-700 text-sm font-medium transition-all duration-300 relative"
                   >
                     {t.footer.contact.email}
-                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300"></div>
                   </Link>
                   <p className="text-gray-500 text-xs group-hover:text-gray-600 transition-colors duration-300">
                     {t.footer.contact.emailLabel}
