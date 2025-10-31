@@ -6,7 +6,7 @@ export default function SecuritySection() {
   const t = useTranslation();
 
   return (
-    <section id="security" className="relative w-full py-12 md:py-16 lg:py-20 bg-gray-50">
+    <section id="security" className="relative w-full pt-12 md:pt-16 lg:pt-20 pb-4 bg-gray-50">
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
       

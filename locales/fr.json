@@ -1213,5 +1213,9 @@
       }
     ],
     "note": "Cathaleia unifica tu ciclo de datos con un enfoque visual y operativo: claridad para decidir, precisión para accionar."
+  },
+  "whatsApp": {
+    "tooltip": "¡Hola! Me gustaría obtener más información.",
+    "defaultMessage": "¿Necesitas ayuda? ¡Chatea con nosotros!"
   }
 }
