@@ -4,170 +4,63 @@
 
 @layer base {
   :root {
-    /* Regla 60-30-10 aplicada */
+    /* Fondo original Cathaleia */
     --background: 0 0% 100%;
-    /* 60% - Blanco para fondos */
+    /* Blanco */
     --foreground: 0 0% 0%;
-    /* 30% - Negro para textos */
+    /* Negro texto base */
     --text-white: 0 0% 100%;
-    /* Variable adicional para texto blanco */
+    /* Texto blanco */
 
-    /* Mantener el morado como accent (10%) */
-    --primary: 168 100% 50%;
-    /* 10% - Morado (color principal anterior) */
+    /* --- Nueva paleta morada --- */
+    --primary: 255 90% 73%;
+    /* #9e7cf7 - Morado principal brillante */
     --primary-foreground: 0 0% 100%;
-    /* Texto blanco sobre morado */
-    --secondary: 160 30% 27%;
-    /* Ajustar otros elementos manteniendo la armonía */
-    --card: 0 0% 98%;
-    /* Blanco ligeramente gris */
-    --card-foreground: 0 0% 0%;
-    /* Negro */
-    --popover: 0 0% 100%;
-    /* Blanco */
-    --popover-foreground: 0 0% 0%;
-    /* Negro */
-    /* Gris muy claro */
-    --secondary-foreground: 0 0% 0%;
-    /* Negro */
-    --muted: 0 0% 96%;
-    /* Gris claro */
-    --muted-foreground: 0 0% 45%;
-    /* Gris medio */
-    --accent: 280 100% 70%;
-    /* Morado para acentos */
-    --accent-foreground: 0 0% 100%;
-    /* Blanco sobre morado */
-    --destructive: 0 84% 60%;
-    /* Rojo para destructivo */
-    --destructive-foreground: 0 0% 98%;
-    /* Blanco */
-    --border: 0 0% 90%;
-    /* Gris claro para bordes */
-    --input: 0 0% 100%;
-    /* Blanco para inputs */
-    --ring: 280 100% 70%;
-    /* Morado para ring */
 
-    /* Chart colors manteniendo la armonía */
-    --chart-1: 280 100% 70%;
-    /* Morado */
-    --chart-2: 0 0% 85%;
-    /* Gris */
-    --chart-3: 0 0% 95%;
-    /* Gris claro */
-    --chart-4: 280 80% 80%;
-    /* Morado claro */
-    --chart-5: 0 0% 75%;
-    /* Gris medio */
+    --secondary: 253 54% 38%;
+    /* #3f2d93 - Morado oscuro */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 253 91% 95%;
+    /* #e8e4fd - Lila claro */
+    --accent-foreground: 248 100% 5%;
+    /* Texto oscuro sobre fondo lila */
+
+    /* Tarjetas y superficies (sin cambios de fondo) */
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
+
+    /* Popovers */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Colores neutros */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Destructivos */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Bordes, inputs, y ring */
+    --border: 0 0% 90%;
+    --input: 0 0% 100%;
+    --ring: 255 90% 73%;
+    /* Morado principal */
+
+    /* Gráficos y visualizaciones */
+    --chart-1: 255 90% 73%;
+    /* Morado principal */
+    --chart-2: 253 54% 38%;
+    /* Morado oscuro */
+    --chart-3: 253 91% 95%;
+    /* Lila claro */
+    --chart-4: 248 100% 5%;
+    /* Azul profundo */
+    --chart-5: 253 91% 90%;
+    /* Lila pálido */
 
     --radius: 0.5rem;
-  }
-
-  .dark {
-    /* Modo oscuro opcional - puedes mantenerlo o adaptarlo */
-    --background: 0 0% 9%;
-    /* Fondo oscuro */
-    --foreground: 0 0% 98%;
-    /* Texto claro */
-    --text-white: 0 0% 100%;
-    /* Variable adicional para texto blanco */
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 280 100% 70%;
-    /* Mantener morado */
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 13%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 280 100% 70%;
-    /* Morado */
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 280 100% 70%;
-    /* Morado */
-    --chart-1: 280 100% 70%;
-    --chart-2: 0 0% 25%;
-    --chart-3: 0 0% 16%;
-    --chart-4: 280 80% 80%;
-    --chart-5: 0 0% 19%;
-  }
-
-  * {
-    @apply border-border;
-    box-sizing: border-box;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
-
-  /* Prevent horizontal overflow */
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Fix for fractional pixel overflow */
-  #__next,
-  main,
-  .container {
-    width: 100%;
-    max-width: 100vw;
-  }
-
-  /* Responsive container adjustments */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-    .container {
-      max-width: 1536px;
-    }
-  }
-
-  /* Utility class para texto blanco */
-  .text-white-override {
-    color: hsl(var(--text-white));
   }
 }
 

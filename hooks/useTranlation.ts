@@ -429,10 +429,6 @@ type Translations = {
     }[];
     note: string;
   };
-  whatsApp: {
-    tooltip: string;
-    defaultMessage: string;
-  };
 };
 
 export const useTranslation = () => {
@@ -743,10 +739,6 @@ export const useTranslation = () => {
       ],
       note: "",
     },
-    whatsApp: {
-      tooltip: "",
-      defaultMessage: "",
-    }
   });
 
   useEffect(() => {

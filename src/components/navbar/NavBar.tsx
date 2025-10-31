@@ -18,7 +18,7 @@ export default function NavBar() {
   // 1. Define tu lista de rutas sólidas
   // (Agrega aquí todas las rutas que necesites)
   const solidRoutes = [
-    "/analysis",
+    "/analisis",
     "/reports",
     "/inteligent",
     "/flexible",

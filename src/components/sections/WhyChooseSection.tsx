@@ -5,7 +5,8 @@ export default function WhyChooseSection() {
 
   return (
     <section className="relative w-full py-12 md:py-16 lg:py-20 overflow-hidden">
-      <div className="top-section-bg"></div>
+      <div className="top-section-bg">
+      </div>
       {/* Línea separadora superior */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 border-t-2 border-primary" />
 
