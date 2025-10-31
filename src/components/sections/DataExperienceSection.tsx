@@ -7,6 +7,10 @@ import {
   Wand2,
   LineChart,
   Zap,
+  Cloud,
+  ShieldCheck,
+  Layers,
+  Workflow,
   type LucideIcon,
 } from "lucide-react";
 
@@ -44,7 +48,6 @@ export default function DataExperienceSection() {
       id="data-experience"
       className="relative w-full overflow-hidden bg-white py-16 md:py-20 lg:py-24 text-gray-800"
     >
-
       <div className="container mx-auto max-w-6xl px-4 md:px-6">
         {/* Hero */}
         <motion.div
@@ -77,7 +80,7 @@ export default function DataExperienceSection() {
             {highlights.map((h) => (
               <div
                 key={h.id}
-                className="rounded-2xl border border-gray-100 bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm"
+                className="rounded-2xl border-2 border-secondary bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm"
               >
                 <div className="text-2xl font-extrabold text-gray-900">
                   {h.value}
@@ -100,9 +103,8 @@ export default function DataExperienceSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.25 }}
                   transition={{ duration: 0.5, delay: 0.05 * idx }}
-                  className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+                  className="group relative overflow-hidden rounded-2xl border-2 border-secundary bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
                 >
-                  <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-primary/5 blur-2xl transition-all group-hover:bg-primary/10" />
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
                     <Icon className="h-6 w-6 text-primary" />
                   </div>
@@ -155,10 +157,51 @@ export default function DataExperienceSection() {
                       </h3>
                       <p className="mt-2 text-gray-700">{step.text}</p>
                     </div>
-                    {/* Punto/onda decorativa */}
+
+                    {/* Punto/onda decorativa → CAMBIO: Badge con ícono y borde reactivo */}
+                    {/* LÍNEAS ~150–170 */}
                     <div className="relative hidden md:block">
-                      <div className="absolute left-1/2 top-6 h-3 w-3 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_0_6px_rgba(20,184,166,0.15)]" />
+                      {(() => {
+                        // Array con variedad de íconos para cada paso
+                        const icons = [
+                          Cloud,
+                          ShieldCheck,
+                          Layers,
+                          LineChart,
+                          Workflow,
+                        ];
+                        const TimelineIcon = icons[i % icons.length];
+
+                        return (
+                          <div
+                            className="
+                              group absolute left-1/2 top-11 -translate-x-1/2 
+                              inline-flex h-14 w-14 items-center justify-center
+                              rounded-xl border-4 border-primary bg-white text-secondary
+                              shadow-sm transition-all duration-300
+
+                              /* Ring base y hover */
+                              ring-2 ring-transparent ring-offset-2 ring-offset-white
+                              group-hover:ring-secondary/60 group-hover:ring-offset-[3px]
+
+                              /* Glow radial verde */
+                              before:pointer-events-none before:absolute before:inset-0 before:rounded-xl
+                              before:opacity-0 before:blur before:transition before:duration-300
+                              group-hover:before:opacity-100
+                              before:bg-[radial-gradient(closest-side,theme(colors.secondary/40),transparent_70%)]
+
+                              /* Focus accesible (sin azul) */
+                              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-white
+                            "
+                            aria-hidden="true"
+                          >
+                            {/* Ícono centrado y grande */}
+                            <TimelineIcon className="h-8 w-8 transition-transform duration-300 group-hover:scale-110" />
+                          </div>
+                        );
+                      })()}
                     </div>
+                    {/* FIN CAMBIO */}
                   </motion.div>
                 ))}
               </div>
