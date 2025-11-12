@@ -323,6 +323,13 @@
   "contact": {
     "head": "Contacto",
     "title": "Basta de nosotros. Hablemos ahora de su proyecto de datos.",
+    "subtitle": "PÓNGASE EN CONTACTO CON NUESTROS EXPERTOS",
+    "name": "Nombre *",
+    "email": "Correo electrónico *",
+    "phone": "Teléfono/WhatsApp",
+    "message": "Mensaje",
+    "button": "Enviar",
+    "text": "*Respetamos su confidencialidad y toda la información está protegida.",
     "description": "Estamos aquí para transformar tus datos en decisiones inteligentes. Nuestros expertos están listos para analizar tus necesidades y diseñar la solución perfecta para tu empresa.",
     "benefitsTitle": "",
     "benefits": [

@@ -10,7 +10,7 @@ export default function ContactSection() {
     message: ''
   });
 
-const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -27,7 +27,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
     <section id="contact" className="w-full py-8 md:py-12 lg:py-16 relative overflow-hidden">
       {/* Imagen de fondo con overlay */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <div
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `linear-gradient(135deg, rgba(59, 58, 108, 0.95), rgba(59, 58, 108, 0.85)), url('/assets/contact-bg.jpg')`
@@ -39,7 +39,13 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
           {/* Lado izquierdo - Contenido */}
           <div className="space-y-8 text-white">
-            {/* Línea decorativa */}
+            {/* Encabezado / Línea decorativa */}
+            <div className="flex items-center justify-between">
+              <span className="text-sm md:text-base tracking-wide uppercase text-white/80">
+                {t.contact.head}
+              </span>
+            </div>
+
             <div className="flex items-center space-x-4">
               <div className="w-12 h-1 bg-primary rounded-full"></div>
               <div className="w-8 h-1 bg-primary/60 rounded-full"></div>
@@ -51,7 +57,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                 {t.contact.title.split(' ').slice(0, 2).join(' ')}{' '}
                 <span className="block">{t.contact.title.split(' ').slice(2).join(' ')}</span>
               </h2>
-              
+
               <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-lg">
                 {t.contact.description}
               </p>
@@ -59,11 +65,13 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
 
             {/* Lista de beneficios */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-white">
-                {t.contact.benefitsTitle}
-              </h3>
+              {t.contact.benefitsTitle && (
+                <h3 className="text-xl font-semibold text-white">
+                  {t.contact.benefitsTitle}
+                </h3>
+              )}
               <div className="space-y-3">
-                {t.contact.benefits.map((benefit, index) => (
+                {t.contact.benefits.map((benefit: string, index: number) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
                     <span className="text-white/90 text-sm md:text-base">{benefit}</span>
@@ -78,7 +86,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
             <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 shadow-2xl">
               <div className="mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  PÓNGASE EN CONTACTO CON NUESTROS EXPERTOS
+                  {t.contact.subtitle}
                 </h3>
               </div>
 
@@ -86,7 +94,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                 {/* Campo Nombre */}
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-white text-sm font-medium">
-                    Nombre *
+                    {t.contact.name}
                   </label>
                   <input
                     type="text"
@@ -96,14 +104,14 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                     value={formData.name}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    placeholder="Ingrese su nombre completo"
+                    placeholder={t.contact.name}
                   />
                 </div>
 
                 {/* Campo Email */}
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-white text-sm font-medium">
-                    Correo electrónico *
+                    {t.contact.email}
                   </label>
                   <input
                     type="email"
@@ -113,14 +121,14 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    placeholder="su.email@empresa.com"
+                    placeholder={t.contact.email}
                   />
                 </div>
 
                 {/* Campo Teléfono */}
                 <div className="space-y-2">
                   <label htmlFor="phone" className="text-white text-sm font-medium">
-                    Teléfono/WhatsApp
+                    {t.contact.phone}
                   </label>
                   <input
                     type="tel"
@@ -129,14 +137,14 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    placeholder="+57 (316) 123-4567"
+                    placeholder={t.contact.phone}
                   />
                 </div>
 
                 {/* Campo Mensaje */}
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-white text-sm font-medium">
-                    Mensaje
+                    {t.contact.message}
                   </label>
                   <textarea
                     id="message"
@@ -145,7 +153,7 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                     value={formData.message}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
-                    placeholder="Ingrese los detalles de su proyecto (como requisitos específicos, cronograma, etc.) para recibir una cotización precisa."
+                    placeholder={t.contact.message}
                   />
                 </div>
 
@@ -154,20 +162,18 @@ const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent"
                 >
-                  Enviar
+                  {t.contact.button}
                 </button>
 
                 {/* Nota de privacidad */}
                 <p className="text-white/70 text-xs text-center leading-relaxed">
-                  *Respetamos su confidencialidad y toda la información está protegida.
+                  {t.contact.text}
                 </p>
               </form>
             </div>
           </div>
         </div>
       </div>
-
-    
     </section>
   );
 }

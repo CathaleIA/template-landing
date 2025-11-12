@@ -164,6 +164,13 @@ type Translations = {
   contact: {
     head: string;
     title: string;
+    subtitle: string;
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+    button: string;
+    text: string;
     description: string;
     benefitsTitle: string;
     benefits: string[];
@@ -536,6 +543,13 @@ export const useTranslation = () => {
     contact: {
       head: "",
       title: "",
+      subtitle: "",
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      button: "",
+      text: "",
       description: "",
       benefitsTitle: "",
       benefits: [],
