@@ -174,6 +174,23 @@ type Translations = {
     description: string;
     benefitsTitle: string;
     benefits: string[];
+    validation: {
+      name: string;
+      email: string;
+      phone: string;
+      messageLink: string;
+      messageLength: string;
+      general: string;
+    };
+    status: {
+      configuringCaptcha: string;
+      loadingCaptcha: string;
+      sending: string;
+      success: string;
+      error: string;
+      tooManyAttempts: string;
+      unknownError: string;
+    };
   };
   footer: {
     copyright: string;
@@ -553,6 +570,23 @@ export const useTranslation = () => {
       description: "",
       benefitsTitle: "",
       benefits: [],
+      validation: {
+        name: "",
+        email: "",
+        phone: "",
+        messageLink: "",
+        messageLength: "",
+        general: "",
+      },
+      status: {
+        configuringCaptcha: "",
+        loadingCaptcha: "",
+        sending: "",
+        success: "",
+        error: "",
+        tooManyAttempts: "",
+        unknownError: "",
+      },
     },
     footer: {
       copyright: "",

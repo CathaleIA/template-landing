@@ -337,7 +337,24 @@
       "Soporte confiable y especializado en todo momento",
       "Atención personalizada con foco en tus necesidades",
       "Entrega garantizada acorde a tus necesidades"
-    ]
+    ],
+    "validation": {
+      "name": "Ingresa tu nombre (2–80 caracteres).",
+      "email": "Correo inválido.",
+      "phone": "Teléfono inválido (solo números, +, espacios y guiones).",
+      "messageLink": "No incluyas enlaces en el mensaje.",
+      "messageLength": "Mensaje mínimo de 10 caracteres o déjalo vacío.",
+      "general": "Revisa los campos resaltados."
+    },
+    "status": {
+      "configuringCaptcha": "Configurando verificación…",
+      "loadingCaptcha": "Cargando verificación…",
+      "sending": "Enviando…",
+      "success": "¡Mensaje enviado! Te contactaremos pronto.",
+      "error": "Ocurrió un error al enviar tu mensaje.",
+      "tooManyAttempts": "Demasiados intentos. Intenta nuevamente en unos minutos.",
+      "unknownError": "No se pudo enviar. Intenta nuevamente."
+    }
   },
   "footer": {
     "copyright": "© 2025 CathaleIA . Todos los derechos reservados.",
